@@ -25,6 +25,7 @@ class GameProMain:
             print(str(self.gameBoard[i][0])+"   "+str(self.gameBoard[i][1])+"   "+str(self.gameBoard[i][2])+"   "+
               str(self.gameBoard[i][3]))
         print("---------------")
+        print("上:w 下:s 左:a 右:d")
            # print(i)
 
     def proData(self,qipan):
