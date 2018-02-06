@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="canonical" href="http://blog.csdn.net/csdnnews/article/details/79260714"/> 
+    <script type="text/javascript">
+        var username = "csdnnews";
+        var _blogger = username;
+        var blog_address = "http://blog.csdn.net/csdnnews";
+        var static_host = "http://csdnimg.cn/release/phoenix/";
+        var currentUserName = ""; 
+        var fileName = '79260714';
+        var commentscount = 6;
+        var islock = false;
+        window.quickReplyflag = true;
+        var totalFloor = 3;
+        var isBole = false;
+        var isDigg = false;
+        var isExpert = false;
+        var isAdm = false;
+        var baiduKey = "";
+        var needInsertBaidu = true;
+        var isShowAds = true;
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="http://c.csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://c.csdnimg.cn/public/static/css/avatar.css">
+                <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/main-ffb45d8453.css">
+          <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+
+    <script src="http://csdnimg.cn/rabbit/exposure-click/main-1.0.5.js"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/tracking-1.0.2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/release/phoenix/production/main-df0973cd7f.js"></script>
+
+    <script src="http://dup.baidustatic.com/js/ds.js"></script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <meta name="description" content="点击上方“CSDN”，选择“置顶公众号”关键时刻，第一时间送达！当前正是春运进行时，春节的脚步越来越近了，不知大家是否都已经买到了往返家乡的车票。近几天早上看新闻时也一直能看到「春运 2018」的最新情况，而据中国之声《全国新闻联播》报道，中国铁道科学研究院电子所副总工程师兼 12306 技术部主任单杏花表示，12306 最高峰抢票时段已经平稳渡过，今年春运 12306 售票系统首次没有出现卡断现" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <title>12306：春节抢票高峰已过，技术团队为自己打 90 分以上 - CSDN博客</title>
+    <link href="http://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+                      <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/htmledit_views-4f31372ff7.css">
+      </head>
+<body>
+<script id="toolbar-tpl-scriptId" prod="download" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="http://blog.csdn.net/"></script>
+<div class="container clearfix">
+  <main>
+      <div style="display:none;">
+          <img src="" onerror='setTimeout(function(){if(top !== self){window["\x74\x6f\x70"]["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"] = window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"];}            if(typeof(csdn)=="\x75\x6e\x64\x65\x66\x69\x6e\x65\x64"&&window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x6f\x73\x74"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x63\x73\x64\x6e\x2e\x6e\x65\x74")<0&&window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x6f\x73\x74"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x69\x74\x65\x79\x65\x2e\x63\x6f\x6d")<0){window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"]="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74";}},3000);'>
+      </div>
+    <article>
+        <h1 class="csdn_top">12306：春节抢票高峰已过，技术团队为自己打 90 分以上</h1>
+        <div class="article_bar clearfix">
+            <div class="artical_tag">
+                <span class="original">
+                转载                </span>
+                <span class="time">2018年02月05日 00:00:00</span>
+            </div>
+
+            <ul class="article_tags clearfix csdn-tracking-statistics tracking-click" data-mod="popu_377" >
+                <li class="tit">标签：</li>
+
+<!--          [startarticletags]-->
+                <!--          [endarticletags]-->
+            </ul>
+            <ul class="right_bar">
+                <li><button class="btn-noborder"><i class="icon iconfont icon-read"></i><span class="txt">1420</span></button></li>
+                <li class="edit">
+                    <a class="btn-noborder" href="" >
+                        <i class="icon iconfont icon-bianji"></i><span class="txt">编辑</span>
+                    </a>
+                </li>
+                <li class="del">
+                    <a class="btn-noborder" onclick="javascript:deleteArticle(fileName);return false;">
+                        <i class="icon iconfont icon-shanchu"></i><span class="txt">删除</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="article_content" class="article_content csdn-tracking-statistics tracking-click" data-mod="popu_519" data-dsm="post">
+                            <div class="htmledit_views">
+                        
+    <div class="rich_media_content" id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);background-color:rgb(255,255,255);line-height:1.75em;text-align:center;letter-spacing:1px;"><span style="color:rgb(127,127,127);font-size:14px;line-height:1.75em;">点击上方“</span><span style="font-size:14px;line-height:1.75em;color:rgb(0,176,240);">CSDN</span><span style="color:rgb(127,127,127);font-size:14px;line-height:1.75em;">”，选择“置顶公众号”</span></p><p style="font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);background-color:rgb(255,255,255);line-height:25.6px;text-align:center;letter-spacing:1px;"><span style="color:rgb(127,127,127);font-size:14px;">关键时刻，第一时间送达！</span></p><p style="white-space:normal;"><br /></p><p style="white-space:normal;text-align:center;"><img src="http://ss.csdn.net/p?http://mmbiz.qpic.cn/mmbiz_jpg/Pn4Sm0RsAuh7ffhBq5ZABCySSPGFFrXFZiaLyjmaftmibEKmULjKIhfXUo79hsNSkW5UibAauXEjfc9XZJ9kyIqkA/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1" style="visibility:visible !important;" alt="640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1" /></p><p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);letter-spacing:1px;line-height:1.75em;text-align:justify;background-color:rgb(255,255,255);">当前正是春运进行时，春节的脚步越来越近了，不知大家是否都已经买到了往返家乡的车票。近几天早上看新闻时也一直能看到「春运 2018」的最新情况，而据中国之声《全国新闻联播》报道，中国铁道科学研究院电子所副总工程师兼 12306 技术部主任单杏花表示，12306 最高峰抢票时段已经平稳渡过，今年春运 12306 售票系统首次没有出现卡断现象，技术团队为自己打 90 分以上。</p><p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);letter-spacing:1px;line-height:1.75em;text-align:justify;background-color:rgb(255,255,255);">今年春运全国铁路预计发送旅客 3.9 亿人次，日均 955 万人次。12306 数据显示，1 月 3 日发售春运车票以来，截止 2 月 1 日共发售车票 3.5 亿张，其中互联网售票为 2.8 亿张。据单杏花介绍，通过售票情况来看，高峰日售票量已经创出了新高，高峰时日售出 1135.7 万张，占全渠道售票量的 80%以上。高峰时段最高秒级售出将近 700 张，相当于一趟热门动车组列车的车票几乎在 1 秒钟内售完。</p><p style="white-space:normal;"><br /></p><p style="white-space:normal;text-align:center;"><img class="img_loading" src="http://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/Pn4Sm0RsAuh7ffhBq5ZABCySSPGFFrXFB2hbzHOoqWX8cjCj0KarU2Wdkkgw9xdkXz7Y447av0Xb2lOsRvjadA/640?wx_fmt=jpeg" alt="640?wx_fmt=jpeg" /></p><p style="white-space:normal;text-align:center;"><span style="font-size:14px;color:rgb(136,136,136);">眼前的计算机屏幕是 12306 的各项数据</span></p><p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);letter-spacing:1px;line-height:1.75em;text-align:justify;background-color:rgb(255,255,255);">并且，由于今年春运回程会出现多重客流叠加现象，因此，年后返程车票明显比节前要更为紧俏。1 月 24 日预售 2 月 22 日车票，节后初六（22 日）是返程高峰，早上 8：00 开始放票，每半点会放票，售票高峰日同时是放票高峰节点，可以每秒售出近 700 张的数量。</p><p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);letter-spacing:1px;line-height:1.75em;text-align:justify;background-color:rgb(255,255,255);">铁路 12306 售票系统于 2012 年春运开始上线运行，由于当时系统能力较差，卡断严重，因此秒级售出是几十张的水平，低的时候甚至只有几张。这也引得我们一直吐槽「<a href="http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&amp;mid=2650691927&amp;idx=1&amp;sn=3706a10dc20b26ba195f37e176e377f2&amp;chksm=bea6288489d1a19246e2f735103aeecab325b2234fbf5b17690f95769cd7d1ee471b0f933d59&amp;scene=21#wechat_redirect">为什么耗资数亿的 12306 一直都非常难用？</a>」。不过，这几年的时间里，12306 系统也在不断迭代优化，据单杏花介绍，随着系统能力的提升，12306 每天售票量将有望达到 1500 万张。</p><p style="margin-top:15px;margin-right:8px;margin-left:8px;font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);letter-spacing:1px;line-height:1.75em;text-align:justify;background-color:rgb(255,255,255);"><img class="img_loading" style="text-align:center;line-height:25.6px;visibility:visible !important;" src="http://ss.csdn.net/p?http://mmbiz.qpic.cn/mmbiz_jpg/Pn4Sm0RsAuhjy3ca4Zqcv1iaBIiaicaJANGWW4rmAicwXDViap40ia2ZrXjjz82MZmC92E79qvoPoYymXB4TiboeCAnwg/640?wx_fmt=jpeg" alt="640?wx_fmt=jpeg" /><br /></p><p style="font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);background-color:rgb(255,255,255);text-align:center;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&amp;mid=2650693934&amp;idx=1&amp;sn=36189e6958f602f5efbfbe6e3ee034df&amp;chksm=bea610fd89d199eb4189dbf76582e4d54f474b8c338821fbd715a3cbc7e2b009545d61fd176a&amp;scene=21#wechat_redirect"></a></p><p style="font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);background-color:rgb(255,255,255);text-align:center;"><a href="http://mp.weixin.qq.com/s?__biz=MjM5MjAwODM4MA==&amp;mid=2650693926&amp;idx=1&amp;sn=55e7276012ca48860d9be53c156efe27&amp;chksm=bea610f589d199e3cf38603ecbaae727f7ea01acda4ad9bfa1c64753f20ac77f49f1d567133d&amp;scene=21#wechat_redirect"></a></p><p style="font-size:16px;white-space:normal;min-height:1em;color:rgb(62,62,62);line-height:25.6px;text-align:center;background-color:rgb(255,255,255);"><img class="__bg_gif img_loading" title="引导分享与赞" style="letter-spacing:1px;line-height:1.6;display:inline;visibility:visible !important;" src="http://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_gif/Pn4Sm0RsAuhjy3ca4Zqcv1iaBIiaicaJANGjt7ChWnsia5qs2vHlM86GdicP61juQ6SLb2qBw7icsc6Vh8jy5eOYCPZg/640?wx_fmt=gif" alt="640?wx_fmt=gif" /></p>
+                </div>
+                  </div>
+                    </div>
+    </article>
+      <div class="readall_box csdn-tracking-statistics tracking-click" data-mod="popu_376">
+          <div class="read_more_mask"></div>
+          <a class="btn btn-large btn-gray-fred read_more_btn" target="_self">阅读全文</a>
+      </div>
+      <div class="article_copyright">
+              </div>
+      <ul class="article_collect clearfix csdn-tracking-statistics tracking-click"  data-mod="popu_378">
+          <li class="tit">本文已收录于以下专栏：</li>
+<!--          [startarticlecolumns]-->
+                                <!--          [endarticlecolumns]-->
+      </ul>
+      <div class="comment_box clearfix" id="comments">
+          <div id="comment_form">
+              <div id="commentsbmitarear">
+                              </div>
+          </div>
+      </div>
+      <div class="comment_li_outbox">
+          <div id="comment_list"></div>
+      </div>
+
+      <div class="more_comment">
+          <div id="comment_bar" class="trackgin-ad" data-mod="popu_385"></div>
+      </div>
+
+      <!-- <h3 class="recommend_tit" id="related">相关文章推荐</h3> -->
+      <div class="recommend_list clearfix" id="rasss">
+                                                                        <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/anhui_ming/article/details/8566813"  target="_blank" strategy="BlogCommendFromQuerySearch_0">
+                        <dd class="clearfix">
+                          <h2 class="">简述12306网站春运抢票插件的工作原理</h2>
+                          <div class="summary">
+                              好久没有自己写日志了啊，先说明一下，这篇文章也并非完全原创，事先是有专门查找过相关技术文档的，毕竟菜鸟水平有限（这也是菜鸟一直自称“菜鸟”的原因）。因为就快要过年了，而公司一个ERP需要在年前推出来，...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/4/E/7/3_anhui_ming.jpg" alt="anhui_ming" title="anhui_ming"/></li>
+                              <li class="user_name">anhui_ming</li>
+                              <li class="time">2013年02月03日 13:37</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>1453</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/wuqing942274053/article/details/78570229"  target="_blank" strategy="BlogCommendFromQuerySearch_1">
+                        <dd class="clearfix">
+                          <h2 class="">12306自动下单抢票-登录篇</h2>
+                          <div class="summary">
+                              12306网站推出图片验证码以后，对于抢票软件就提出了更高的要求，本篇并不涉及自动识别验证码登录（主要是博主能力所限），提供一个途径-打码平台，这个几乎是可以破解所有验证码了，本篇主要是分享一下123...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/2/E/A/3_wuqing942274053.jpg" alt="wuqing942274053" title="wuqing942274053"/></li>
+                              <li class="user_name">wuqing942274053</li>
+                              <li class="time">2017年11月18日 18:05</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>1895</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                      <dl class="">
+                  <script>
+                  (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                      id: '4765209',
+                      container: s,
+                      size: '808,120',
+                      display: 'inlay-fix'
+                    });
+                  })();
+                  </script>
+                </dl>
+                                                                <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/qing666888/article/details/43344785"  target="_blank" strategy="BlogCommendFromQuerySearch_2">
+                        <dd class="clearfix">
+                          <h2 class="">12306改版之后简单抢票软件的实现（二）完结</h2>
+                          <div class="summary">
+                              上一篇文章讲完了12306网站模拟登陆的部分，看这里 12306改版之后简单抢票软件的实现
+    现在把后面的步骤全部分析一下。
+    登录完成要选择买票人的信息，那么怎么获得账户中常用联系人的信...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/A/0/3/3_qing666888.jpg" alt="qing666888" title="qing666888"/></li>
+                              <li class="user_name">qing666888</li>
+                              <li class="time">2015年01月31日 20:25</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>1872</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/adream307/article/details/53820991"  target="_blank" strategy="BlogCommendFromQuerySearch_3">
+                        <dd class="clearfix">
+                          <h2 class="">一步一步编写12306抢票软件</h2>
+                          <div class="summary">
+                              本文在Linux平台上，以Python为开发工具，介绍12306抢票软件的基本原理，并引入示例，讲解如何自己编写一个12306抢票软件。...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/7/7/8/3_adream307.jpg" alt="adream307" title="adream307"/></li>
+                              <li class="user_name">adream307</li>
+                              <li class="time">2016年12月23日 20:41</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>34008</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/u012345283/article/details/42044537"  target="_blank" strategy="BlogCommendFromQuerySearch_4">
+                        <dd class="clearfix">
+                          <h2 class="">12306新版抢票之逻辑分析</h2>
+                          <div class="summary">
+                              12306新版抢票之逻辑分析                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/7/4/6/3_u012345283.jpg" alt="u012345283" title="u012345283"/></li>
+                              <li class="user_name">u012345283</li>
+                              <li class="time">2014年12月20日 21:07</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>2999</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/cH3RUF0tErmB3yH/article/details/79091593"  target="_blank" strategy="BlogCommendFromQuerySearch_5">
+                        <dd class="clearfix">
+                          <h2 class="">Python突破12306最后一道防线，实现自动抢票（附源码）</h2>
+                          <div class="summary">
+                              一年一度的春运又来了，今年我自己写了个抢票脚本。使用Python+Splinter自动刷新抢票，可以成功抢到。（依赖自己的网络环境太厉害，还有机器的好坏）Splinter是一个使用Python开发的开...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/D/F/7/3_ch3ruf0termb3yh.jpg" alt="cH3RUF0tErmB3yH" title="cH3RUF0tErmB3yH"/></li>
+                              <li class="user_name">cH3RUF0tErmB3yH</li>
+                              <li class="time">2018年01月17日 00:00</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>596</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/yaerfeng/article/details/7189867"  target="_blank" strategy="BlogCommendFromQuerySearch_6">
+                        <dd class="clearfix">
+                          <h2 class="">教你如何秒杀12306，JAVA程序抢票成功！分享~~~[附截图]</h2>
+                          <div class="summary">
+                              GOHOME最新版出世了！！！支持多人订票及指定车次等功能！！！更方便！
+
+JAVA程序GOHOME自动抢票成功！非常棒~~~不多说，直接截图上教程说明！
+大家都在抢票，可谁让咱们是程序员呢。程序员就...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/B/6/B/3_yaerfeng.jpg" alt="yaerfeng" title="yaerfeng"/></li>
+                              <li class="user_name">yaerfeng</li>
+                              <li class="time">2012年01月10日 10:01</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>76068</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/qq_21181253/article/details/73017306"  target="_blank" strategy="BlogCommendFromQuerySearch_7">
+                        <dd class="clearfix">
+                          <h2 class="">JAVA版12306抢票工具</h2>
+                          <div class="summary">
+                              JAVA版12306抢票工具，实现时间是2015-2016当前是2017-06-11不废话，上截图1、登录界面 
+2、主界面 
+3、订单界面 
+有话要说 
+原本是私人项目，但作者时间有限无法继续更新，...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/C/F/3/3_qq_21181253.jpg" alt="qq_21181253" title="qq_21181253"/></li>
+                              <li class="user_name">qq_21181253</li>
+                              <li class="time">2017年06月11日 10:53</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>3146</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/breaksoftware/article/details/8551035"  target="_blank" strategy="BlogCommendFromQuerySearch_8">
+                        <dd class="clearfix">
+                          <h2 class="">如何定制一款12306抢票浏览器——完结篇</h2>
+                          <div class="summary">
+                              差不多花了一个星期的业余时间去完成了相关的编码。最后也只是使用了5篇文章将整个大题流程和使用的关键技术介绍了一下。其中有很多酸甜苦辣，其中记忆最为深刻的就是我对图像做了处理后，tesseract-oc...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/4/D/D/3_breaksoftware.jpg" alt="breaksoftware" title="breaksoftware"/></li>
+                              <li class="user_name">breaksoftware</li>
+                              <li class="time">2013年01月29日 01:53</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>5682</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/HarderXin/article/details/8528345"  target="_blank" strategy="BlogCommendFromQuerySearch_9">
+                        <dd class="clearfix">
+                          <h2 class="">12306抢票JS脚本</h2>
+                          <div class="summary">
+                              // ==UserScript==
+// @name 			12306.CN 订票助手 For Firefox&Chrome
+// @namespace		http://www.u-tide.co...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/D/E/D/3_harderxin.jpg" alt="HarderXin" title="HarderXin"/></li>
+                              <li class="user_name">HarderXin</li>
+                              <li class="time">2013年01月22日 09:10</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>9340</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                    <!-- <script async="async" charset="utf-8" src="https://shared.ydstatic.com/js/yatdk/3.0.0/stream.js" data-notify="bannerMulti_notify" data-insert-nodes="yd_a_d_feed_1,yd_a_d_feed_13,yd_a_d_feed_18,yd_a_d_feed_23,yd_a_d_feed_28,yd_a_d_feed_33" data-id="8935aa488dd58452b9e5ee3b44f1212f" data-hide-ad-label="0" data-div-Style="width:100%;padding:16px 35px 16px 10px;" data-img-Style="float:right;width:120px;" data-tit-Style="font-size:20px;font-weight:bold;margin-bottom:10px;font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;" data-des-Style="width:700px;font-size:14px;font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;" > </script> -->
+      
+      </div>
+  </main>
+<aside>
+    <div class="right_box user_info">
+    <dl class="inf_bar clearfix">
+        <dt class="csdn-tracking-statistics tracking-click" data-mod="popu_381">
+        <a href="http://blog.csdn.net/csdnnews" target="_blank">
+            <img src="http://avatar.csdn.net/C/3/E/3_csdnnews.jpg" class="avatar_pic">
+        </a>
+      </dt><dd>
+            <h3 class="csdn-tracking-statistics tracking-click"  data-mod="popu_380"><a href="http://blog.csdn.net/csdnnews" target="_blank" id="uid">csdnnews</a></h3>
+            <div class="medals" title="">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-bokezhuanjia"></use>
+            </svg>
+            <span>博客专家</span>
+                      </div>
+                        <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379"><a class="btn btn-redborder-small "  id="span_add_follow" target="_self">关注</a></span>
+                    </dd>
+    </dl>
+    <div class="inf_number_box clearfix">
+        <dl title="203">
+            <dt>原创</dt>
+            <dd>203</dd>
+        </dl>
+        <dl title="782">
+            <dt>粉丝</dt>
+            <dd id='fan'>782</dd>
+        </dl>
+        <dl title="756">
+            <dt>喜欢</dt>
+            <dd>756</dd>
+        </dl>
+        <dl title="1809">
+          <dt>评论</dt>
+          <dd>1.8k</dd>
+        </dl>
+    </div>
+
+</div>
+<div class="interflow clearfix">
+      <div class="badge gradeAndbadge">
+        <div>
+                                    <img src='http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/chizhiyiheng.png' alt='持之以恒'>
+                                            </div>
+    </div>
+      <div class="grade gradeAndbadge">
+      <span>等级：</span>
+      <div>
+        <a href="http://blog.csdn.net/home/help.html#level" title="7级,点击查看等级说明" target="_blank">
+          <img class="grade-img" src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog7.png" alt="7级,点击查看等级说明">
+        </a>
+      </div>
+    </div>
+    <div class="gradeAndbadge" title="1991712">
+        <span>访问量：</span>
+        <span class="num odd-overhidden">1.99m</span>
+    </div>
+
+    <div class="gradeAndbadge" title="12619">
+      <span>积分：</span>
+      <span  class="num odd-overhidden">12.61k</span>
+    </div>
+    <div class="gradeAndbadge" title="1337">
+        <span>排名：</span>
+        <span class="num odd-overhidden">1.33k</span>
+    </div>
+
+</div>          <div class="extension_other csdn-tracking-statistics tracking-click" data-mod="popu_389">
+          <!--u3032528-->
+        <div class="flashrecommend">
+            <script type="text/javascript" src="//cee1.iteye.com/bwocoltly.js"></script>
+        </div>
+      </div>
+      <div class="writings">
+    <div class="public_signal clearfix">
+      <h3>他的最新文章</h3>
+      <a href="http://blog.csdn.net/csdnnews" target="_blank" class="more"><span>更多文章</span></a>
+    </div>
+      <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/csdnnews/article/details/79256376" target="_blank">天才少年创世纪：从创建应用程序，到被哈佛录取、登上头条</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/csdnnews/article/details/79256374" target="_blank">百度头条“撕逼”没完；“头脑王者”爆红遭封；腾讯立知被指“抄袭”即刻 | 一周业界事</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/csdnnews/article/details/79256373" target="_blank">区块链开发人员短缺？各大公司献上连环招</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/csdnnews/article/details/79250850" target="_blank">观点 | 2017，区块链与加密货币“追逐者”玩命的一年</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/csdnnews/article/details/79250848" target="_blank">离破产仅一步之遥的A站，还能挺过去吗？</a>
+          </li>
+                </ul>
+  </div>
+            <div class="user-hotArticle sort userSort">
+            <h3>文章分类</h3>
+            <ul class="hotArticle-list userSort-list">
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/csdnnews/article/category/7171152" class="odd-overhidden floatL">产品见闻</a>
+                        <div class="read list-left floatR"><span>28篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/csdnnews/article/category/7171167" class="odd-overhidden floatL">技术之路</a>
+                        <div class="read list-left floatR"><span>29篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/csdnnews/article/category/7173896" class="odd-overhidden floatL">程序人生</a>
+                        <div class="read list-left floatR"><span>19篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/csdnnews/article/category/7180318" class="odd-overhidden floatL">行业热点</a>
+                        <div class="read list-left floatR"><span>19篇</span></div>
+                    </li>
+                            </ul>
+            <div class="unfold-btn">
+              <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+            </div>
+        </div>
+    <!--    [StartShowSelfColumn]-->
+    <!--    [EndShowSelfColumn]-->
+            <div class="user-hotArticle sort timeSort">
+          <h3>文章存档</h3>
+          <ul class="hotArticle-list timeSort-list">
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2018/02" class="odd-overhidden floatL">2018年2月</a>
+                  <div class="read list-left floatR"><span>22篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2018/01" class="odd-overhidden floatL">2018年1月</a>
+                  <div class="read list-left floatR"><span>150篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2017/12" class="odd-overhidden floatL">2017年12月</a>
+                  <div class="read list-left floatR"><span>151篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2017/11" class="odd-overhidden floatL">2017年11月</a>
+                  <div class="read list-left floatR"><span>33篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2017/10" class="odd-overhidden floatL">2017年10月</a>
+                  <div class="read list-left floatR"><span>29篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/csdnnews/article/month/2017/09" class="odd-overhidden floatL">2017年9月</a>
+                  <div class="read list-left floatR"><span>29篇</span></div>
+                </li>
+                      </ul>
+          <div class="unfold-btn">
+            <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+          </div>
+        </div>
+        <div class="user-hotArticle">
+        <h3>他的热门文章</h3>
+        <ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+<!--            [StartHotArticles]-->
+                                                <li>
+                        <a href="http://blog.csdn.net/csdnnews/article/details/78259290">Wi-Fi 爆重大安全漏洞，Android、iOS、Windows 等所有无线设备都不安全了</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>375886</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/csdnnews/article/details/78557392">数百种编程语言，而我为什么要学 Python？</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>47594</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/csdnnews/article/details/78248699">一文总结学习 Python 的 14 张思维导图</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>33786</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/csdnnews/article/details/78280033">一个 38 岁程序员的中年危机</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>33096</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/csdnnews/article/details/78838709">2018 最具就业前景的 7 大编程语言，Java、Python 和 JavaScript 前三无悬念？</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>31322</span></div>
+                    </li>
+                            <!--            [EndHotArticles]-->
+        </ul>
+    </div>
+
+<!--    [startcustom]-->
+    <!--    [endcustom]-->
+  <div class="fixRight_box" style="height:256px">
+    <div class="fixRight">
+                    <!--u3163270-->
+            <script type="text/javascript" src="//cee1.iteye.com/avneunkwb.js"></script>
+                <div class="persion_article"></div>
+    </div>
+    </div>
+  </div>
+</aside></div>
+
+<div class="left_fixed">
+    <div class="left_show_button">
+        <span>
+          <i class="icon iconfont icon-youjiantou"></i>
+        </span>
+    </div>
+    <ul class="left_menu" id="share_box">
+        <li>
+            <button class="left-fixed-btn btn-like csdn-tracking-statistics tracking-click" data-mod="popu_373" target="_self" title="点赞">
+                <a href="javascript:void(0);" class="iconbox border_red" ><i class="icon iconfont icon-dianzan"></i></a>
+                <a class="txt" href="javascript:void(0);">0</a>
+            </button>
+        </li>
+        <li id="blog_artical_directory">
+            <button class="left-fixed-btn left_menu_btn csdn-tracking-statistics tracking-click" data-mod="popu_372" target="_self" title="目录">
+                <a href="javascript:void(0);" class="iconbox border_black" ><i class="icon iconfont icon-mulu"></i></a>
+            </button>
+        </li>
+        <li class="menu_con">
+            <div class="list_father">
+                <div class="arr_box">
+                    <button class="btn-noborder arr-btn scroll-down  left_scroll_down"><i class="icon iconfont icon-xiajiantou"></i></button>
+                    <button class="btn-noborder arr-btn scroll-up left_scroll_top"><i class="icon iconfont icon-shangjiantou"></i></button>
+                </div>
+                <div class="arr"></div>
+                <div id="csdnBlogDir"></div>
+            </div>
+        </li>
+        <!--        <li>-->
+        <!--            <button class="left-fixed-btn btn-like tracking-ad" data-mod="popu_373" target="_self">-->
+        <!--                <span class="iconbox border_red"><i class="icon iconfont icon-xihuan-"></i></span>-->
+        <!--                <span class="txt">喜欢</span>-->
+        <!--                <span class="untxt">取消喜欢</span>-->
+        <!--            </button>-->
+        <!--        </li>-->
+        <li>
+            <button class="left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_374"  id="com-quick-collect" target="_self" title="收藏">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-shoucang"></i></a>
+            </button>
+        </li>
+        <li>
+            <button class="left-fixed-btn btn-pinglun csdn-tracking-statistics tracking-click" data-mod="popu_544" title="评论">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-pinglun"></i></a>
+            </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到新浪微博">
+                <span class="iconbox border_red2"><i class="icon iconfont icon-xinlang"></i></span>
+                <a href="#" class="bds_tsina" data-cmd="tsina" > </a>
+          </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到微信">
+              <span class="iconbox border_green"><i class="icon iconfont icon-weixin"></i></span>
+              <a href="#" class="bds_weixin" data-cmd="weixin" > </a>
+          </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到QQ空间">
+              <span class="iconbox border_blue"><i class="icon iconfont icon-QQ"></i></span>
+              <a href="#" class="bds_qzone" data-cmd="qzone" > </a>
+          </button>
+        </li>
+        <li id="share_box">
+            
+            <div class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+                
+                
+                
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="right_fixed">
+    <div class="r_ico">
+        <i class="icon iconfont icon-jubao"></i>
+        <span class="txt" id="reportBtn">内容举报</span>
+    </div>
+    <div class="returnTop">
+        <i class="icon iconfont icon-fanhuidingbu"></i>
+        <span>返回顶部</span>
+    </div>
+</div>
+<div id="pop_win"></div>
+<div id="popup_mask"></div>
+<div class="pop_CA_cover" ></div>
+<div class="pop pop_CA" >
+    <div class="CA_header">
+        收藏助手
+        <span class="cancel_icon"  id="fapancle" ></span>
+    </div>
+    <iframe src="" id="collectIframe" frameborder="0" width="100%" height="360"  scrolling="no" ></iframe>
+</div>
+<!--举报-->
+<div id="report_dialog" style="top: 250px; left: 343.5px;"><div id="panel_report">
+    <div class="panel_head">不良信息举报</div>
+    <form method="post" id="frmReport" class="panel_body">
+        <table border="0" cellpadding="0" cellspacing="4" class="pop_table">
+            <tbody><tr><td colspan="2">您举报文章：<a href="http://blog.csdn.net/csdnnews/article/details/79260714" target="_blank">12306：春节抢票高峰已过，技术团队为自己打 90 分以上</a></td></tr>
+            <tr>
+                <th style="width:60px;">举报原因：</th>
+                <td id="panel_reporttype">
+                    <label><input type="radio" class="report_type" id="report_sex" name="report_type" value="1">色情</label>
+                    <label><input type="radio" class="report_type" id="report_Politics" name="report_type" value="2">政治</label>
+                    <label><input type="radio" class="report_type" id="report_copy" name="report_type" value="3">抄袭</label>
+                    <label><input type="radio" class="report_type" id="report_ad" name="report_type" value="4">广告</label>
+                    <label><input type="radio" class="report_type" id="report_want" name="report_type" value="5">招聘</label>
+                    <label><input type="radio" class="report_type" id="report_call" name="report_type" value="6">骂人</label>
+                    <br>
+                    <label><input type="radio" class="report_type" id="report_other" name="report_type" value="7">其他</label>
+                    <input type="text" name="report_other_content" id="report_other_content" maxlength="30" style="display: none;">
+                </td>
+            </tr>
+            <tr id="panel_originalurl" style="display: none;">
+                <th>原文地址：</th>
+                <td>
+                    <input id="originalurl" value="http://" name="originalurl" type="text" style="width: 90%;">
+                </td>
+            </tr>
+            <tr>
+                <th id="sp_reason">原因补充：</th>
+                <td>
+                    <textarea id="report_description" style="width: 300px;" rows="3" name="report_description"></textarea>
+                    <p id="sp_n" style="color:#999;margin:0px;padding:0px;">(最多只允许输入30个字)</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input id="btnSubmitReport" name="submit" type="image" align="middle" class="btn_1" src="http://csdnimg.cn/release/phoenix/images/btn_submit.jpg">
+                    <span style="padding-left:20px;"></span>
+                    <img id="btnCloseReportDialog" src="http://csdnimg.cn/release/phoenix/images/btn_cancel.jpg" align="middle">
+                    <div id="error" style="color: Red">
+                    </div>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</div>
+    <script language="javascript" type="text/javascript">
+        var isComment=0;
+        //显示隐藏地址
+        $(function () {
+          console.log("version:phoenix");
+            if(isComment){
+                $("#report_description").attr("disabled",true);
+                $("#sp_n").hide();
+                $("#sp_reason").html("评论内容：");
+            }
+            $(".report_type").click(function () {
+                $("#panel_originalurl,#report_other_content").hide();
+                switch ($(this).val()) {
+                    case '3':
+                        $("#panel_originalurl").show();
+                        $("#originalurl").focus();
+                        break;
+                    case '7':
+                        if(isComment){
+                            $("#report_other_content").show().focus();
+                        }
+                        break;
+                }
+
+            });
+
+            $("#frmReport").submit(function () {
+                if (!currentUserName) {
+
+                    if (confirm("您的操作必须登录，是否登录？")) {
+                        location.href = "http://passport.csdn.net/account/login?from=" + encodeURIComponent(location.href);
+                        return false;
+                    }
+                    return false;
+                }
+
+                var reportType = $("input[name=report_type]:checked").val();
+                if(!reportType){
+                    alert("请选择举报原因！");
+                    return false;
+                }
+                var otherInfo = "";
+                switch (reportType) {
+                    case '3':
+                        otherInfo = $("#originalurl").val();
+                        if (otherInfo == ""||otherInfo=="http://") {
+                            alert("举报抄袭必须提供原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        } else if(!checkeURL(otherInfo)) {
+                            alert("请输入正确的原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        }
+                        break;
+                    case '7':
+                        otherInfo = $("#report_other_content").val();
+                        if (isComment && !otherInfo) {
+                            alert("请填写举报的具体原因！");
+                            $("#report_other_content").focus();
+                            return false;
+                        }
+                        if(!isComment){
+                            if(!$("#report_description").val()){
+                                alert("请填写举报的具体原因！");
+                                $("#report_description").focus();
+                                return false;
+                            }
+                        }
+                        break;
+                }
+                if(!isComment){
+                    if($("#report_description").val().length>30){
+                        alert("举报原因最多只允许输入30个字！");
+                        return false;
+                    }
+                }
+	            nowTime = {
+		            year: new Date().getFullYear(),
+		            month: parseInt(new Date().getMonth())+1,
+		            day: new Date().getDate(),
+		            hours: parseInt(new Date().getHours())+1,
+		            minutes: parseInt(new Date().getMinutes())+1,
+		            seconds: parseInt(new Date().getSeconds())+1
+	            };
+	            var data = {
+		            articleId: fileName,
+		            commentId: 0,
+		            reportType: reportType,
+		            originalurl: $("#originalurl").val(),
+		            report_other_content: $("#report_other_content").val(),
+		            report_description: $("#report_description").val(),
+		            currentUserName: currentUserName,
+		            updatetime: nowTime.year+'/'+nowTime.month+'/'+nowTime.day+' '+ nowTime.hours+':'+nowTime.minutes+':'+seconds,
+		            blogUser: username
+	            };
+	            if(!isComment){//如果是举报文章
+		            data.report_other_content = data.report_description;
+		            // data.report_description = "1. 神经网络这是一个常见的神经网络的图：这是一个常见的三层神经网络的基本构成，Layer L1是输入层，Layer L2是隐含层";
+	            }
+
+	            $.post(blog_address + "/common/report?id="+fileName+"&t=2", data, function (data) {
+		            if (data.result == 1){
+			            SetError("感谢您的举报，我们会尽快审核！");
+		            }else{
+			            if (data.content) alert(data.content);
+		            }
+
+	            });
+                return false;
+            });
+
+            $("#btnCloseReportDialog").click(function () {
+                CloseDiv();
+            });
+
+        });
+
+        //提示后关闭方法
+        function SetError(error) {
+            $("#btnCloseReportDialog").trigger("click");
+            alert(error);
+            CloseDiv();
+        }
+
+        //关闭方法
+        function CloseDiv() {
+
+            $.removeMask();
+            $("#report_dialog").hide();
+            return false;
+        }
+
+        //验证url
+        function checkeURL(url){
+            return /^http(s)?:\/\/([\w-]+\.)+[\w-]+/i.test(url);
+        }
+    </script>
+</div>
+<!--  fixme 后期清理掉  -->
+<div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+    <script id="adJs52b5334"></script>
+    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+</div>
+<script type="text/javascript" src="//static.blog.csdn.net/mdeditor/public/res/bower-libs/MathJax/MathJax.js"></script>
+<!-- <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script> -->
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script type="text/javascript" >
+    if($(".article_collect li").length==1){$(".article_collect").hide();}
+    if($(".article_tags li").length==1){$(".article_tags").hide();}
+    $(".edit a").attr("href","http://mp.blog.csdn.net/postedit/"+fileName);
+    $.each($(".edu_li a"),function(){$(this).attr("href",$(this).attr("href").replace("blog7","blog9"))});
+    new CNick('#uid').showNickname();
+
+    if($("#fan").html()=="")
+    {
+	    $("#fan").html(0);
+    }
+</script>
+<script src="http://c.csdnimg.cn/public/common/append_mark/appendMark.min.js?v=5.00.43" type="text/javascript"></script>
+<script type="text/javascript">
+    appendMark($('.recommend_list').children('a').find('dt'),$('.extension_other'),$('.yd_a_d_feed_cla'))
+</script>
+<script src='//csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js?v201802051726' data-isfootertrack="false"></script>
+<div class=""id="loginWrap"></div>
+<div class="" id="dlMask"></div>
+</body>

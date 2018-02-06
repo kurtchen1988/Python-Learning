@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="canonical" href="http://blog.csdn.net/carson_ho/article/details/79256773"/> 
+    <script type="text/javascript">
+        var username = "carson_ho";
+        var _blogger = username;
+        var blog_address = "http://blog.csdn.net/carson_ho";
+        var static_host = "http://csdnimg.cn/release/phoenix/";
+        var currentUserName = ""; 
+        var fileName = '79256773';
+        var commentscount = 2;
+        var islock = false;
+        window.quickReplyflag = true;
+        var totalFloor = 2;
+        var isBole = false;
+        var isDigg = false;
+        var isExpert = false;
+        var isAdm = false;
+        var baiduKey = "";
+        var needInsertBaidu = true;
+        var isShowAds = true;
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="http://c.csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://c.csdnimg.cn/public/static/css/avatar.css">
+                <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/main-ffb45d8453.css">
+          <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+
+    <script src="http://csdnimg.cn/rabbit/exposure-click/main-1.0.5.js"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/tracking-1.0.2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/release/phoenix/production/main-df0973cd7f.js"></script>
+
+    <script src="http://dup.baidustatic.com/js/ds.js"></script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <meta name="description" content="前言
+
+
+Glide，该功能非常强大 Android  图片加载开源框架 相信大家并不陌生 
+
+正由于他的功能强大，所以它的源码非常复杂，这导致很多人望而却步
+本人尝试将 Glide 的功能进行分解，并单独针对每个功能进行源码分析，从而降低Glide源码的复杂度。
+
+
+  接下来，我将推出一系列关于 Glide的功能源码分析，有兴趣可以继续关注
+
+今天，我将主要讲解在使用Glide缓存功能时的问题" />
+    <meta name="keywords" content="Android,Glide" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <title>Android 图片加载的那些事：为什么你的Glide 缓存没有起作用？ - CSDN博客</title>
+    <link href="http://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+            </head>
+<body>
+<script id="toolbar-tpl-scriptId" prod="download" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="http://blog.csdn.net/"></script>
+<div class="container clearfix">
+  <main>
+      <div style="display:none;">
+          <img src="" onerror='setTimeout(function(){if(top !== self){window["\x74\x6f\x70"]["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"] = window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"];}            if(typeof(csdn)=="\x75\x6e\x64\x65\x66\x69\x6e\x65\x64"&&window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x6f\x73\x74"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x63\x73\x64\x6e\x2e\x6e\x65\x74")<0&&window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x6f\x73\x74"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x69\x74\x65\x79\x65\x2e\x63\x6f\x6d")<0){window["\x6c\x6f\x63\x61\x74\x69\x6f\x6e"]["\x68\x72\x65\x66"]="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74";}},3000);'>
+      </div>
+    <article>
+        <h1 class="csdn_top">Android 图片加载的那些事：为什么你的Glide 缓存没有起作用？</h1>
+        <div class="article_bar clearfix">
+            <div class="artical_tag">
+                <span class="original">
+                原创                </span>
+                <span class="time">2018年02月05日 09:29:16</span>
+            </div>
+
+            <ul class="article_tags clearfix csdn-tracking-statistics tracking-click" data-mod="popu_377" >
+                <li class="tit">标签：</li>
+
+<!--          [startarticletags]-->
+                                                            <li><a href="http://so.csdn.net/so/search/s.do?q=Android&t=blog" target="_blank">Android</a> <span>/</span></li>
+                                            <li><a href="http://so.csdn.net/so/search/s.do?q=Glide&t=blog" target="_blank">Glide</a> <span>/</span></li>
+                                            <li><a href="http://so.csdn.net/so/search/s.do?q=图片加载&t=blog" target="_blank">图片加载</a> <span>/</span></li>
+                                            <li><a href="http://so.csdn.net/so/search/s.do?q=图片缓存&t=blog" target="_blank">图片缓存</a> <span>/</span></li>
+                                            <li><a href="http://so.csdn.net/so/search/s.do?q=源码分析&t=blog" target="_blank">源码分析</a> <span>/</span></li>
+                                    <!--          [endarticletags]-->
+            </ul>
+            <ul class="right_bar">
+                <li><button class="btn-noborder"><i class="icon iconfont icon-read"></i><span class="txt">781</span></button></li>
+                <li class="edit">
+                    <a class="btn-noborder" href="" >
+                        <i class="icon iconfont icon-bianji"></i><span class="txt">编辑</span>
+                    </a>
+                </li>
+                <li class="del">
+                    <a class="btn-noborder" onclick="javascript:deleteArticle(fileName);return false;">
+                        <i class="icon iconfont icon-shanchu"></i><span class="txt">删除</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="article_content" class="article_content csdn-tracking-statistics tracking-click" data-mod="popu_519" data-dsm="post">
+                            <div class="markdown_views">
+                        <h1 id="前言">前言</h1>
+
+<ul>
+<li><p><code>Glide</code>，该功能非常强大 <code>Android</code>  图片加载开源框架 相信大家并不陌生 <br>
+<img src="http://upload-images.jianshu.io/upload_images/944365-e2ba626030d121a5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Github截图" title=""></p></li>
+<li><p>正由于他的功能强大，所以它的源码非常复杂，这导致很多人望而却步</p></li>
+<li><p>本人尝试将 <code>Glide</code> 的功能进行分解，并单独针对每个功能进行源码分析，从而降低<code>Glide</code>源码的复杂度。</p>
+
+<blockquote>
+  <p>接下来，我将推出一系列关于 <code>Glide</code>的功能源码分析，有兴趣可以继续关注</p>
+</blockquote></li>
+<li><p>今天，我将主要讲解在使用<code>Glide</code>缓存功能时的问题：为什么Glide 的缓存无起作用，希望你们会喜欢。</p></li>
+</ul>
+
+<blockquote>
+  <p>请先阅读文章<a href="http://blog.csdn.net/carson_ho/article/details/79256892">Android源码分析：手把手带你分析 Glide的缓存功能</a></p>
+</blockquote>
+
+<hr>
+
+
+
+<h1 id="1-背景">1. 背景</h1>
+
+<ul>
+<li><code>Glide</code>实现内存 &amp; 磁盘缓存是根据 图片的缓存<code>Key</code>进行唯一标识</li>
+<li>开发者为了降低成本 &amp; 安全，往往会将图片存放在云服务器上 <br>
+
+
+<blockquote>
+  如 七牛云 等等。</blockquote></li>
+  <li>为了保护 客户的图片资源，图片云服务器 会在图片<code>Url</code>地址的基础上再加一个token参数</li>
+  </ul>
+  
+
+
+<pre class="prettyprint"><code class=" hljs avrasm"><span class="hljs-label">http:</span>//url<span class="hljs-preprocessor">.com</span>/image<span class="hljs-preprocessor">.jpg</span>?token=a6cvva6b02c670b0a</code></pre>
+
+
+
+<ul>
+<li><code>Glide</code>加载该图片时，会使用加了<code>token</code>参数的图片<code>Url</code>地址 作为 <br>
+<code>id</code>参数，从而生成 缓存Key</li>
+</ul>
+
+<hr>
+
+
+
+<h1 id="2-问题">2. 问题</h1>
+
+<ul>
+<li>作为身份认证的<code>token</code>参数可能会发生变化，并不是一成不变</li>
+<li>若 <code>token</code>参数变了，则图片<code>Url</code>跟着变，则生成缓存key的所需id参数发生变化，即 <strong>缓存Key也会跟着变化</strong></li>
+<li>这导致同一张图片，但因为<code>token</code>参数变化，而导致缓存Key发生变化，从而使得 <code>Glide</code>的缓存功能失效 <br>
+
+
+<blockquote>
+  <p>缓存Key发生变化，即同一个图片的当前缓存key 和 之前写入缓存的key不相同，这意味着 在读取缓存时 无法根据当前缓存key 找到之前的缓存，从而使得失效</p></blockquote></li>
+  </ul>
+  
+  <hr>
+
+
+
+
+
+
+<h1 id="3-解决方案">3. 解决方案</h1>
+
+
+
+<h3 id="31-原理">3.1 原理</h3>
+
+<p>在 生成缓存<code>Key</code> 的id参数 前，将 带有<code>token</code>参数的图片<code>Url</code>地址 去掉 <code>token</code>参数，从而根据 初始的图片<code>Url</code>地址 生成缓存<code>Key</code>的id参数</p>
+
+<blockquote>
+  <p>实现了一个图片的缓存<code>Key</code>的id参数始终唯一 ，即等于 图片<code>Url</code>地址</p>
+</blockquote>
+
+<h3 id="32-储备知识生成缓存key的id参数的逻辑">3.2 储备知识：生成缓存Key的id参数的逻辑</h3>
+
+<p><strong>生成缓存<code>Key</code>的<code>id</code>参数的逻辑为：直接将图片的 <code>URL</code> 地址作为缓存Key的<code>id</code>参数</strong></p>
+
+<p>回看文章<a href="http://blog.csdn.net/carson_ho/article/details/79256892">Android源码分析：手把手带你分析 Glide的缓存功能</a>生成缓存<code>Key</code>的代码</p>
+
+
+
+
+<pre class="prettyprint"><code class=" hljs axapta"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Engine</span> <span class="hljs-inheritance"><span class="hljs-keyword">implements</span></span> <span class="hljs-title">EngineJobListener</span>,
+        <span class="hljs-title">MemoryCache</span>.<span class="hljs-title">ResourceRemovedListener</span>,
+        <span class="hljs-title">EngineResource</span>.<span class="hljs-title">ResourceListener</span> {</span>
+
+    <span class="hljs-keyword">public</span> &lt;T, Z, R&gt; LoadStatus load(Key signature, <span class="hljs-keyword">int</span> width, <span class="hljs-keyword">int</span> height, DataFetcher&lt;T&gt; fetcher,
+            DataLoadProvider&lt;T, Z&gt; loadProvider, Transformation&lt;Z&gt; transformation, ResourceTranscoder&lt;Z, R&gt; transcoder,
+            Priority priority, <span class="hljs-keyword">boolean</span> isMemoryCacheable, DiskCacheStrategy diskCacheStrategy, ResourceCallback cb) {
+        Util.assertMainThread();
+        <span class="hljs-keyword">long</span> startTime = LogTime.getLogTime();
+
+        <span class="hljs-keyword">final</span> String id = fetcher.getId();
+        <span class="hljs-comment">// 获得了一个id字符串，即需加载图片的唯一标识</span>
+        <span class="hljs-comment">// 如，若图片的来源是网络，那么该id = 这张图片的url地址</span>
+        <span class="hljs-comment">// fetcher = HttpUrlFetcher的实例，即调用HttpUrlFetcher.getid（）-&gt;&gt;分析19</span>
+
+        EngineKey key = keyFactory.buildKey(id, signature, width, height, loadProvider.getCacheDecoder(),loadProvider.getSourceDecoder(), transformation, loadProvider.getEncoder(),transcoder, loadProvider.getSourceEncoder());
+        <span class="hljs-comment">// 将该id 和 signature、width、height等10个参数一起传入到缓存Key的工厂方法里，最终创建出一个EngineKey对象</span>
+        <span class="hljs-comment">// 创建原理：通过重写equals() 和 hashCode()，保证只有传入EngineKey的所有参数都相同情况下才认为是同一个EngineKey对象</span>
+       <span class="hljs-comment">// 该EngineKey 即Glide中的缓存Key</span>
+
+        ...
+}
+
+
+&lt;-- 分析<span class="hljs-number">19</span>：getId() --&gt;
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpUrlFetcher</span> <span class="hljs-inheritance"><span class="hljs-keyword">implements</span></span> <span class="hljs-title">DataFetcher</span>&lt;<span class="hljs-title">InputStream</span>&gt; {</span>
+    ...
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> GlideUrl glideUrl;
+    <span class="hljs-comment">// GlideUrl = 在上篇文章讲解 图片加载 第2步load()中传入图片url地址时，Glide在内部把图片url地址包装成一个GlideUrl对象</span>
+
+    @Override
+    <span class="hljs-keyword">public</span> String getId() {
+        <span class="hljs-keyword">return</span> glideUrl.getCacheKey();
+        <span class="hljs-comment">// -&gt;&gt;分析20</span>
+}
+
+&lt;-- 分析<span class="hljs-number">20</span>：getCacheKey()  --&gt;
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GlideUrl</span> {</span>
+
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> URL url;
+    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> String stringUrl;
+    ...
+
+    <span class="hljs-comment">// GlideUrl构造函数</span>
+     <span class="hljs-keyword">public</span> GlideUrl(URL url) {
+        <span class="hljs-keyword">this</span>(url, Headers.DEFAULT);
+    }
+
+    <span class="hljs-keyword">public</span> GlideUrl(String url) {
+        <span class="hljs-keyword">this</span>(url, Headers.DEFAULT);
+    }
+
+
+    <span class="hljs-keyword">public</span> String getCacheKey() {
+        <span class="hljs-keyword">return</span> stringUrl != <span class="hljs-keyword">null</span> ? stringUrl : url.toString();
+        <span class="hljs-comment">// 在生成GlideUrl对象时：</span>
+        <span class="hljs-comment">// 若传入的是URL字符串（即图片地址），就直接返回该字符串（大多数是这种情况）</span>
+        <span class="hljs-comment">// 若传入的是URL对象，那么就返回这个对象toString()后的结果。</span>
+
+    }
+
+    ...
+}
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="33-实现方案">3.3 实现方案</h3>
+
+<p>即 <strong>我们只需重写<code>getCacheKey()</code> &amp; 将 带有token参数的图片<code>Url</code>地址 去掉 token参数 即可。</strong></p>
+
+
+
+
+<pre class="prettyprint"><code class=" hljs java"><span class="hljs-javadoc">/**
+  * 代码实现：创建一个GlideUrl类的子类 &amp; 重写getCacheKey()
+  **/</span>
+    <span class="hljs-comment">// 1. 继承GlideUrl </span>
+    <span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">mGlideUrl</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">GlideUrl</span> {</span>
+
+        <span class="hljs-keyword">private</span> String mUrl;
+
+        <span class="hljs-comment">// 构造函数里 传入 带有token参数的图片Url地址 </span>
+        <span class="hljs-keyword">public</span> <span class="hljs-title">MyGlideUrl</span>(String url) {
+            <span class="hljs-keyword">super</span>(url);
+            mUrl = url;
+        }
+
+        <span class="hljs-comment">// 2. 重写getCacheKey()</span>
+        <span class="hljs-annotation">@Override</span>
+        <span class="hljs-keyword">public</span> String <span class="hljs-title">getCacheKey</span>() {
+            <span class="hljs-keyword">return</span> mUrl.replace(deleteToken(), <span class="hljs-string">""</span>);
+            <span class="hljs-comment">// 通过 deleteToken() 从 带有token参数的图片Url地址中 去掉 token参数</span>
+            <span class="hljs-comment">// 最终返回一个没有token参数、初始的图片URL地址</span>
+            <span class="hljs-comment">// -&gt;&gt;分析1</span>
+        }
+
+        <span class="hljs-comment">// 分析1：deleteToken()</span>
+        <span class="hljs-keyword">private</span> String <span class="hljs-title">deleteToken</span>() {
+            String tokenParam = <span class="hljs-string">""</span>;
+            <span class="hljs-keyword">int</span> tokenKeyIndex = mUrl.indexOf(<span class="hljs-string">"?token="</span>) &gt;= <span class="hljs-number">0</span> ? mUrl.indexOf(<span class="hljs-string">"?token="</span>) : mUrl.indexOf(<span class="hljs-string">"&amp;token="</span>);
+            <span class="hljs-keyword">if</span> (tokenKeyIndex != -<span class="hljs-number">1</span>) {
+                <span class="hljs-keyword">int</span> nextAndIndex = mUrl.indexOf(<span class="hljs-string">"&amp;"</span>, tokenKeyIndex + <span class="hljs-number">1</span>);
+                <span class="hljs-keyword">if</span> (nextAndIndex != -<span class="hljs-number">1</span>) {
+                    tokenParam = mUrl.substring(tokenKeyIndex + <span class="hljs-number">1</span>, nextAndIndex + <span class="hljs-number">1</span>);
+                } <span class="hljs-keyword">else</span> {
+                    tokenParam = mUrl.substring(tokenKeyIndex);
+                }
+            }
+            <span class="hljs-keyword">return</span> tokenParam;
+        }
+
+    }
+
+<span class="hljs-javadoc">/**
+  * 使用缓存时：需要在load()中传入自定义的 mGlideUrl对象
+  **/</span>
+
+    Glide.with(<span class="hljs-keyword">this</span>)
+         .load(<span class="hljs-keyword">new</span> mGlideUrl(url))
+         .into(imageView);
+
+    <span class="hljs-comment">// 注：a. 若像之前直接传入图片的url地址，那么在内部还是会使用原始的GlideUrl类</span>
+    <span class="hljs-comment">//    b. 即直接将传入传入图片的url地址作为缓存key的Id参数，而没有对token参数作任何处理</span>
+</code></pre>
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+<h1 id="4-总结">4. 总结</h1>
+
+<ul>
+<li>本文主要对<strong><code>Glide</code>的图片缓存功能</strong>的使用问题进行讲解</li>
+<li><p>关于Glide的相关文章阅读 <br>
+<a href="http://blog.csdn.net/carson_ho/article/details/79256892">Android源码分析：手把手带你分析 Glide的缓存功能</a> <br>
+<a href="http://blog.csdn.net/carson_ho/article/details/79212841">Android源码分析：这是一份详细的图片加载库Glide源码讲解攻略</a> <br>
+<a href="http://blog.csdn.net/carson_ho/article/details/52663351">Android图片加载库：最全面解析Glide用法</a></p></li>
+<li><p>下面我将继续对 <strong><code>Glide</code> 的其他功能进行源码分析</strong> ，有兴趣可以继续关注<a href="http://blog.csdn.net/carson_ho">Carson_Ho的安卓开发笔记</a></p></li>
+</ul>
+
+<hr>
+
+<h1 id="帮顶-评论点赞因为你的鼓励是我写作的最大动力">帮顶 / 评论点赞！因为你的鼓励是我写作的最大动力！</h1>                </div>
+                                                <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/markdown_views-993eb3f29c.css" />
+                                    </div>
+    </article>
+      <div class="readall_box csdn-tracking-statistics tracking-click" data-mod="popu_376">
+          <div class="read_more_mask"></div>
+          <a class="btn btn-large btn-gray-fred read_more_btn" target="_self">阅读全文</a>
+      </div>
+      <div class="article_copyright">
+        版权声明：本文为博主原创文章，未经博主允许不得转载，更多文章请继续关注Carson_Ho的博客！      </div>
+      <ul class="article_collect clearfix csdn-tracking-statistics tracking-click"  data-mod="popu_378">
+          <li class="tit">本文已收录于以下专栏：</li>
+<!--          [startarticlecolumns]-->
+                                <!--          [endarticlecolumns]-->
+      </ul>
+      <div class="comment_box clearfix" id="comments">
+          <div id="comment_form">
+              <div id="commentsbmitarear">
+                              </div>
+          </div>
+      </div>
+      <div class="comment_li_outbox">
+          <div id="comment_list"></div>
+      </div>
+
+      <div class="more_comment">
+          <div id="comment_bar" class="trackgin-ad" data-mod="popu_385"></div>
+      </div>
+
+      <!-- <h3 class="recommend_tit" id="related">相关文章推荐</h3> -->
+      <div class="recommend_list clearfix" id="rasss">
+                                                                        <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/james_liao3/article/details/60767026"  target="_blank" strategy="BlogCommendFromQuerySearch_0">
+                        <dd class="clearfix">
+                          <h2 class="">打造自己的图片加载缓存库（Picasso OR Glide）</h2>
+                          <div class="summary">
+                              好久没写文章了，一个是工作的原因，还一个就是这几个月看了很多文章，一直在补充自己的知识。之前看到一句很喜欢的话——感到快乐就忙东忙西，感到累了就放空自己，这几个月一“快乐”了，就停不下来地看、一直在写...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/A/F/5/3_james_liao3.jpg" alt="james_liao3" title="james_liao3"/></li>
+                              <li class="user_name">james_liao3</li>
+                              <li class="time">2017年03月07日 16:08</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>805</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/androidstarjack/article/details/51364612"  target="_blank" strategy="BlogCommendFromQuerySearch_1">
+                        <dd class="clearfix">
+                          <h2 class="">Android 强大的图片加载缓存— Glide</h2>
+                          <div class="summary">
+                              在图片加载库烂大街的今天，选择一个适合自己使用的图片加载库已经成为了每一个Android开发者的必经之路。现在市面上知名的图片加载库有UIL,Picasso,Volley ImageLoader,Fr...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/E/C/6/3_androidstarjack.jpg" alt="androidstarjack" title="androidstarjack"/></li>
+                              <li class="user_name">androidstarjack</li>
+                              <li class="time">2016年05月10日 16:55</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>15412</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                      <dl class="">
+                  <script>
+                  (function() {
+                    var s = "_" + Math.random().toString(36).slice(2);
+                    document.write('<div id="' + s + '"></div>');
+                    (window.slotbydup=window.slotbydup || []).push({
+                      id: '4765209',
+                      container: s,
+                      size: '808,120',
+                      display: 'inlay-fix'
+                    });
+                  })();
+                  </script>
+                </dl>
+                                                                <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/chenrushui/article/details/51335282"  target="_blank" strategy="BlogCommendFromQuerySearch_2">
+                        <dd class="clearfix">
+                          <h2 class="">图片加载及缓存框架Glide在安卓开发中的应用</h2>
+                          <div class="summary">
+                              1)综合介绍Glide框架
+2014谷歌推出的；图片加载速度快，用户体验好(最大的优点)；需要比较大的内存空间进行图片缓存
+2)Glide如何导包？
+compile 'com.github.bumpt...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/9/5/1/3_chenrushui.jpg" alt="chenrushui" title="chenrushui"/></li>
+                              <li class="user_name">chenrushui</li>
+                              <li class="time">2016年05月06日 22:52</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>4859</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/sinyu890807/article/details/53759439"  target="_blank" strategy="BlogCommendFromQuerySearch_3">
+                        <dd class="clearfix">
+                          <h2 class="">Android图片加载框架最全解析（一），Glide的基本用法</h2>
+                          <div class="summary">
+                              转载请注明出处：http://blog.csdn.net/guolin_blog/article/details/53759439
+
+
+  本文同步发表于我的微信公众号，扫一扫文章底部的二维码或在微信...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/8/B/B/3_sinyu890807.jpg" alt="sinyu890807" title="sinyu890807"/></li>
+                              <li class="user_name">sinyu890807</li>
+                              <li class="time">2017年03月21日 08:03</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>72086</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/shenggaofei/article/details/52326618"  target="_blank" strategy="BlogCommendFromQuerySearch_4">
+                        <dd class="clearfix">
+                          <h2 class="">Android图片加载与缓存开源框架总结七部曲：Glide Picasso ImageLoader  Fresco ASimpleCache等</h2>
+                          <div class="summary">
+                              ImageLoader其实也不难，下面来看看代码：
+
+下载地址：
+
+http://download.csdn.net/detail/wwj_748/5975847
+
+http://download.c...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/1/B/2/3_shenggaofei.jpg" alt="shenggaofei" title="shenggaofei"/></li>
+                              <li class="user_name">shenggaofei</li>
+                              <li class="time">2016年08月26日 12:08</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>1828</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/xiehuimx/article/details/52349317"  target="_blank" strategy="BlogCommendFromQuerySearch_5">
+                        <dd class="clearfix">
+                          <h2 class="">详谈高大上的图片加载框架Glide -应用篇</h2>
+                          <div class="summary">
+                              在Android设备上，加载网络图片一直是一个头疼的问题，因为Android设备种类繁多（当然最主要的是配置），处理的稍不周到轻则应用卡顿，严重者就会出现OOM的，导致程序挂掉。现如今网络上有很多图片...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/3/F/8/3_xiehuimx.jpg" alt="xiehuimx" title="xiehuimx"/></li>
+                              <li class="user_name">xiehuimx</li>
+                              <li class="time">2016年08月29日 23:00</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>14109</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/sinyu890807/article/details/54895665"  target="_blank" strategy="BlogCommendFromQuerySearch_6">
+                        <dd class="clearfix">
+                          <h2 class="">Android图片加载框架最全解析（三），深入探究Glide的缓存机制</h2>
+                          <div class="summary">
+                              Glide的缓存设计可以说是非常先进的，考虑的场景也很周全。在缓存这一功能上，Glide又将它分成了两个模块，一个是内存缓存，一个是硬盘缓存。
+
+这两个缓存模块的作用各不相同，内存缓存的主要作用是防止...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/8/B/B/3_sinyu890807.jpg" alt="sinyu890807" title="sinyu890807"/></li>
+                              <li class="user_name">sinyu890807</li>
+                              <li class="time">2017年05月23日 08:37</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>34533</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/sinyu890807/article/details/70215985"  target="_blank" strategy="BlogCommendFromQuerySearch_7">
+                        <dd class="clearfix">
+                          <h2 class="">Android图片加载框架最全解析（四），玩转Glide的回调与监听</h2>
+                          <div class="summary">
+                              大家好，今天我们继续学习Glide。在上一篇文章当中，我带着大家一起深入探究了Glide的缓存机制，我们不光掌握了Glide缓存的使用方法，还通过源码分析对缓存的工作原理进行了了解。今天是这个Glid...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/8/B/B/3_sinyu890807.jpg" alt="sinyu890807" title="sinyu890807"/></li>
+                              <li class="user_name">sinyu890807</li>
+                              <li class="time">2017年06月20日 07:53</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>22398</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/qq_18973645/article/details/52996998"  target="_blank" strategy="BlogCommendFromQuerySearch_8">
+                        <dd class="clearfix">
+                          <h2 class="">ARM那些你得知道的事儿</h2>
+                          <div class="summary">
+                              《朱老师物联网大讲堂》学习笔记
+学习地址：www.zhulaoshi.org
+ 
+1，ARM的成长史
+ARM，Advanced RISC machines，
+ 
+第一台64位处理器手机，i...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/5/2/7/3_qq_18973645.jpg" alt="qq_18973645" title="qq_18973645"/></li>
+                              <li class="user_name">qq_18973645</li>
+                              <li class="time">2016年11月01日 16:13</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>212</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                                                      <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                      <a href="http://blog.csdn.net/xiangzhihong8/article/details/51772292"  target="_blank" strategy="BlogCommendFromQuerySearch_9">
+                        <dd class="clearfix">
+                          <h2 class="">android图片加载库Glide</h2>
+                          <div class="summary">
+                              什么是Glide？
+
+Glide是一个加载图片的库，作者是bumptech，它是在泰国举行的google 开发者论坛上google为我们介绍的，这个库被广泛的运用在google的开源项目中。
+
+Gli...                          </div>
+
+                          <ul class="">
+                              <li class="avatar_img"><img src="http://avatar.csdn.net/E/D/2/3_xiangzhihong8.jpg" alt="xiangzhihong8" title="xiangzhihong8"/></li>
+                              <li class="user_name">xiangzhihong8</li>
+                              <li class="time">2016年06月27日 23:29</li>
+                              <li class="visited_num"><i class="icon iconfont icon-read"></i><span>3074</span></li>
+                          </ul>
+                        </dd>
+                      </a>
+                  </dl>
+                                                    <!-- <script async="async" charset="utf-8" src="https://shared.ydstatic.com/js/yatdk/3.0.0/stream.js" data-notify="bannerMulti_notify" data-insert-nodes="yd_a_d_feed_1,yd_a_d_feed_13,yd_a_d_feed_18,yd_a_d_feed_23,yd_a_d_feed_28,yd_a_d_feed_33" data-id="8935aa488dd58452b9e5ee3b44f1212f" data-hide-ad-label="0" data-div-Style="width:100%;padding:16px 35px 16px 10px;" data-img-Style="float:right;width:120px;" data-tit-Style="font-size:20px;font-weight:bold;margin-bottom:10px;font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;" data-des-Style="width:700px;font-size:14px;font-family: 'PingFang SC', 'Microsoft YaHei', SimHei, Arial, SimSun;" > </script> -->
+      
+      </div>
+  </main>
+<aside>
+    <div class="right_box user_info">
+    <dl class="inf_bar clearfix">
+        <dt class="csdn-tracking-statistics tracking-click" data-mod="popu_381">
+        <a href="http://blog.csdn.net/carson_ho" target="_blank">
+            <img src="http://avatar.csdn.net/C/8/C/3_carson_ho.jpg" class="avatar_pic">
+        </a>
+      </dt><dd>
+            <h3 class="csdn-tracking-statistics tracking-click"  data-mod="popu_380"><a href="http://blog.csdn.net/carson_ho" target="_blank" id="uid">carson_ho</a></h3>
+            <div class="medals" title="">
+                        <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-bokezhuanjia"></use>
+            </svg>
+            <span>博客专家</span>
+                      </div>
+                        <span  class="csdn-tracking-statistics tracking-click" data-mod="popu_379"><a class="btn btn-redborder-small "  id="span_add_follow" target="_self">关注</a></span>
+                    </dd>
+    </dl>
+    <div class="inf_number_box clearfix">
+        <dl title="120">
+            <dt>原创</dt>
+            <dd>120</dd>
+        </dl>
+        <dl title="1671">
+            <dt>粉丝</dt>
+            <dd id='fan'>1.67k</dd>
+        </dl>
+        <dl title="1439">
+            <dt>喜欢</dt>
+            <dd>1.43k</dd>
+        </dl>
+        <dl title="643">
+          <dt>评论</dt>
+          <dd>643</dd>
+        </dl>
+    </div>
+
+</div>
+<div class="interflow clearfix">
+      <div class="badge gradeAndbadge">
+        <div>
+                        <img src='http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/zhuanlandaren.png' alt='专栏达人'>
+                                    <img src='http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/chizhiyiheng.png' alt='持之以恒'>
+                                            </div>
+    </div>
+      <div class="grade gradeAndbadge">
+      <span>等级：</span>
+      <div>
+        <a href="http://blog.csdn.net/home/help.html#level" title="7级,点击查看等级说明" target="_blank">
+          <img class="grade-img" src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog7.png" alt="7级,点击查看等级说明">
+        </a>
+      </div>
+    </div>
+    <div class="gradeAndbadge" title="1173359">
+        <span>访问量：</span>
+        <span class="num odd-overhidden">1.17m</span>
+    </div>
+
+    <div class="gradeAndbadge" title="10806">
+      <span>积分：</span>
+      <span  class="num odd-overhidden">10.8k</span>
+    </div>
+    <div class="gradeAndbadge" title="1805">
+        <span>排名：</span>
+        <span class="num odd-overhidden">1.8k</span>
+    </div>
+
+</div>          <div class="extension_other csdn-tracking-statistics tracking-click" data-mod="popu_389">
+          <!--u3032528-->
+        <div class="flashrecommend">
+            <script type="text/javascript" src="//cee1.iteye.com/bwocoltly.js"></script>
+        </div>
+      </div>
+      <div class="writings">
+    <div class="public_signal clearfix">
+      <h3>他的最新文章</h3>
+      <a href="http://blog.csdn.net/carson_ho" target="_blank" class="more"><span>更多文章</span></a>
+    </div>
+      <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/carson_ho/article/details/79256892" target="_blank">Android源码分析：手把手带你分析 Glide的缓存功能</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/carson_ho/article/details/79212841" target="_blank">Android源码分析：这是一份详细的图片加载库Glide源码讲解攻略</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/carson_ho/article/details/79191327" target="_blank">Android： RxJava操作符 详细使用手册</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/carson_ho/article/details/79168723" target="_blank">Android RxJava实际应用案例讲解：使用RxJava的最佳开发场景</a>
+          </li>
+                    <li class="clearfix">
+              <a href="http://blog.csdn.net/carson_ho/article/details/79168602" target="_blank">Android RxJava：这是一份面向初学者的RxJava使用指南</a>
+          </li>
+                </ul>
+  </div>
+            <div class="user-hotArticle sort userSort">
+            <h3>文章分类</h3>
+            <ul class="hotArticle-list userSort-list">
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/7227390" class="odd-overhidden floatL">RxJava 详细教程</a>
+                        <div class="read list-left floatR"><span>23篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6735474" class="odd-overhidden floatL">自定义View原理&amp;应用系列</a>
+                        <div class="read list-left floatR"><span>20篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/5959547" class="odd-overhidden floatL">Android基础</a>
+                        <div class="read list-left floatR"><span>23篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6260188" class="odd-overhidden floatL">Android常用汇总</a>
+                        <div class="read list-left floatR"><span>33篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6365482" class="odd-overhidden floatL">最易懂的设计模式解析</a>
+                        <div class="read list-left floatR"><span>12篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6365490" class="odd-overhidden floatL">源码分析</a>
+                        <div class="read list-left floatR"><span>12篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6435250" class="odd-overhidden floatL">常用开源库</a>
+                        <div class="read list-left floatR"><span>8篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/carson_ho/article/category/6440777" class="odd-overhidden floatL">多线程汇总</a>
+                        <div class="read list-left floatR"><span>4篇</span></div>
+                    </li>
+                            </ul>
+            <div class="unfold-btn">
+              <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+            </div>
+        </div>
+    <!--    [StartShowSelfColumn]-->
+            <div class="host-column">
+            <h3>博主专栏</h3>
+            <ul class="column-list csdn-tracking-statistics tracking-click" data-mod="popu_520" >
+<!--                [StartSelfColumn]-->
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14750.html">
+                                <img src="http://img.blog.csdn.net/20170308143350605" alt="">
+                                <div>11 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14750.html">Android基础</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>60841</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14783.html">
+                                <img src="http://img.blog.csdn.net/20170310083104720" alt="">
+                                <div>12 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14783.html">设计模式</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>47696</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14784.html">
+                                <img src="http://img.blog.csdn.net/20170315145314674" alt="">
+                                <div>24 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14784.html">常用组件</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>233159</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14815.html">
+                                <img src="http://img.blog.csdn.net/20170315145146411" alt="">
+                                <div>8 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14815.html">自定义View</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>97253</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14816.html">
+                                <img src="http://img.blog.csdn.net/20170310083649314" alt="">
+                                <div>4 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14816.html">多线程</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>13226</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/14849.html">
+                                <img src="http://img.blog.csdn.net/20170314102401709" alt="">
+                                <div>5 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/14849.html">常用开源库使用分析</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>24669</span></div>
+                        </div>
+                    </li>
+                                    <li class="clearfix">
+                        <div class="img list-left">
+                            <a href="http://blog.csdn.net/column/details/17714.html">
+                                <img src="http://img.blog.csdn.net/20171016094217815" alt="">
+                                <div>9 篇</div>
+                            </a>
+                        </div>
+                        <div class="content list-left">
+                            <h4 class="title"><a href="http://blog.csdn.net/column/details/17714.html">RxJava详细教程</a></h4>
+                            <div class="read list-left"><i class="icon iconfont icon-read"></i><span>73767</span></div>
+                        </div>
+                    </li>
+                <!--                [EndSelfColumn]-->
+            </ul>
+            <div class="unfold-btn">
+                <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+            </div>
+        </div>
+    <!--    [EndShowSelfColumn]-->
+            <div class="user-hotArticle sort timeSort">
+          <h3>文章存档</h3>
+          <ul class="hotArticle-list timeSort-list">
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2018/02" class="odd-overhidden floatL">2018年2月</a>
+                  <div class="read list-left floatR"><span>2篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2018/01" class="odd-overhidden floatL">2018年1月</a>
+                  <div class="read list-left floatR"><span>9篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/12" class="odd-overhidden floatL">2017年12月</a>
+                  <div class="read list-left floatR"><span>3篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/11" class="odd-overhidden floatL">2017年11月</a>
+                  <div class="read list-left floatR"><span>7篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/10" class="odd-overhidden floatL">2017年10月</a>
+                  <div class="read list-left floatR"><span>5篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/09" class="odd-overhidden floatL">2017年9月</a>
+                  <div class="read list-left floatR"><span>2篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/08" class="odd-overhidden floatL">2017年8月</a>
+                  <div class="read list-left floatR"><span>6篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/07" class="odd-overhidden floatL">2017年7月</a>
+                  <div class="read list-left floatR"><span>4篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/06" class="odd-overhidden floatL">2017年6月</a>
+                  <div class="read list-left floatR"><span>10篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/05" class="odd-overhidden floatL">2017年5月</a>
+                  <div class="read list-left floatR"><span>4篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/04" class="odd-overhidden floatL">2017年4月</a>
+                  <div class="read list-left floatR"><span>5篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/03" class="odd-overhidden floatL">2017年3月</a>
+                  <div class="read list-left floatR"><span>6篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/02" class="odd-overhidden floatL">2017年2月</a>
+                  <div class="read list-left floatR"><span>12篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2017/01" class="odd-overhidden floatL">2017年1月</a>
+                  <div class="read list-left floatR"><span>2篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/12" class="odd-overhidden floatL">2016年12月</a>
+                  <div class="read list-left floatR"><span>1篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/11" class="odd-overhidden floatL">2016年11月</a>
+                  <div class="read list-left floatR"><span>11篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/10" class="odd-overhidden floatL">2016年10月</a>
+                  <div class="read list-left floatR"><span>4篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/09" class="odd-overhidden floatL">2016年9月</a>
+                  <div class="read list-left floatR"><span>7篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/08" class="odd-overhidden floatL">2016年8月</a>
+                  <div class="read list-left floatR"><span>5篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/07" class="odd-overhidden floatL">2016年7月</a>
+                  <div class="read list-left floatR"><span>2篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/06" class="odd-overhidden floatL">2016年6月</a>
+                  <div class="read list-left floatR"><span>4篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/05" class="odd-overhidden floatL">2016年5月</a>
+                  <div class="read list-left floatR"><span>4篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/04" class="odd-overhidden floatL">2016年4月</a>
+                  <div class="read list-left floatR"><span>3篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2016/03" class="odd-overhidden floatL">2016年3月</a>
+                  <div class="read list-left floatR"><span>1篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/carson_ho/article/month/2015/11" class="odd-overhidden floatL">2015年11月</a>
+                  <div class="read list-left floatR"><span>1篇</span></div>
+                </li>
+                      </ul>
+          <div class="unfold-btn">
+            <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+          </div>
+        </div>
+        <div class="user-hotArticle">
+        <h3>他的热门文章</h3>
+        <ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+<!--            [StartHotArticles]-->
+                                                <li>
+                        <a href="http://blog.csdn.net/carson_ho/article/details/52693322">Android：最全面的 Webview 详解</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>99629</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/carson_ho/article/details/64904691">Android：你要的WebView与 JS 交互方式 都在这里了</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>86077</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/carson_ho/article/details/54136311">Android事件分发机制详解：史上最全面、最易懂</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>37611</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/carson_ho/article/details/64904635">Android：你不知道的 WebView 使用漏洞</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>37450</span></div>
+                    </li>
+                                    <li>
+                        <a href="http://blog.csdn.net/carson_ho/article/details/73732076">这是一份很详细的 Retrofit 2.0 使用教程（含实例讲解）</a>
+                        <div class="read list-left"><i class="icon iconfont icon-read"></i><span>33082</span></div>
+                    </li>
+                            <!--            [EndHotArticles]-->
+        </ul>
+    </div>
+
+<!--    [startcustom]-->
+    <!--    [endcustom]-->
+  <div class="fixRight_box" style="height:256px">
+    <div class="fixRight">
+                    <!--u3163270-->
+            <script type="text/javascript" src="//cee1.iteye.com/avneunkwb.js"></script>
+                <div class="persion_article"></div>
+    </div>
+    </div>
+  </div>
+</aside></div>
+
+<div class="left_fixed">
+    <div class="left_show_button">
+        <span>
+          <i class="icon iconfont icon-youjiantou"></i>
+        </span>
+    </div>
+    <ul class="left_menu" id="share_box">
+        <li>
+            <button class="left-fixed-btn btn-like csdn-tracking-statistics tracking-click" data-mod="popu_373" target="_self" title="点赞">
+                <a href="javascript:void(0);" class="iconbox border_red" ><i class="icon iconfont icon-dianzan"></i></a>
+                <a class="txt" href="javascript:void(0);">1</a>
+            </button>
+        </li>
+        <li id="blog_artical_directory">
+            <button class="left-fixed-btn left_menu_btn csdn-tracking-statistics tracking-click" data-mod="popu_372" target="_self" title="目录">
+                <a href="javascript:void(0);" class="iconbox border_black" ><i class="icon iconfont icon-mulu"></i></a>
+            </button>
+        </li>
+        <li class="menu_con">
+            <div class="list_father">
+                <div class="arr_box">
+                    <button class="btn-noborder arr-btn scroll-down  left_scroll_down"><i class="icon iconfont icon-xiajiantou"></i></button>
+                    <button class="btn-noborder arr-btn scroll-up left_scroll_top"><i class="icon iconfont icon-shangjiantou"></i></button>
+                </div>
+                <div class="arr"></div>
+                <div id="csdnBlogDir"></div>
+            </div>
+        </li>
+        <!--        <li>-->
+        <!--            <button class="left-fixed-btn btn-like tracking-ad" data-mod="popu_373" target="_self">-->
+        <!--                <span class="iconbox border_red"><i class="icon iconfont icon-xihuan-"></i></span>-->
+        <!--                <span class="txt">喜欢</span>-->
+        <!--                <span class="untxt">取消喜欢</span>-->
+        <!--            </button>-->
+        <!--        </li>-->
+        <li>
+            <button class="left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_374"  id="com-quick-collect" target="_self" title="收藏">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-shoucang"></i></a>
+            </button>
+        </li>
+        <li>
+            <button class="left-fixed-btn btn-pinglun csdn-tracking-statistics tracking-click" data-mod="popu_544" title="评论">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-pinglun"></i></a>
+            </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到新浪微博">
+                <span class="iconbox border_red2"><i class="icon iconfont icon-xinlang"></i></span>
+                <a href="#" class="bds_tsina" data-cmd="tsina" > </a>
+          </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到微信">
+              <span class="iconbox border_green"><i class="icon iconfont icon-weixin"></i></span>
+              <a href="#" class="bds_weixin" data-cmd="weixin" > </a>
+          </button>
+        </li>
+        <li class="bdsharebuttonbox">
+          <button class="outside left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_172" title="分享到QQ空间">
+              <span class="iconbox border_blue"><i class="icon iconfont icon-QQ"></i></span>
+              <a href="#" class="bds_qzone" data-cmd="qzone" > </a>
+          </button>
+        </li>
+        <li id="share_box">
+            
+            <div class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+                
+                
+                
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="right_fixed">
+    <div class="r_ico">
+        <i class="icon iconfont icon-jubao"></i>
+        <span class="txt" id="reportBtn">内容举报</span>
+    </div>
+    <div class="returnTop">
+        <i class="icon iconfont icon-fanhuidingbu"></i>
+        <span>返回顶部</span>
+    </div>
+</div>
+<div id="pop_win"></div>
+<div id="popup_mask"></div>
+<div class="pop_CA_cover" ></div>
+<div class="pop pop_CA" >
+    <div class="CA_header">
+        收藏助手
+        <span class="cancel_icon"  id="fapancle" ></span>
+    </div>
+    <iframe src="" id="collectIframe" frameborder="0" width="100%" height="360"  scrolling="no" ></iframe>
+</div>
+<!--举报-->
+<div id="report_dialog" style="top: 250px; left: 343.5px;"><div id="panel_report">
+    <div class="panel_head">不良信息举报</div>
+    <form method="post" id="frmReport" class="panel_body">
+        <table border="0" cellpadding="0" cellspacing="4" class="pop_table">
+            <tbody><tr><td colspan="2">您举报文章：<a href="http://blog.csdn.net/carson_ho/article/details/79256773" target="_blank">Android 图片加载的那些事：为什么你的Glide 缓存没有起作用？</a></td></tr>
+            <tr>
+                <th style="width:60px;">举报原因：</th>
+                <td id="panel_reporttype">
+                    <label><input type="radio" class="report_type" id="report_sex" name="report_type" value="1">色情</label>
+                    <label><input type="radio" class="report_type" id="report_Politics" name="report_type" value="2">政治</label>
+                    <label><input type="radio" class="report_type" id="report_copy" name="report_type" value="3">抄袭</label>
+                    <label><input type="radio" class="report_type" id="report_ad" name="report_type" value="4">广告</label>
+                    <label><input type="radio" class="report_type" id="report_want" name="report_type" value="5">招聘</label>
+                    <label><input type="radio" class="report_type" id="report_call" name="report_type" value="6">骂人</label>
+                    <br>
+                    <label><input type="radio" class="report_type" id="report_other" name="report_type" value="7">其他</label>
+                    <input type="text" name="report_other_content" id="report_other_content" maxlength="30" style="display: none;">
+                </td>
+            </tr>
+            <tr id="panel_originalurl" style="display: none;">
+                <th>原文地址：</th>
+                <td>
+                    <input id="originalurl" value="http://" name="originalurl" type="text" style="width: 90%;">
+                </td>
+            </tr>
+            <tr>
+                <th id="sp_reason">原因补充：</th>
+                <td>
+                    <textarea id="report_description" style="width: 300px;" rows="3" name="report_description"></textarea>
+                    <p id="sp_n" style="color:#999;margin:0px;padding:0px;">(最多只允许输入30个字)</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input id="btnSubmitReport" name="submit" type="image" align="middle" class="btn_1" src="http://csdnimg.cn/release/phoenix/images/btn_submit.jpg">
+                    <span style="padding-left:20px;"></span>
+                    <img id="btnCloseReportDialog" src="http://csdnimg.cn/release/phoenix/images/btn_cancel.jpg" align="middle">
+                    <div id="error" style="color: Red">
+                    </div>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</div>
+    <script language="javascript" type="text/javascript">
+        var isComment=0;
+        //显示隐藏地址
+        $(function () {
+          console.log("version:phoenix");
+            if(isComment){
+                $("#report_description").attr("disabled",true);
+                $("#sp_n").hide();
+                $("#sp_reason").html("评论内容：");
+            }
+            $(".report_type").click(function () {
+                $("#panel_originalurl,#report_other_content").hide();
+                switch ($(this).val()) {
+                    case '3':
+                        $("#panel_originalurl").show();
+                        $("#originalurl").focus();
+                        break;
+                    case '7':
+                        if(isComment){
+                            $("#report_other_content").show().focus();
+                        }
+                        break;
+                }
+
+            });
+
+            $("#frmReport").submit(function () {
+                if (!currentUserName) {
+
+                    if (confirm("您的操作必须登录，是否登录？")) {
+                        location.href = "http://passport.csdn.net/account/login?from=" + encodeURIComponent(location.href);
+                        return false;
+                    }
+                    return false;
+                }
+
+                var reportType = $("input[name=report_type]:checked").val();
+                if(!reportType){
+                    alert("请选择举报原因！");
+                    return false;
+                }
+                var otherInfo = "";
+                switch (reportType) {
+                    case '3':
+                        otherInfo = $("#originalurl").val();
+                        if (otherInfo == ""||otherInfo=="http://") {
+                            alert("举报抄袭必须提供原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        } else if(!checkeURL(otherInfo)) {
+                            alert("请输入正确的原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        }
+                        break;
+                    case '7':
+                        otherInfo = $("#report_other_content").val();
+                        if (isComment && !otherInfo) {
+                            alert("请填写举报的具体原因！");
+                            $("#report_other_content").focus();
+                            return false;
+                        }
+                        if(!isComment){
+                            if(!$("#report_description").val()){
+                                alert("请填写举报的具体原因！");
+                                $("#report_description").focus();
+                                return false;
+                            }
+                        }
+                        break;
+                }
+                if(!isComment){
+                    if($("#report_description").val().length>30){
+                        alert("举报原因最多只允许输入30个字！");
+                        return false;
+                    }
+                }
+	            nowTime = {
+		            year: new Date().getFullYear(),
+		            month: parseInt(new Date().getMonth())+1,
+		            day: new Date().getDate(),
+		            hours: parseInt(new Date().getHours())+1,
+		            minutes: parseInt(new Date().getMinutes())+1,
+		            seconds: parseInt(new Date().getSeconds())+1
+	            };
+	            var data = {
+		            articleId: fileName,
+		            commentId: 0,
+		            reportType: reportType,
+		            originalurl: $("#originalurl").val(),
+		            report_other_content: $("#report_other_content").val(),
+		            report_description: $("#report_description").val(),
+		            currentUserName: currentUserName,
+		            updatetime: nowTime.year+'/'+nowTime.month+'/'+nowTime.day+' '+ nowTime.hours+':'+nowTime.minutes+':'+seconds,
+		            blogUser: username
+	            };
+	            if(!isComment){//如果是举报文章
+		            data.report_other_content = data.report_description;
+		            // data.report_description = "1. 神经网络这是一个常见的神经网络的图：这是一个常见的三层神经网络的基本构成，Layer L1是输入层，Layer L2是隐含层";
+	            }
+
+	            $.post(blog_address + "/common/report?id="+fileName+"&t=2", data, function (data) {
+		            if (data.result == 1){
+			            SetError("感谢您的举报，我们会尽快审核！");
+		            }else{
+			            if (data.content) alert(data.content);
+		            }
+
+	            });
+                return false;
+            });
+
+            $("#btnCloseReportDialog").click(function () {
+                CloseDiv();
+            });
+
+        });
+
+        //提示后关闭方法
+        function SetError(error) {
+            $("#btnCloseReportDialog").trigger("click");
+            alert(error);
+            CloseDiv();
+        }
+
+        //关闭方法
+        function CloseDiv() {
+
+            $.removeMask();
+            $("#report_dialog").hide();
+            return false;
+        }
+
+        //验证url
+        function checkeURL(url){
+            return /^http(s)?:\/\/([\w-]+\.)+[\w-]+/i.test(url);
+        }
+    </script>
+</div>
+<!--  fixme 后期清理掉  -->
+<div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+    <script id="adJs52b5334"></script>
+    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+</div>
+<script type="text/javascript" src="//static.blog.csdn.net/mdeditor/public/res/bower-libs/MathJax/MathJax.js"></script>
+<!-- <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script> -->
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script type="text/javascript" >
+    if($(".article_collect li").length==1){$(".article_collect").hide();}
+    if($(".article_tags li").length==1){$(".article_tags").hide();}
+    $(".edit a").attr("href","http://mp.blog.csdn.net/postedit/"+fileName);
+    $.each($(".edu_li a"),function(){$(this).attr("href",$(this).attr("href").replace("blog7","blog9"))});
+    new CNick('#uid').showNickname();
+
+    if($("#fan").html()=="")
+    {
+	    $("#fan").html(0);
+    }
+</script>
+<script src="http://c.csdnimg.cn/public/common/append_mark/appendMark.min.js?v=5.00.43" type="text/javascript"></script>
+<script type="text/javascript">
+    appendMark($('.recommend_list').children('a').find('dt'),$('.extension_other'),$('.yd_a_d_feed_cla'))
+</script>
+<script src='//csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js?v201802051726' data-isfootertrack="false"></script>
+<div class=""id="loginWrap"></div>
+<div class="" id="dlMask"></div>
+</body>
