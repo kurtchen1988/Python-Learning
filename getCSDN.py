@@ -50,7 +50,7 @@ class getCSDNContent():
 
 if __name__ == "__main__":
     print("请输入抓取任务开始的小时：")
-    a=input();
+    a=input()
     print("请输入抓取任务开始的分钟：")
     b=input()
     print("请输入系统检查间隔时间（以秒为单位）：")
