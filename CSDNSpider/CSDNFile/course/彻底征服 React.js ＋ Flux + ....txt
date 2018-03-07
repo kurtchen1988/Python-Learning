@@ -1,0 +1,6 @@
+课程名称: 彻底征服 React.js ＋ Flux + Redux【专家辅导】
+课程URL: https://edu.csdn.net/course/detail/2064
+课程价格: ¥600.00
+课程人数: 73577
+课程状态: 已完结
+已更新课时/总课时: 110/110
