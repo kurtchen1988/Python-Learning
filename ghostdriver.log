@@ -1,0 +1,21 @@
+[INFO  - 2018-03-17T12:28:47.400Z] GhostDriver - Main - running on port 59606
+[INFO  - 2018-03-17T12:28:48.817Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36","webSecurityEnabled":true}
+[INFO  - 2018-03-17T12:28:48.817Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.customHeaders:  - {}
+[INFO  - 2018-03-17T12:28:48.817Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"},"phantomjs.page.settings.userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36"}
+[INFO  - 2018-03-17T12:28:48.817Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: be5d6370-29de-11e8-a427-791b8f25448a
+[ERROR - 2018-03-17T12:30:31.861Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.onError - msg: TypeError: null is not an object (evaluating 'nowImg.nextSibling.nextSibling')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-17T12:30:31.861Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.onError - stack:
+  start (http://ac.gtimg.com/media/js/ac.page.chapter.view_v2.3.6.js?v=20170622:2941)
+  onreadystatechange (http://ac.gtimg.com/media/js/ac.page.chapter.view_v2.3.6.js?v=20170622:103)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-17T12:30:32.751Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.onError - msg: TypeError: null is not an object (evaluating 'nowImg.nextSibling.nextSibling')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2018-03-17T12:30:32.751Z] Session [be5d6370-29de-11e8-a427-791b8f25448a] - page.onError - stack:
+  start (http://ac.gtimg.com/media/js/ac.page.chapter.view_v2.3.6.js?v=20170622:2941)
+  onreadystatechange (http://ac.gtimg.com/media/js/ac.page.chapter.view_v2.3.6.js?v=20170622:103)
+
+  phantomjs://platform/console++.js:263 in error
