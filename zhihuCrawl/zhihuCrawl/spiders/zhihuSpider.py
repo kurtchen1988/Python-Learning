@@ -258,4 +258,4 @@ class ZhihuspiderSpider(scrapy.Spider):
                 topicItem["topicName"] = topic[i]
                 topicItem["topicClass"] = topicClass[i]
 
-            pass
+                yield topicItem
