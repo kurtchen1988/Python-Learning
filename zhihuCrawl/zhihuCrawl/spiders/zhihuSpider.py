@@ -3,10 +3,14 @@ import scrapy
 import time
 import json
 import execjs
+import re
+import urllib.request
 import os
+import zhihuCrawl.items
 from PIL import Image
 import base64
 from scrapy.http.cookies import CookieJar
+
 
 class ZhihuspiderSpider(scrapy.Spider):
     name = 'zhihuSpider'
@@ -17,7 +21,18 @@ class ZhihuspiderSpider(scrapy.Spider):
     start_urls = ['http://www.zhihu.com/']
     login_url = 'https://www.zhihu.com/api/v3/oauth/sign_in'  # 登陆的url
     captcha_url = 'https://www.zhihu.com/api/v3/oauth/captcha?lang=en'# 验证码地址
-    inbox_url = 'https://www.zhihu.com/inbox'#测试链接
+    topic_url = 'https://www.zhihu.com/topics'#测试链接
+    nonlogincookie = '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|15' \
+                     '21378566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZm' \
+                     'MzZkYzhkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-7' \
+                     '3fc-4362-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee968' \
+                     '88d4bc168d30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292' \
+                     '|a076be34c57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.15215' \
+                     '56000.6; __utmz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=' \
+                     '/topics; l_cap_id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87' \
+                     'af28b464ecc5ce90d"; d_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f' \
+                     '8a5fd07b9b77b2d8; __utmc=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_' \
+                     'date=20180320=1'
     logincookie = None
 
     # 登陆时，需要的信息
@@ -30,13 +45,16 @@ class ZhihuspiderSpider(scrapy.Spider):
         'Host': 'www.zhihu.com',
         'Origin': 'https://www.zhihu.com',
         'Referer': 'https://www.zhihu.com/signup?next=%2F',
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36 QQBrowser/4.3.4986.400',
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.'
+                      '0.3112.101 Safari/537.36 QQBrowser/4.3.4986.400',
         'X-UDID': 'ADAg-7cpUg2PTtLig29RVbKuOrt_QwlJn_8=',
         'X-Xsrftoken': '7cc9ff84-ca8d-491d-9f6e-b4733fdae31c',
         'If-None-Match': '7eb4ebdc523b46e04c7fa978993f57f559d7ed8b'
     }
 
+    numTime=10 #爬取的页数
 
+    #更改全局设置，让cookie可以全部使用
     custom_settings = {
         "COOKIES_ENABLED": True,
         "DOWNLOAD_DELAY": 0.5,
@@ -46,6 +64,7 @@ class ZhihuspiderSpider(scrapy.Spider):
         '''登陆验证结束，正式开始处理爬虫'''
         if response.status == 200:
             print('登录成功，可以开始爬取')
+            topicHtml=response.body
         else:
             print(response.text)
 
@@ -56,7 +75,7 @@ class ZhihuspiderSpider(scrapy.Spider):
         return str(timestamp)
 
     def get_signature(self):
-        '''通过网页上的js生成签名'''
+        '''通过js破解算法生成签名'''
         path = os.path.dirname(os.path.abspath(__file__))
         fp=open(path+'/zhihu.js')
         js=fp.read()
@@ -158,9 +177,11 @@ class ZhihuspiderSpider(scrapy.Spider):
         if 'user_id' in response_dit:
             print('登陆成功')
             self.get_cookies(response)
-            yield scrapy.Request(url=self.inbox_url, headers=self.login_headers, callback=self.parse,meta=self.logincookie)
+            yield scrapy.Request(url=self.topic_url, headers=self.login_headers, callback=self.parse, meta=self.logincookie)
         else:
-            print('登陆异常 ： '+response.text)
+            print('登陆异常,不带coockie直接跳转话题页面 ： '+response.text)
+            yield scrapy.Request(url=self.topic_url, headers=self.login_headers, callback=self.parse)
+
 
 
     def get_cookies(self,res):
@@ -172,7 +193,7 @@ class ZhihuspiderSpider(scrapy.Spider):
             for cookie in cookie_jar:
                 f.write(str(cookie) + '\n')
 
-    def get_header(self, refer):
+    def get_header(self, cookie, refer):
         '''处理所有request的头信息'''
         request_headers = {
             "Accept": "application/json, text/plain, */*",
@@ -181,7 +202,7 @@ class ZhihuspiderSpider(scrapy.Spider):
             "authorization": "oauth c3cef7c66a1843f8b3a9e6a1e3160e20",
             "Connection": "keep-alive",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-            "Cookie": '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|1521378566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYzhkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-73fc-4362-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee96888d4bc168d30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292|a076be34c57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.1521556000.6; __utmz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; d_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utmc=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1',
+            "Cookie": cookie,
             "Host": "www.zhihu.com",
             "Referer": str(refer),
             "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.3",
@@ -189,5 +210,52 @@ class ZhihuspiderSpider(scrapy.Spider):
         }
         return request_headers
 
-    def post_content(self, url, header, param):
-        pass
+    def get_nextTopicPara(self, after_id):
+        nextpara = {
+            'include': 'data[?(target.type=topic_sticky_module)].target.data[?(target.type=answer)].target.content,'
+                       'relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?(target.type=topic_s'
+                       'ticky_module)].target.data[?(target.type=answer)].target.is_normal,comment_count,voteup_count,'
+                       'content,relevant_info,excerpt.author.badge[?(type=best_answerer)].topics;data[?(target.type='
+                       'topic_sticky_module)].target.data[?(target.type=article)].target.content,voteup_count,commen'
+                       't_count,voting,author.badge[?(type=best_answerer)].topics;data[?(target.type=topic_sticky_mo'
+                       'dule)].target.data[?(target.type=people)].target.answer_count,articles_count,gender,follower'
+                       '_count,is_followed,is_following,badge[?(type=best_answerer)].topics;data[?(target.type=answe'
+                       'r)].target.content,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?('
+                       'target.type=answer)].target.author.badge[?(type=best_answerer)].topics;data[?(target.type=ar'
+                       'ticle)].target.content,author.badge[?(type=best_answerer)].topics;data[?(target.type=question'
+                       ')].target.comment_count',
+            'limit': '5',
+            'after_id': after_id
+        }
+        return nextpara
+
+    def get_Topic(self, response, login):
+        topicItem = zhihuCrawl.items.TopicItem()
+        if(login=='NO'):
+            topicHtml=response.body
+            topicIDPat = '<a target="_blank" href="/topic/(.*?)">'
+            topic = response.xpath('//strong/text()').extract()
+            topicID = re.compile(topicIDPat).findall(topicHtml)
+            topicClass = response.xpath('//li[@class="zm-topic-cat-item"]/a/text()')
+
+            for i in len(topic):
+
+                topicItem["topicID"] = topicID[i]
+                topicItem["topicName"] = topic[i]
+                topicItem["topicClass"] = topicClass[i]
+
+                yield topicItem
+        else:
+            topicHtml=response.body
+            topicIDPat = '<a target="_blank" href="/topic/(.*?)">'
+            topic = response.xpath('//strong/text()').extract()
+            topicID = re.compile(topicIDPat).findall(topicHtml)
+            topicClass = response.xpath('//li[@class="zm-topic-cat-item"]/a/text()')
+
+            for i in len(topic):
+
+                topicItem["topicID"] = topicID[i]
+                topicItem["topicName"] = topic[i]
+                topicItem["topicClass"] = topicClass[i]
+
+            pass
