@@ -9,7 +9,7 @@ import json
 class testPachong:
 
     def huati(self):
-        '''
+
         topicOne=urllib.request.urlopen("https://www.zhihu.com/topics").read().decode("utf-8","ignore")
 
         htmlone=etree.HTML(topicOne)
@@ -179,7 +179,7 @@ class testPachong:
         #<div class="RichText PostIndex-content av-paddingSide av-card">
 
         #questiondetail=urllib.request.urlopen(questionurl[0]).read().decode("utf-8")
-'''
+
         question_headers = {
             "Accept": "application/json, text/plain, */*",
              #"Accept-Encoding": "gzip, deflate, br",
@@ -216,9 +216,10 @@ class testPachong:
         processquestio=urllib.request.urlopen(processquestion)
         processquesti=processquestio.read().decode("utf-8")
 
-
-
-        print(processquesti)
+        answerpat='"content": "(.*?)",'
+        answer=re.compile(answerpat).findall(processquesti)
+        #print(processquesti)
+        print(answer)
 
     def articleLink(self):
 
