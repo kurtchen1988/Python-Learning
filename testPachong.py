@@ -9,7 +9,7 @@ import json
 class testPachong:
 
     def huati(self):
-
+        '''
         topicOne=urllib.request.urlopen("https://www.zhihu.com/topics").read().decode("utf-8","ignore")
 
         htmlone=etree.HTML(topicOne)
@@ -157,19 +157,19 @@ class testPachong:
 
         nexttitle=re.compile(nexttitlepat).findall(nextarti)
 
-        print(nexttitle)
+        #print(nexttitle)
 
         nextQuestionIDpat = '"type": "question", "id": (.*?)}'
 
         nextQuestionID = re.compile(nextQuestionIDpat).findall(nextarti)
 
-        print(nextQuestionID)
+        #print(nextQuestionID)
 
         nextarticonpat = '"url": "(http://zhuanlan.zhihu.com/p/.*?)",'
 
         nextArticon = re.compile(nextarticonpat).findall(nextarti)
 
-        print(nextArticon)
+        #print(nextArticon)
 
         #https://www.zhihu.com/question/269477116
 
@@ -179,17 +179,21 @@ class testPachong:
         #<div class="RichText PostIndex-content av-paddingSide av-card">
 
         #questiondetail=urllib.request.urlopen(questionurl[0]).read().decode("utf-8")
-
+'''
         question_headers = {
-            "Accept": "*/*",
-            # "Accept-Encoding": "gzip, deflate, br",
+            "Accept": "application/json, text/plain, */*",
+             #"Accept-Encoding": "gzip, deflate, br",
             "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+            "authorization":"oauth c3cef7c66a1843f8b3a9e6a1e3160e20",
             "Connection": "keep-alive",
             "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
             "Cookie": '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|1521378566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYzhkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-73fc-4362-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee96888d4bc168d30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292|a076be34c57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.1521556000.6; __utmz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; d_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utmc=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1',
-            "Host": "zhihu-web-analytics.zhihu.com",
+            "Host": "www.zhihu.com",
             "Referer": "https://www.zhihu.com/question/269169798",
             "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.3",
+            "x-udid":"APBvzZ6uUw2PTunjl2NE4hNTFng78JkWYGo=",
+            "X-Requested-With": "XMLHttpRequest",
+            "X-Xsrftoken": "b346d3a1d11d099f8a5fd07b9b77b2d8"
         }
 
         questionpara = {
@@ -200,8 +204,21 @@ class testPachong:
                        'thelp,upvoted_followees;data[*].mark_infos[*].url;data[*].author.follower_count,badge[?(type=bes'
                        't_answerer)].topics',
             'limit': '5',
-            'offset': '10'
+            'offset': '10',
+            'sort_by':'default'
         }
+
+        questionrealpara=urllib.parse.urlencode(questionpara)
+        #print(questionrealpara)
+        questionSecUrl="https://www.zhihu.com/api/v4/questions/269169798/answers?"
+
+        processquestion=urllib.request.Request(url=questionSecUrl+questionrealpara, headers=question_headers)
+        processquestio=urllib.request.urlopen(processquestion)
+        processquesti=processquestio.read().decode("utf-8")
+
+
+
+        print(processquesti)
 
     def articleLink(self):
 
