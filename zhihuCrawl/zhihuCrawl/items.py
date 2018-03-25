@@ -11,4 +11,8 @@ import scrapy
 class ZhihucrawlItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+    topic = scrapy.Field()
+    articleList = scrapy.Field()
+    name = scrapy.Field()
+    name = scrapy.Field()
     pass
