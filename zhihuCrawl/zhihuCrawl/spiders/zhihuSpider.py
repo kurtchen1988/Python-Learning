@@ -25,7 +25,7 @@ class ZhihuspiderSpider(scrapy.Spider):
     password = ''
     client_id = 'c3cef7c66a1843f8b3a9e6a1e3160e20'
 
-    headers = {
+    login_headers = {
         'authorization': 'oauth ' + client_id,
         'Host': 'www.zhihu.com',
         'Origin': 'https://www.zhihu.com',
@@ -67,7 +67,7 @@ class ZhihuspiderSpider(scrapy.Spider):
 
     def start_requests(self):
         '''开始爬取登录页面'''
-        yield scrapy.Request('https://www.zhihu.com/api/v3/oauth/captcha?lang=en',headers=self.headers,
+        yield scrapy.Request('https://www.zhihu.com/api/v3/oauth/captcha?lang=en',headers=self.login_headers,
                              callback=self.ifCaptcha,dont_filter=True)
 
     def ifCaptcha(self,response):
@@ -88,10 +88,10 @@ class ZhihuspiderSpider(scrapy.Spider):
         if 'show_captcha' in captcha_info:
             if captcha_info['show_captcha']:
                  print('出现验证码')
-                 yield scrapy.Request(url=self.captcha_url, headers=self.headers, method='PUT', callback=self.captcha_process, meta=params)
+                 yield scrapy.Request(url=self.captcha_url, headers=self.login_headers, method='PUT', callback=self.captcha_process, meta=params)
             else:
                 print('无验证码')
-                yield scrapy.FormRequest(url=self.login_url, headers=self.headers, formdata=params, method='POST', callback=self.check_login)
+                yield scrapy.FormRequest(url=self.login_url, headers=self.login_headers, formdata=params, method='POST', callback=self.check_login)
         else:
             self.logger.warning('出现未知异常： %s', response.text)
 
@@ -119,7 +119,7 @@ class ZhihuspiderSpider(scrapy.Spider):
         params_checkCaptcha={
             'input_text':captcha
         }
-        yield scrapy.FormRequest(url=self.captcha_url, headers=self.headers, formdata=params_checkCaptcha, method='POST',
+        yield scrapy.FormRequest(url=self.captcha_url, headers=self.login_headers, formdata=params_checkCaptcha, method='POST',
                                  meta=params_checkCaptcha, callback=self.check_captcha)
 
 
@@ -145,7 +145,7 @@ class ZhihuspiderSpider(scrapy.Spider):
 
         if 'success' in res_dit:
             print('验证码正确')
-            yield scrapy.FormRequest(url=self.login_url, headers=self.headers, formdata=params, method='POST',
+            yield scrapy.FormRequest(url=self.login_url, headers=self.login_headers, formdata=params, method='POST',
                                     callback=self.check_login)
         else:
             print(response.text)
@@ -158,7 +158,7 @@ class ZhihuspiderSpider(scrapy.Spider):
         if 'user_id' in response_dit:
             print('登陆成功')
             self.get_cookies(response)
-            yield scrapy.Request(url=self.inbox_url, headers=self.headers, callback=self.parse,meta=self.logincookie)
+            yield scrapy.Request(url=self.inbox_url, headers=self.login_headers, callback=self.parse,meta=self.logincookie)
         else:
             print('登陆异常 ： '+response.text)
 
@@ -171,3 +171,23 @@ class ZhihuspiderSpider(scrapy.Spider):
         with open('cookies.txt', 'w') as f:
             for cookie in cookie_jar:
                 f.write(str(cookie) + '\n')
+
+    def get_header(self, refer):
+        '''处理所有request的头信息'''
+        request_headers = {
+            "Accept": "application/json, text/plain, */*",
+            # "Accept-Encoding": "gzip, deflate, br",
+            "Accept-Language": "zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+            "authorization": "oauth c3cef7c66a1843f8b3a9e6a1e3160e20",
+            "Connection": "keep-alive",
+            "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            "Cookie": '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|1521378566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYzhkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-73fc-4362-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee96888d4bc168d30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292|a076be34c57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.1521556000.6; __utmz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; d_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utmc=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1',
+            "Host": "www.zhihu.com",
+            "Referer": str(refer),
+            "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.119 Safari/537.3",
+            "x-udid": "APBvzZ6uUw2PTunjl2NE4hNTFng78JkWYGo="
+        }
+        return request_headers
+
+    def post_content(self, url, header, param):
+        pass
