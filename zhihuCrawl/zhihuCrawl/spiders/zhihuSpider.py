@@ -64,7 +64,8 @@ class ZhihuspiderSpider(scrapy.Spider):
         '''登陆验证结束，正式开始处理爬虫'''
         if response.status == 200:
             print('登录成功，可以开始爬取')
-            topicHtml=response.body
+            print(response.text.decode("utf-8"))
+            self.get_Topic(response,"Y")
         else:
             print(response.text)
 
@@ -231,8 +232,9 @@ class ZhihuspiderSpider(scrapy.Spider):
 
     def get_Topic(self, response, login):
         topicItem = zhihuCrawl.items.TopicItem()
+        print("test")
         if(login=='NO'):
-            topicHtml=response.body
+            topicHtml=response.body.decode("utf-8")
             topicIDPat = '<a target="_blank" href="/topic/(.*?)">'
             topic = response.xpath('//strong/text()').extract()
             topicID = re.compile(topicIDPat).findall(topicHtml)
@@ -246,7 +248,7 @@ class ZhihuspiderSpider(scrapy.Spider):
 
                 yield topicItem
         else:
-            topicHtml=response.body
+            topicHtml=response
             topicIDPat = '<a target="_blank" href="/topic/(.*?)">'
             topic = response.xpath('//strong/text()').extract()
             topicID = re.compile(topicIDPat).findall(topicHtml)
