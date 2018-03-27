@@ -183,7 +183,21 @@ class zhihuSpider:
 
                         for k in range(0, len(artauthor)):
                             if (str(artauthor[k]).find('zhuanlan')) >= 0:
-                                print(0)
+                                article_headers = {
+                                    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                                    "Content-Type": "text/html; charset=utf-8",
+                                    "Cookie": self.cleanCookie,
+                                    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:59.0) Gecko/20100101 Firefox/59.0"
+                                }
+
+                                art_url = artauthor[k].replace("http", "https")
+                                artcontent = urllib.request.Request(url=art_url, headers=article_headers)
+
+                                arti = {"title": arttitle[k], "author": artauthor[k], "aid":self.aid[k],"content": artcontent, "link": artlink[k]}
+
+                                self.write_to_DB(arti,"topic")
+
+
                             elif ('answers' in str(artauthor[k])) == True:
 
                                 anspat = "'" + str(artauthor[k]) + "'.*?'url':.*?'(.*?)'"
@@ -245,21 +259,17 @@ class zhihuSpider:
         return urllib.request.urlopen(url).read().decode("utf-8","ignore")
 
     def write_to_DB(self, dict, type):
-        #self.conn = pymysql.connect(host="127.0.0.1", user="root", passwd="root", db="zhihu")
+        self.conn = pymysql.connect(host="127.0.0.1", user="root", passwd="root", db="zhihu")
         if(type=="topic"):
-            print(dict)
-            #sql="INSERT into topic(titlename, tid, class) VALUES ("+dict["titlename"]+","+dict["tid"]+","+dict["class"]+")"
+            sql="INSERT into topic(titlename, tid, class) VALUES ("+dict["titlename"]+","+dict["tid"]+","+dict["class"]+")"
         elif(type=="article"):
-            print(dict)
-            #sql = "INSERT into article(title, author, aid, content, link) VALUES (" + "," + dict["title"] + "," + dict[
-            #    "author"] + "," + dict["aid"] + "," + dict["content"] + "," + dict["link"] + ")"
+            sql = "INSERT into article(title, author, aid, content, link) VALUES (" + "," + dict["title"] + "," + dict[
+                "author"] + "," + dict["aid"] + "," + dict["content"] + "," + dict["link"] + ")"
         elif(type=="question"):
-            print(dict)
-            #sql = "INSERT into question(title, tid, link) VALUES (" + "," + dict["title"] + ","  + "," + dict["tid"] + "," +  "," + dict["link"] + ")"
+            sql = "INSERT into question(title, tid, link) VALUES (" + "," + dict["title"] + ","  + "," + dict["tid"] + "," +  "," + dict["link"] + ")"
         elif(type=="answer"):
-            print(dict)
-            #sql = "INSERT into answer(author, content, askid) VALUES (" + "," + dict["author"] + "," + dict[
-            #    "content"] + "," + dict["askid"] + ")"
+            sql = "INSERT into answer(author, content, askid) VALUES (" + "," + dict["author"] + "," + dict[
+                "content"] + "," + dict["askid"] + ")"
         #self.conn.commit()
         #self.conn.close()
 
