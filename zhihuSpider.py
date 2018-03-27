@@ -9,7 +9,7 @@ import http.cookiejar
 
 class zhihuSpider:
 
-    topicpages=0
+    topicpages=2
     #每个话题页面抓取几页内容
     articlepages=5
     #文章页面抓取几页内容
@@ -28,22 +28,16 @@ class zhihuSpider:
     "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0)",
     "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 BIDUBrowser/8.3 Safari/537.36")
 
-    cleanCookie = '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|15213' \
-                  '78566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYz' \
-                  'hkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-73fc-4362' \
-                  '-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee96888d4bc168' \
-                  'd30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292|a076be34c' \
-                  '57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.1521556000.6; __ut' \
-                  'mz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_' \
-                  'id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; ' \
-                  'd_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utm' \
-                  'c=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1'
+    cleanCookie = '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|1521378566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYzhkMTgxZTk=|6923e50d6edf43e519899682e589376d813babd22d76629d016fb6db32874305"; _zap=34f289cd-73fc-4362-a6fa-5c39b0c71f35; r_cap_id="ZDc5ZmZlZGY4MDgwNGZjMzhkYzM3MTJiZTc0MmQ5ZDg=|1521561292|eee96888d4bc168d30324208e0b00a96d750374e"; cap_id="NjM1MWJlY2QwMGY5NGJlMGE1NjVjYTZhNzNhMjNmNjA=|1521561292|a076be34c57e4a383bbb0f177db96b3224cecfd8"; __utma=51854390.1141490050.1521384369.1521556000.1521556000.6; __utmz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; d_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utmc=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1'
     #普通cookie
 
     topic_url = []
     topic_title = []
     tid = []
     aid = []
+    artlink = []
+    arttile = []
+    artauthor = []
 
     def ua(self, uapools):
         thisua = random.choice(uapools)
@@ -52,19 +46,17 @@ class zhihuSpider:
         opener = urllib.request.build_opener()
         opener.addheaders = [headers]
         urllib.request.install_opener(opener)
-
         cookiejar = http.cookiejar.CookieJar()
         handler = urllib.request.HTTPCookieProcessor(cookiejar=cookiejar)
         opener = urllib.request.build_opener(handler, urllib.request.HTTPHandler(debuglevel=1))
         urllib.request.install_opener(opener)
-        return thisua
 
     def __init__(self):
         pass
 
     def get_topic(self):
         '''得到话题信息'''
-        self.ua(self.cleanCookie)
+        self.ua(self.headers)
 
         firstPage = self.get_URLCode("https://www.zhihu.com/topics")
 
@@ -171,33 +163,46 @@ class zhihuSpider:
                     afterpat = "'next.*?after_id=(.*?)',"
                     after = re.compile(afterpat).findall(str(art_que))
 
+                    print(after)
+
                     if(after[0]=='0.00000'):
                         endflag = False
                     else:
 
                         authorpat = "'name': '(.*?)'"
-                        linkpat = "[False|True]}, 'url':.*?'(.*?)'"
+                        linkpat = "[False|True], 'url': '(.*?)'"
                         titlepat = "'title': '(.*?)'"
 
                         artauthor = re.compile(authorpat).findall(str(art_que))
                         artlink = re.compile(linkpat).findall(str(art_que))
                         arttitle = re.compile(titlepat).findall(str(art_que))
 
-                        print(artauthor)
-                        print(artlink)
-                        print(arttitle)
+                        self.artauthor=artauthor
+                        self.artlink=artlink
+                        self.arttile=arttitle
 
-            #测试用，请删除
-                if(i==1):
-                    break
-                    break
+                        for k in range(0, len(artauthor)):
+                            if (str(artauthor[k]).find('zhuanlan')) >= 0:
+                                print(0)
+                            elif ('answers' in str(artauthor[k])) == True:
+
+                                anspat = "'" + str(artauthor[k]) + "'.*?'url':.*?'(.*?)'"
+                                ans = re.compile(anspat).findall(str(art_que))
+
+                                question = {"title": arttitle[k], "tid": self.tid[k],  "link": artlink[k]}
+                                self.write_to_DB(question, "question")
 
 
-    def get_ask(self):
-        pass
+                                anst = artlink[k][36:]
+                                quef = ans[0][38:]
 
-    def get_answer(self):
-        pass
+                                url_aq = 'https://www.zhihu.com/question/' + str(
+                                    quef) + '/answer/' + str(anst)
+                                url_aq_content = urllib.request.urlopen(url_aq).read().decode("utf-8","ignore")
+                                answer = {"author": artauthor[k], "content": url_aq_content[k], "askid": anst}
+                                self.write_to_DB(answer, "answer")
+
+
 
     def get_header(self, cookie, refer):
         '''处理所有request的头信息'''
@@ -244,28 +249,20 @@ class zhihuSpider:
         if(type=="topic"):
             print(dict)
             #sql="INSERT into topic(titlename, tid, class) VALUES ("+dict["titlename"]+","+dict["tid"]+","+dict["class"]+")"
-        elif(type=="artlink"):
-            print(dict)
-            #sql = "INSERT into artlink(artid, tid, title, link) VALUES (" + dict["artid"] + "," + dict["tid"] + "," + dict[
-            #    "title"] + dict["link"] +")"
         elif(type=="article"):
             print(dict)
-            #sql = "INSERT into article(id, title, author, aid, content, link) VALUES (" + dict["id"] + "," + dict["title"] + "," + dict[
+            #sql = "INSERT into article(title, author, aid, content, link) VALUES (" + "," + dict["title"] + "," + dict[
             #    "author"] + "," + dict["aid"] + "," + dict["content"] + "," + dict["link"] + ")"
         elif(type=="question"):
             print(dict)
-            #sql = "INSERT into question(id, title, detail, aid, content, link) VALUES (" + dict["id"] + "," + dict["title"] + "," + dict[
-            #    "detail"] + "," + dict["aid"] + "," + dict["content"] + "," + dict["link"] + ")"
+            #sql = "INSERT into question(title, tid, link) VALUES (" + "," + dict["title"] + ","  + "," + dict["tid"] + "," +  "," + dict["link"] + ")"
         elif(type=="answer"):
             print(dict)
-            #sql = "INSERT into answer(id, author, content, askid) VALUES (" + dict["id"] + "," + dict["author"] + "," + dict[
+            #sql = "INSERT into answer(author, content, askid) VALUES (" + "," + dict["author"] + "," + dict[
             #    "content"] + "," + dict["askid"] + ")"
         #self.conn.commit()
         #self.conn.close()
 
-    def test(self):
-        a={"aa":1,"bb":2}
-        print(a["aa"])
 
 if __name__ == '__main__':
     a = zhihuSpider()
