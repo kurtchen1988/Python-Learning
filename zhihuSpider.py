@@ -3,15 +3,30 @@ import urllib.request
 from lxml import etree
 import re
 import json
+import random
+import http.cookiejar
 
 
 class zhihuSpider:
 
-    topicpages=1
+    topicpages=0
     #每个话题页面抓取几页内容
     articlepages=5
     #文章页面抓取几页内容
 
+    headers = (
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:46.0) Gecko/20100101 Firefox/46.0",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36 OPR/37.0.2178.32",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534.57.2 (KHTML, like Gecko) Version/5.1.7 Safari/534.57.2",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2486.0 Safari/537.36 Edge/13.10586",
+    "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko",
+    "Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)",
+    "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)",
+    "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; WOW64; Trident/4.0)",
+    "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 BIDUBrowser/8.3 Safari/537.36")
 
     cleanCookie = '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|15213' \
                   '78566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYz' \
@@ -30,11 +45,26 @@ class zhihuSpider:
     tid = []
     aid = []
 
+    def ua(self, uapools):
+        thisua = random.choice(uapools)
+        print(thisua)
+        headers = ("User-Agent", thisua)
+        opener = urllib.request.build_opener()
+        opener.addheaders = [headers]
+        urllib.request.install_opener(opener)
+
+        cookiejar = http.cookiejar.CookieJar()
+        handler = urllib.request.HTTPCookieProcessor(cookiejar=cookiejar)
+        opener = urllib.request.build_opener(handler, urllib.request.HTTPHandler(debuglevel=1))
+        urllib.request.install_opener(opener)
+        return thisua
+
     def __init__(self):
         pass
 
     def get_topic(self):
         '''得到话题信息'''
+        self.ua(self.cleanCookie)
 
         firstPage = self.get_URLCode("https://www.zhihu.com/topics")
 
@@ -144,7 +174,6 @@ class zhihuSpider:
                     if(after[0]=='0.00000'):
                         endflag = False
                     else:
-                        print(art_que)
 
                         authorpat = "'name': '(.*?)'"
                         linkpat = "[False|True]}, 'url':.*?'(.*?)'"
