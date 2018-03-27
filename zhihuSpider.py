@@ -51,13 +51,15 @@ class zhihuSpider:
             for i in range(0, self.pages):
                 para = {'params': '{"topic_id":' + classID[j] + ',"offset":'+ str(i*20) +',"hash_id":""}', 'method': 'next'}  # 下一页的话题参数，用offset控制。offset就是20的倍数
                 realpara = urllib.parse.urlencode(para)
-                topica = urllib.request.Request(url=next_page_url, headers=topicheader,data=bytes(realpara, encoding='utf-8'))
+                topica = urllib.request.Request(url=next_page_url, headers=topicheader, data=bytes(realpara, encoding='utf-8'))
                 # 通过post方法拿到下一页的数据
                 topicb = urllib.request.urlopen(topica)
                 topicc = topicb.read().decode("utf-8")
-                moreIDpat = 'topic./(.*?)..>'
-                moreID = re.compile(moreIDpat).findall(topicc)
+                #realtopic = json.loads(str(topica))
+                #moreIDpat = 'topic./(.*?)..>'
+                #moreID = re.compile(topicpat).findall(realtopic)
 
+                print(topicc)
 
 
         pass
