@@ -7,8 +7,11 @@ import json
 
 class zhihuSpider:
 
-    pages=5
-    #每个话题抓取几页内容
+    topicpages=1
+    #每个话题页面抓取几页内容
+    articlepages=5
+    #文章页面抓取几页内容
+
 
     cleanCookie = '__DAYU_PP=mIAzqR6JjZJIV3AmU62v2ae19319dc81; q_c1=2f36189ed07842fea5d63abcf6dcfe6c|1521378566000|15213' \
                   '78566000; capsion_ticket="2|1:0|10:1521554442|14:capsion_ticket|44:M2IyYzBlYjY2NWI4NGQ0Y2I3NmZmMzZkYz' \
@@ -19,8 +22,13 @@ class zhihuSpider:
                   'mz=51854390.1521384369.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/topics; l_cap_' \
                   'id="MmZhMzdhYTRkYzRhNDZmMGEzZDg2YzgyM2VkZmUyMDM=|1521561292|3a4e77d02b1e1031f6dac87af28b464ecc5ce90d"; ' \
                   'd_c0="AEBr7njMTw2PTg-BnKIjeG7KuLINqK1ENFo=|1521473500"; _xsrf=b346d3a1d11d099f8a5fd07b9b77b2d8; __utm' \
-                  'c=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1',
+                  'c=51854390; __utmv=51854390.000--|2=registration_date=20180318=1^3=entry_date=20180320=1'
+    #普通cookie
 
+    topic_url = []
+    topic_title = []
+    tid = []
+    aid = []
 
     def __init__(self):
         pass
@@ -30,38 +38,136 @@ class zhihuSpider:
 
         firstPage = self.get_URLCode("https://www.zhihu.com/topics")
 
-        topicpat = '<strong>(.*?)</strong>'  # 话题
-        urlpat = '<a target="_blank" href="(/topic/.*?)">'  # 话题详细url
-        tidpat = '<a target="_blank" href="/topic/(.*?)">'  # 话题id
         classpat = '<li class="zm-topic-cat-item" .*?><.*?>(.*?)</a></li>'  # 话题分类
         classIDpat = '<li class="zm-topic-cat-item" data-id="(.*?)">'  # 话题分类id
 
         topicClass = re.compile(classpat).findall(firstPage)
         classID = re.compile(classIDpat).findall(firstPage)
 
-
         for j in range(0, len(topicClass)):
 
             topicurl = "https://www.zhihu.com/topics#" + urllib.parse.quote(topicClass[j])
             referurl = "https://www.zhihu.com/topics"
-            topicpage = self.get_URLCode(topicurl)
             topicheader = self.get_header(self.cleanCookie, referurl)
             next_page_url = 'https://www.zhihu.com/node/TopicsPlazzaListV2'
 
-            for i in range(0, self.pages):
+            for i in range(0, self.topicpages):
                 para = {'params': '{"topic_id":' + classID[j] + ',"offset":'+ str(i*20) +',"hash_id":""}', 'method': 'next'}  # 下一页的话题参数，用offset控制。offset就是20的倍数
                 realpara = urllib.parse.urlencode(para)
                 topica = urllib.request.Request(url=next_page_url, headers=topicheader, data=bytes(realpara, encoding='utf-8'))
                 # 通过post方法拿到下一页的数据
                 topicb = urllib.request.urlopen(topica)
                 topicc = topicb.read().decode("utf-8")
-                #realtopic = json.loads(str(topica))
-                #moreIDpat = 'topic./(.*?)..>'
-                #moreID = re.compile(topicpat).findall(realtopic)
+                sub_topics = json.loads(topicc)
 
-                print(topicc)
+                sub_topics_url = '<div class="blk">.n<a target="_blank" href="(.*?)"'
+                sub_topics_id = '<div class="blk">.n<a target="_blank" href="/topic/(.*?)"'
+                sub_topics_title = '<strong>(.*?)<.strong>'
+
+                actual_topic_url = re.compile(sub_topics_url).findall(str(sub_topics))
+                acutal_topic_id = re.compile(sub_topics_id).findall(str(sub_topics))
+                acutal_topic_title = re.compile(sub_topics_title).findall(str(sub_topics))
+
+                self.topic_title.append(acutal_topic_title)
+
+                for x in acutal_topic_id:
+                    self.tid.append(x)
+                for y in actual_topic_url:
+                    self.topic_url.append(y)
+
+                for k in range(0, len(acutal_topic_title)):
+                    topics = {"titlename":acutal_topic_title[k], "tid":acutal_topic_id[k], "class": topicClass[j]}
+                    self.write_to_DB(topics, "topic")
+            #测试用，请删除
+            if(j==1):
+                break
+                break
+        pass
+
+    def get_article(self):
+        '''
+        @抓取话题下的文章和问答
+        '''
+        artile_first_url = 'https://www.zhihu.com'
+        referurl2 = "https://www.zhihu.com/topics"
+        art_url = 'https://www.zhihu.com/api/v4/topics/'
+        topicname = self.topic_title
+        toppicurl = self.topic_url
+        toppicid = self.tid
+        endflag = True
+
+        if(len(self.topic_title)==0|len(self.topic_url)==0):
+            print("系统未能抓取有效数据")
+            pass
+        else:
+            for i in range(0, len(toppicurl)):
+
+                artile_url = artile_first_url + toppicurl[i]
+                artia = self.get_URLCode(artile_url)
+                nextidpat = 'after_id=(.*?)&'
+                nextID = re.compile(nextidpat).findall(artia)
+                print(nextID)
+                art_header = self.get_header(self.cleanCookie, artile_url)
+
+                while endflag:
+                    sub_data = {
+                        'include': 'data[?(target.type=topic_sticky_module)].target.data[?(target.type=answer)].target.content,'
+                                   'relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?(target.type=topic_s'
+                                   'ticky_module)].target.data[?(target.type=answer)].target.is_normal,comment_count,voteup_count,'
+                                   'content,relevant_info,excerpt.author.badge[?(type=best_answerer)].topics;data[?(target.type='
+                                   'topic_sticky_module)].target.data[?(target.type=article)].target.content,voteup_count,commen'
+                                   't_count,voting,author.badge[?(type=best_answerer)].topics;data[?(target.type=topic_sticky_mo'
+                                   'dule)].target.data[?(target.type=people)].target.answer_count,articles_count,gender,follower'
+                                   '_count,is_followed,is_following,badge[?(type=best_answerer)].topics;data[?(target.type=answe'
+                                   'r)].target.content,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?('
+                                   'target.type=answer)].target.author.badge[?(type=best_answerer)].topics;data[?(target.type=ar'
+                                   'ticle)].target.content,author.badge[?(type=best_answerer)].topics;data[?(target.type=question'
+                                   ')].target.comment_count',
+                        "limit": "5",
+                        "after_id": nextID[0]
+                    }
+
+                    realpara = urllib.parse.urlencode(sub_data)
+
+                    art_act_url = art_url+toppicid[i]+'/feeds/top_activity?'+'/feeds/top_activity?include=data[?(target.type=topic_sticky_module)].target.data[?(target.type=answer)].target.content,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?(target.type=topic_sticky_module)].target.data[?(target.type=answer)].target.is_normal,comment_count,voteup_count,content,relevant_info,excerpt.author.badge[?(type=best_answerer)].topics;data[?(target.type=topic_sticky_module)].target.data[?(target.type=article)].target.content,voteup_count,comment_count,voting,author.badge[?(type=best_answerer)].topics;data[?(target.type=topic_sticky_module)].target.data[?(target.type=people)].target.answer_count,articles_count,gender,follower_count,is_followed,is_following,badge[?(type=best_answerer)].topics;data[?(target.type=answer)].target.content,relationship.is_authorized,is_author,voting,is_thanked,is_nothelp;data[?(target.type=answer)].target.author.badge[?(type=best_answerer)].topics;data[?(target.type=article)].target.content,author.badge[?(type=best_answerer)].topics;data[?(target.type=question)].target.comment_count&limit=5&after_id=' + str(
+                        nextID[0])
+
+                    print(art_act_url)
+
+                    art_a_url = urllib.request.Request(url=art_act_url, headers=art_header)
+                    art_b_url = urllib.request.urlopen(art_a_url)
+                    art_c_url = art_b_url.read().decode("utf-8","ignore")
+                    art_que = json.loads(art_c_url)
+                    afterpat = "'next.*?after_id=(.*?)',"
+                    after = re.compile(afterpat).findall(str(art_que))
+
+                    if(after[0]=='0.00000'):
+                        endflag = False
+                    else:
+                        print(art_que)
+
+                        authorpat = "'name': '(.*?)'"
+                        linkpat = "[False|True]}, 'url':.*?'(.*?)'"
+                        titlepat = "'title': '(.*?)'"
+
+                        artauthor = re.compile(authorpat).findall(str(art_que))
+                        artlink = re.compile(linkpat).findall(str(art_que))
+                        arttitle = re.compile(titlepat).findall(str(art_que))
+
+                        print(artauthor)
+                        print(artlink)
+                        print(arttitle)
+
+            #测试用，请删除
+                if(i==1):
+                    break
+                    break
 
 
+    def get_ask(self):
+        pass
+
+    def get_answer(self):
         pass
 
     def get_header(self, cookie, refer):
@@ -108,7 +214,7 @@ class zhihuSpider:
         #self.conn = pymysql.connect(host="127.0.0.1", user="root", passwd="root", db="zhihu")
         if(type=="topic"):
             print(dict)
-            #sql="INSERT into topic(id, titlename, tid, class) VALUES ("+dict["id"]+dict["titlename"]+","+dict["tid"]+","+dict["class"]+")"
+            #sql="INSERT into topic(titlename, tid, class) VALUES ("+dict["titlename"]+","+dict["tid"]+","+dict["class"]+")"
         elif(type=="artlink"):
             print(dict)
             #sql = "INSERT into artlink(artid, tid, title, link) VALUES (" + dict["artid"] + "," + dict["tid"] + "," + dict[
@@ -135,3 +241,4 @@ class zhihuSpider:
 if __name__ == '__main__':
     a = zhihuSpider()
     a.get_topic()
+    a.get_article()
