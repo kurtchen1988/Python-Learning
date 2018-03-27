@@ -31,44 +31,32 @@ class zhihuSpider:
         firstPage = self.get_URLCode("https://www.zhihu.com/topics")
 
         topicpat = '<strong>(.*?)</strong>'  # 话题
-        #pat2 = '<a target="_blank" href="(/topic/.*?)">'  # 话题详细url
+        urlpat = '<a target="_blank" href="(/topic/.*?)">'  # 话题详细url
         tidpat = '<a target="_blank" href="/topic/(.*?)">'  # 话题id
         classpat = '<li class="zm-topic-cat-item" .*?><.*?>(.*?)</a></li>'  # 话题分类
         classIDpat = '<li class="zm-topic-cat-item" data-id="(.*?)">'  # 话题分类id
 
         topicClass = re.compile(classpat).findall(firstPage)
+        classID = re.compile(classIDpat).findall(firstPage)
+
 
         for j in range(0, len(topicClass)):
 
             topicurl = "https://www.zhihu.com/topics#" + urllib.parse.quote(topicClass[j])
             referurl = "https://www.zhihu.com/topics"
-            print(topicurl)
             topicpage = self.get_URLCode(topicurl)
-            topicOne = urllib.request.urlopen(topicurl).read().decode("utf-8", "ignore")
+            topicheader = self.get_header(self.cleanCookie, referurl)
+            next_page_url = 'https://www.zhihu.com/node/TopicsPlazzaListV2'
 
-            for k in range(0, self.pages):
-                if(k==0):
-                    topic = re.compile(topicpat).findall(topicpage)
-                    print(topic)
-                    topicID = re.compile(tidpat).findall(topicpage)
-                    classID = re.compile(classIDpat).findall(topicpage)
-                    for i in range(0, len(topic)):
-                        topicDic = {"id": 0, "titlename": topic[i], "tid": topicID[i], "class": topicClass[j]}
-                        # id为自增量，传入任意数字即可.默认首页为第一个标题
-                        self.write_to_DB(topicDic, "topic")
-                else:
-                    para = {'params': '{"topic_id":' + classID[j] + ',"offset":'+ str(k*20) +',"hash_id":""}', 'method': 'next'}  # 下一页的话题参数，用offset控制。offset就是20的倍数
-                    print(para)
-                    realpara = urllib.parse.urlencode(para)
-                    topicheader = self.get_header(self.cleanCookie, referurl)
-                    next_page_url = 'https://www.zhihu.com/node/TopicsPlazzaListV2'
-
-                    abc = urllib.request.Request(url=next_page_url, headers=topicheader,data=bytes(realpara, encoding='utf-8'))
-                    # 通过post方法拿到下一页的话题id
-                    cde = urllib.request.urlopen(abc)
-                    res = cde.read().decode("utf-8")
-                    pat6 = 'topic./(.*?)..>'
-                    moreID = re.compile(pat6).findall(res)
+            for i in range(0, self.pages):
+                para = {'params': '{"topic_id":' + classID[j] + ',"offset":'+ str(i*20) +',"hash_id":""}', 'method': 'next'}  # 下一页的话题参数，用offset控制。offset就是20的倍数
+                realpara = urllib.parse.urlencode(para)
+                topica = urllib.request.Request(url=next_page_url, headers=topicheader,data=bytes(realpara, encoding='utf-8'))
+                # 通过post方法拿到下一页的数据
+                topicb = urllib.request.urlopen(topica)
+                topicc = topicb.read().decode("utf-8")
+                moreIDpat = 'topic./(.*?)..>'
+                moreID = re.compile(moreIDpat).findall(topicc)
 
 
 

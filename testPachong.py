@@ -10,12 +10,12 @@ class testPachong:
 
     def huati(self):
 
-        topicOne=urllib.request.urlopen("https://www.zhihu.com/topics").read().decode("utf-8","ignore")
+        topicOne = urllib.request.urlopen("https://www.zhihu.com/topics").read().decode("utf-8","ignore")
 
-        htmlone=etree.HTML(topicOne)
-        topicOK=htmlone.xpath('//strong/text()')
-        urlOK=htmlone.xpath('//div[@class="blk"]/a[@target="_blank"]/@href')
-        classOK=htmlone.xpath('//li[@class="zm-topic-cat-item"]/a/text()')
+        htmlone = etree.HTML(topicOne)
+        topicOK = htmlone.xpath('//strong/text()')
+        urlOK = htmlone.xpath('//div[@class="blk"]/a[@target="_blank"]/@href')
+        classOK = htmlone.xpath('//li[@class="zm-topic-cat-item"]/a/text()')
         classidOK=htmlone.xpath('//li[@class="zm-topic-cat-item"]/@data-id')
         pat='<strong>(.*?)</strong>'#话题
         pat2='<a target="_blank" href="(/topic/.*?)">'#话题详细url
