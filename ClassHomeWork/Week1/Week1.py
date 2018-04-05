@@ -251,7 +251,7 @@ if __name__== "__main__":
     入口函数，分别调用各个方法。可以单独调用每个方法来测试。
     '''
     a = Week1()
-    #a.whileLoop() #用while循环跑出4种九九乘法表
-    #a.forLoop() #用for循环跑出4中九九乘法表
-    #a.calEntry() #计算文件夹大小
+    a.whileLoop() #用while循环跑出4种九九乘法表
+    a.forLoop() #用for循环跑出4中九九乘法表
+    a.calEntry() #计算文件夹大小
     a.bankEntry()
