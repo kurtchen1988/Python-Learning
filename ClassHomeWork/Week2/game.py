@@ -12,6 +12,7 @@ class HeroPlane:
         self.y = 400
         self.screen = screen_temp
         self.image = pygame.image.load("./images/me.png")
+        self.imageEx = pygame.image.load("./images/bomb.png")
         self.bullet_list = []  # 用于存放玩家的子弹列表
 
     def display(self):
@@ -21,7 +22,17 @@ class HeroPlane:
             b.display()
             if b.move():
                 self.bullet_list.remove(b)
+
         self.screen.blit(self.image, (self.x, self.y))
+
+    def explosion(self, bullet_enemy):
+        '''玩家飞机机爆炸效果与检查是否被击中'''
+        for bo in bullet_enemy.bullet_listE:
+            if bo.x > self.x + 12 and bo.x < self.x + 92 and bo.y > self.y + 20 and bo.y < self.y + 60:
+                bullet_enemy.bullet_listE.remove(bo)
+                self.screen.blit(self.imageEx, (self.x, self.y))
+                self.x = 200
+                self.y = 400
 
     def move_left(self):
         '''左移动飞机'''
@@ -49,6 +60,7 @@ class Bullet:
         self.screen = screen_temp
         self.image = pygame.image.load("./images/pd.png")
 
+
     def display(self):
         '''绘制子弹'''
         self.screen.blit(self.image, (self.x, self.y))
@@ -58,6 +70,10 @@ class Bullet:
         if self.y <= -20:
             return True
 
+    def moveEnemy(self):
+        self.y += 10
+        if self.y>=580:
+            return True
 
 class EnemyPlane:
     '''敌机类'''
@@ -65,12 +81,30 @@ class EnemyPlane:
     def __init__(self, screen_temp):
         self.x = random.choice(range(408))
         self.y = -75
+        self.z = -100
         self.screen = screen_temp
         self.image = pygame.image.load("./images/e" + str(random.choice(range(3))) + ".png")
+        self.imageEx = pygame.image.load("./images/bomb.png" )
+        self.bullet_listE = []  # 用于存放敌机的子弹列表
 
     def display(self):
-        '''绘制敌机'''
+        '''绘制敌机与子弹'''
+        self.fire()
+        for b in self.bullet_listE:
+            b.display()
+            if b.moveEnemy():
+                self.bullet_listE.remove(b)
         self.screen.blit(self.image, (self.x, self.y))
+
+    def explosion(self):
+        '''敌机爆炸效果'''
+        self.screen.blit(self.imageEx, (self.x, self.y))
+
+    def fire(self):
+        if random.choice(range(10))>8:
+            self.bullet_listE.append(Bullet(self.screen, self.x, self.y))
+        else:pass
+        #print(len(self.bullet_listE))
 
     def move(self, hero):
         self.y += 4
@@ -141,9 +175,13 @@ def main():
             enemylist.append(EnemyPlane(screen))
         # 遍历敌机并绘制移动
         for em in enemylist:
+            hero.explosion(em)
             em.display()
             if em.move(hero):
+                #先显示爆炸效果，再从列表移除
+                em.explosion()
                 enemylist.remove(em)
+
 
         # 更新显示
         pygame.display.update()
