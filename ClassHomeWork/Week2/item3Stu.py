@@ -20,6 +20,10 @@ class stuManage():
             print("数据库连接失败或数据读取失败，具体错误为： ",error)
 
     def findAll(self):
+        '''
+        把数据库里所有数据查询出来并封装到字典列表中。默认的排序为id。
+        :return: 带有数据库所有数据的字典列表
+        '''
         sqlID = "select id from student order by id"
         sqlName = "select name from student order by id"
         sqlAge = "select age from student order by id"
@@ -27,7 +31,6 @@ class stuManage():
 
         allCursor = self.cursor
         stu = []
-
 
         try:
             allCursor.execute(sqlID)
@@ -53,6 +56,11 @@ class stuManage():
             pass
 
     def delete(self, id):
+        '''
+        根据id删除学生信息
+        :param id: 需要删除的学生id
+        :return: None
+        '''
         sql ="delete from student where id = '%d'"%(id)
         try:
             self.cursor.execute(sql)
@@ -61,6 +69,11 @@ class stuManage():
             print("未能删除记录，具体信息为：",error)
 
     def insert(self, data):
+        '''
+        根据一个元组添加学生信息
+        :param data:带有学生信息的元组
+        :return: None
+        '''
         sql = "insert into student(name,age,classid) values ('%s','%d','%s')"%(data)
         try:
             self.cursor.execute(sql)
@@ -69,6 +82,11 @@ class stuManage():
             print("未能添加记录，具体信息为：",error)
 
     def showStu(self, stulist):
+        '''
+        原程序方法，显示学生信息。仅将学生字典列表(stulist)中添加了一个id项
+        :param stulist: 学生字典列表
+        :return: None，当没有学员信息输出时，返回，让程序继续进行
+        '''
         if len(stulist)==0:
             print("---------没有学员信息可以输出---------")
             return
@@ -78,6 +96,10 @@ class stuManage():
             print("|{0:<5}|{1:<10}|{2:<5}|{3:<10}|".format(stulist[i]['id'], stulist[i]['name'], stulist[i]['age'], stulist[i]['classid']))
 
     def programCon(self):
+        '''
+        程序控制方法，负责程序主逻辑与显示。这里尽可能的保留了代码原来的实现方法
+        :return: None
+        '''
         while True:
             print("="*12,"学员管理系统","="*14)
             print("{0:1} {1:13} {2:15}".format(" ","1. 查看学员信息", "2. 添加学员信息"))
@@ -112,5 +134,8 @@ class stuManage():
                 print("==========无效的键盘输入===========")
 
 if __name__ == '__main__':
+    '''
+    程序主入口
+    '''
     a=stuManage()
     a.programCon()
