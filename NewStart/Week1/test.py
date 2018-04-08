@@ -1,6 +1,6 @@
-import os
+import pymysql
 
+a=((1,), (2,), (3,))
 
-a=os.listdir("D:\\Python\\练习\\NewStart\\ioFiles")
-
-print(a)
+for i in len(a):
+    print(a[i][0])
