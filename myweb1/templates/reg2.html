@@ -1,0 +1,13 @@
+<html>
+<head><title>注册系统-韦老师课堂</title></head>
+<body>
+<form method="post">
+    {%csrf_token%}
+    姓名：<input name="name"><br />
+    密码：<input name="passwd"><br />
+    手机号：<input name="phone"><br/>
+    邮箱：<input name="email"><br/>
+    <button type="submit">提交注册</button>
+</form>
+</body>
+</html>

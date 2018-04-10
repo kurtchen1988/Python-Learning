@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>注册页 - 新闻小站</title>
+</head>
+<body>
+<br />
+<br />
+欢迎注册新闻小站，我们将竭力为您提供<b><font color="red">有价值</font></b>的新闻:-)
+<br />
+<br />
+<form method = "post">
+    {% csrf_token %}
+    姓名: <input name = "name"><br />
+    <br />
+    密码: <input name = "passwd"><br />
+    <br />
+    电话: <input name = "phone"><br />
+    <br />
+    电子邮件: <input name = "email"><br />
+    <br />
+    <button type="submit">提交</button><br />
+</form>
+<a href = '/'>[返回-首页]</a>
+</body>
+</html>
+

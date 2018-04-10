@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>登录 - 新闻小站</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span12">
+			<h2>
+				小站登录
+			</h2>
+			<p>
+				感谢光临新闻小站，在访问小站前，请先登录:-)
+			</p>
+			<p>
+				<form method = "post">
+                {% csrf_token %}
+				用户名: <input name = "name"><br />
+				<br />
+				密  码: <input name = "passwd" type="password"><br />
+				<br />
+				<button type="submit">登  录</button><br />
+				</form>
+			<a href = '/'>[返回-首页]</a>
+			</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+

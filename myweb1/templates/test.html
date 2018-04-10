@@ -1,0 +1,15 @@
+<html>
+<head><title>{{title}}-韦老师课堂</title></head>
+<body>
+Hello!<br />
+欢迎来到韦老师课堂！<br />
+{{a}}加{{b}}的结果是{{c}}<br />
+{% for item in name %}
+姓名: {{item}} <br />
+{% endfor %}
+
+{% for item in name_sex %}
+姓名: {{item.0 | safe}}  性别：<b>{{item.1}}</b> <br />
+{% endfor %}
+</body>
+</html>

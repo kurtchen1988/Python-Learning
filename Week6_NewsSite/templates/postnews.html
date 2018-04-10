@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        {% load static %}
+	<title>新闻发表页</title>
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" charset="utf8" src={% static "kindeditor/kindeditor-all.js" %}></script>
+	<script type="text/javascript" charset="utf8" src={% static "kindeditor/lang/zh-CN.js" %}></script>
+	<script type="text/javascript" charset="utf8" src={% static "kindeditor/config.js" %}></script>
+
+    </head>
+	<body>
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+							 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">小站</a>
+						</div>
+						
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li class="active">
+									 <a href="/">首页</a>
+								</li>
+								<li>
+									 <a href="/list">新闻列表</a>
+								</li>
+								
+							</ul>
+
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									 <a href="{{nav2}}">{{nav1}}</a>
+								</li>
+								<li>
+									 <a href="{{nav4}}">{{nav3}}</a>
+								</li>
+							</ul>
+						</div>
+						
+					</nav>
+				</div>
+			</div>
+			<div class="row clearfix">
+				<div class="col-md-9 column">
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="page-header">
+								<h1>
+									<small>新闻发表页</small>
+								</h1>
+							</div>
+							<div class="list-group">
+								<form role="form" method="post">
+                                    {% csrf_token %}
+											<div class="form-group">
+												 <label>新闻标题</label><input id="postname" class="form-control"  name="title" />
+											</div>
+                                            <div class="form-group">
+                                            {% for item in typeidandname%}
+											<div class="radio">
+												  <label>
+													<input type="radio" name="typeid" value="{{item.0}}">
+													{{item.1}}
+												  </label>
+												</div>
+											{% endfor %}
+                                            </div>
+											<div class="form-group">
+												 <label>新闻简介</label><input id="detail" class="form-control"  name="detail" />
+											</div>
+											<div class="form-group">
+											<label>新闻内容</label>
+											<div class="textarea">
+												  <div class="textarea">
+												  <textarea style="width:800px;height:400px;"  name='content'>在此输入新闻内容</textarea>
+											</div>
+											</div>
+                                              </div>
+											 <button type="submit" class="btn btn-default">发布新闻</button>
+								</form>
+								
+								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
