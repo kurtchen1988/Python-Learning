@@ -176,7 +176,7 @@ def zhihu_topics():
                         sql_opr(sql)
 
                     sub_topic_i += 1
-
+################################################################################################################################################################
                     # 如果结果中长度为0，意味着已经滚动到最后一页
                     if len(rsub_topics_title) == 0:
                         sub_continue = False
@@ -250,7 +250,7 @@ def zhihu_topics():
                                     pname = "'name': '(.*?)'"
                                     # aq = article & question
                                     # paq = "False}, 'url':.*?'(.*?)'" or "True}, 'url':.*?'(.*?)'"
-                                    paq = "[False|True]}, 'url':.*?'(.*?)'"
+                                    paq = "[False|True], 'url':.*?'(.*?)'"
                                     ptitle = "'title': '(.*?)'"
                                     rname = re.compile(pname, re.S).findall(str(sub_topics_url_url_info))
                                     raq = re.compile(paq, re.S).findall(str(sub_topics_url_url_info))
