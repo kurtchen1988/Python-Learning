@@ -7,7 +7,9 @@ def index(request):
 
 def stu(request):
     mod = Stu.objects
-    list = mod.all()
-    print(list)
+    #list = mod.all()
+
+    stu=mod.get(id=2)
+    print(stu)
 
     return HttpResponse("OK")

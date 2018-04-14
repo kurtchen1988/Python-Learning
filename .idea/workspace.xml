@@ -2,667 +2,107 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3a68548-a1b2-48a2-97ed-571363020e21" name="默认的" comment="2018-04-10">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/bg2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/bg2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/bg_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/e0.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/e1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/e2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/me.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/num.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/pd.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/images/res3.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/._.DS_Store" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/2009072553153737.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/33.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/44.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/Meinv039.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/Meinv083.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/beidahuang.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/bg1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/bullet.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/cxsp_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/dzsp_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/forget.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/fun.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/haowan.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/help.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/icon1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/icon_20100929.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/index_menu_20110406.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/left_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/load_bk_20100920.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/mistakertu.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/movie.webm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/mytag.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/repeat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/reset.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/s_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/safty_bk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/spph_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/spph_ico.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/step.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/tag.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/tiao.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/tjsp_bg.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/tuan_ad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/tupian2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/user163_bk.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/images/v_icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/ioFiles/a.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/Index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/35695-20180314224115856-662367095.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/TB1gBPhgZLJ8KJjy0FnXXcFDpXa-468-60.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/aliyun.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/cnnic.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/logo_small.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/news.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/lib/commons-fileupload-1.2.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/lib/commons-io-1.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/lib/json_simple-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/1.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/10.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/100.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/101.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/102.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/103.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/104.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/105.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/106.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/107.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/108.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/109.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/11.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/110.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/111.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/112.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/113.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/114.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/115.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/116.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/117.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/118.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/119.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/12.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/120.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/121.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/122.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/123.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/124.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/125.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/126.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/127.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/128.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/129.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/13.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/130.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/131.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/132.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/133.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/134.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/14.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/15.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/17.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/18.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/19.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/2.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/20.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/21.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/22.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/23.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/24.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/25.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/26.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/27.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/28.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/29.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/3.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/30.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/31.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/32.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/33.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/34.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/35.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/36.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/37.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/38.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/39.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/4.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/40.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/41.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/42.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/43.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/44.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/45.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/46.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/47.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/48.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/49.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/5.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/50.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/51.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/52.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/53.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/54.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/55.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/56.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/57.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/58.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/59.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/6.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/60.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/61.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/62.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/63.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/64.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/65.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/66.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/67.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/68.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/69.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/7.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/70.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/71.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/72.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/73.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/74.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/75.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/76.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/77.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/78.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/79.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/8.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/80.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/81.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/82.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/83.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/84.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/85.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/86.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/87.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/88.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/89.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/9.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/90.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/91.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/92.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/93.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/94.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/95.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/96.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/97.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/98.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/99.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/images/static.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/images/file-16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/images/file-64.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/images/folder-16.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/images/folder-64.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/images/go-up.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/image/images/align_left.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/image/images/align_right.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/image/images/align_top.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/image/images/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/multiimage/images/image.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/multiimage/images/select-files-en.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/multiimage/images/select-files-zh-CN.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/multiimage/images/swfupload.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/anchor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/flash.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/media.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/common/rm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/default/background.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/default/default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/qq/editor.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/cache/96f05816abc9879d149c5a6fb516c796.djcache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/cache/970fe90174a01b863a3ec74833134b47.djcache" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/1014720a_385933c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/1014720a_d31158d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/1014720b_45d192d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/c75c10385343fbf25dcffb58bc7eca8064388fee.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/downloading_d04a658.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/loadingico_8466b56.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/logo_b0ef96d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/small_blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u12797292732045144420fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u1297837921938710119fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u1510166591744409988fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u2786603481577391026fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u28164859933502308147fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u29816918431917020757fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u33799174072935738745fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u35375201201956460332fm173app12fJPG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u3689951700566490752fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u37842741471371592040fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u406351863484729393fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u449626892588746949fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/u924556543588984295fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/uploading_82e7bc0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/1014720a_385933c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/1014720a_d31158d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/1014720b_45d192d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/c75c10385343fbf25dcffb58bc7eca8064388fee.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/downloading_d04a658.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/faf2b2119313b07e01e7ea7200d7912397dd8c76.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/loadingico_8466b56.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/logo_b0ef96d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/small_blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u12797292732045144420fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u1297837921938710119fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u1510166591744409988fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u2786603481577391026fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u28164859933502308147fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u29816918431917020757fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u33799174072935738745fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u35375201201956460332fm173app12fJPG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u3689951700566490752fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u37842741471371592040fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u406351863484729393fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u449626892588746949fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/u924556543588984295fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/uploading_82e7bc0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/1014720a_385933c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/1014720a_d31158d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/1014720b_45d192d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/c75c10385343fbf25dcffb58bc7eca8064388fee.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/downloading_d04a658.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/faf2b2119313b07e01e7ea7200d7912397dd8c76.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/loadingico_8466b56.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/logo_b0ef96d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/small_blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u12797292732045144420fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u1297837921938710119fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u1510166591744409988fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u2786603481577391026fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u28164859933502308147fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u29816918431917020757fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u33799174072935738745fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u35375201201956460332fm173app12fJPG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u3689951700566490752fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u37842741471371592040fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u406351863484729393fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u449626892588746949fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/u924556543588984295fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/uploading_82e7bc0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/1014720a_385933c.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/1014720a_d31158d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/1014720b_45d192d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/c75c10385343fbf25dcffb58bc7eca8064388fee.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/downloading_d04a658.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/faf2b2119313b07e01e7ea7200d7912397dd8c76.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/loadingico_8466b56.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/logo_b0ef96d.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/small_blank.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u12797292732045144420fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u1297837921938710119fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u1510166591744409988fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u2786603481577391026fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u28164859933502308147fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u29816918431917020757fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u33799174072935738745fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u35375201201956460332fm173app12fJPG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u3689951700566490752fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u37842741471371592040fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u406351863484729393fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u449626892588746949fm173app25fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/u924556543588984295fm173app12fJPEG.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/uploading_82e7bc0.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/header.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/header.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/booklogo-300x300.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/header.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/timg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/db.sqlite3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/blogdb.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/mydemo.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week2/student.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/1.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/2-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/6-1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/9.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/bgd.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/border.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/font.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/margin.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/Week3/padding.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/ioFiles/a.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NewStart/ioFiles/b.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/Week6_NewsSite/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/Week6_NewsSite/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/Week6_NewsSite/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/Week6_NewsSite/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/MathJax.js.下载" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/aggsite.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/aggsite.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/analytics.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/analytics.js.下载" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/blog-common.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/blog-common.js.下载" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/bundle-LessIsMoreRight-mobile.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/bundle-LessIsMoreRight.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/encoder.js.下载" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/jquery-2.2.0.min.js.下载" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/css/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/demo.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/file_manager_json.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/jsp/upload_json.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/kindeditor-all-min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/kindeditor-all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/ar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/en.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/ko.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/ru.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/zh-CN.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/lang/zh-TW.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/license.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/anchor/anchor.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/autoheight/autoheight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/baidumap/baidumap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/baidumap/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/baidumap/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/clearhtml/clearhtml.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/code/code.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/code/prettify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/code/prettify.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/emoticons/emoticons.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/filemanager/filemanager.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/fixtoolbar/fixtoolbar.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/flash/flash.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/image/image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/insertfile/insertfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/lineheight/lineheight.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/link/link.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/map/map.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/map/map.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/media/media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/multiimage/multiimage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/pagebreak/pagebreak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/plainpaste/plainpaste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/preview/preview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/quickformat/quickformat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/table/table.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/template/html/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/template/html/2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/template/html/3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/template/template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/plugins/wordpaste/wordpaste.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/default/default.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/qq/qq.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/allstatic/kindeditor/themes/simple/simple.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/news/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/category.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/news.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/p.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/postnews.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/reg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/templates/xenserver.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Week6_NewsSite/说明.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/aio_5df69e3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/aio_d11a942.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/aio_ec06920.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/alog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/bm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/bm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/clickMonitor_69bf11e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/dm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/hm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/hm_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/hunter_2113114.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/jianhome_18391af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/jquery-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/jquery-ui_76cbd1d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/jsapi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/ld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/login_tangram_2af24c5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/mod_b818356.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/new_contentplayer_utf8_5be9de4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/osavailable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/qrcode_3560366.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/sidebar_a76f290.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/sidebar_ce6c858.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/tangram-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/uni_login_merge_0dc54d0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/usermonitor_04e58b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/allstatic/css/wrapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogsite/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogsite/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogsite/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogsite/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/aio_5df69e3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/aio_d11a942.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/aio_ec06920.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/alog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/bm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/bm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/clickMonitor_69bf11e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/dm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/hm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/hm_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/hunter_2113114.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/jianhome_18391af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/jquery-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/jquery-ui_76cbd1d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/jsapi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/ld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/login_tangram_2af24c5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/mod_b818356.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/new_contentplayer_utf8_5be9de4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/osavailable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/qrcode_3560366.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/sidebar_a76f290.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/sidebar_ce6c858.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/tangram-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/uni_login_merge_0dc54d0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/usermonitor_04e58b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/index_files/wrapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/reg.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/aio_5df69e3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/aio_d11a942.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/aio_ec06920.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/alog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/bm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/bm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/clickMonitor_69bf11e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/dm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/hm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/hm_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/hunter_2113114.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/jianhome_18391af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/jquery-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/jquery-ui_76cbd1d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/jsapi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/ld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/login_tangram_2af24c5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/mod_b818356.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/new_contentplayer_utf8_5be9de4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/osavailable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/qrcode_3560366.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/sidebar_a76f290.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/sidebar_ce6c858.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/tangram-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/uni_login_merge_0dc54d0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/usermonitor_04e58b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/blogtemps/static/wrapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/home/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/aio_5df69e3.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/aio_d11a942.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/aio_ec06920.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/all.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/alog.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/bm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/bm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/clickMonitor_69bf11e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/dm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/f.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/hm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/hm_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/hunter_2113114.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/jianhome_18391af.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/jquery-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/jquery-ui_76cbd1d.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/jsapi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/ld.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/login_tangram_2af24c5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/mod_b818356.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/new_contentplayer_utf8_5be9de4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/osavailable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/qrcode_3560366.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/sidebar_a76f290.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/sidebar_ce6c858.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/tangram-1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/uni_login_merge_0dc54d0.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/usermonitor_04e58b5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blogsite/static/wrapper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/blog/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/migrations/0001_initial.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/home/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/myweb1/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/myweb1/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/myweb1/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/myweb1/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/article.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/comment-reply.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/jquery-migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/jquery_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/skip-link-focus-fix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/wp-embed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/css/wp-emoji-release.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/index1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/reg1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/reg2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/templates/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/comment-reply.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/jquery-migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/jquery_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/skip-link-focus-fix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/wp-embed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/article_files/wp-emoji-release.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/global.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/jquery-migrate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/jquery_002.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/navigation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/skip-link-focus-fix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/wp-embed.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb1/仿站/韦玮's Blog – 关于图书、视频与商业 – 韦玮的博客_files/wp-emoji-release.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/home/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/myweb2/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/myweb2/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/myweb2/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb2/myweb2/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/blog/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/admin.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/apps.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/migrations/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/models.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/tests.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/home/views.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/manage.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/myfirstweb/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/myfirstweb/settings.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/myfirstweb/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/myfirstweb/wsgi.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pythonweb/myfirstweb/templates/test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/static/msyh.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/static/msyhbd.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/static/msyh.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/static/msyhbd.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/db.sqlite3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/static/a.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/85eed0ac-7c27-467c-81df-dca5022ac6aa.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ClassHomeWork/Week2/try.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gamepra/helloworld.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/migrations/0001_initial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myapp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myweb3/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myweb3/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myweb3/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/myweb3/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/users/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/users/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/users/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/users/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb3/templates/myapp/users/menu.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myapp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myweb4/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myweb4/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myweb4/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/myweb4/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/templates/myapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb4/templates/myapp/rpdemo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myapp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myweb5/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myweb5/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myweb5/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/myweb5/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/templates/myapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myweb5/templates/myapp/rpdemo.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/templatetags/pagetag.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/myapp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/static/js/jquery-1.8.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/templates/myapp/base.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/templates/myapp/demo1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/templates/myapp/demo2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/templates/myapp/district.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/templates/myapp/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/tpdemo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/tpdemo/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/tpdemo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tpdemo/tpdemo/wsgi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/manage.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/migrations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/myapp/views.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/templates/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/urldemo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/urldemo/settings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/urldemo/urls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/urldemo/urldemo/wsgi.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myweb/myapp/admin.py" afterPath="$PROJECT_DIR$/myweb/myapp/admin.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myweb/myapp/models.py" afterPath="$PROJECT_DIR$/myweb/myapp/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myweb/myapp/views.py" afterPath="$PROJECT_DIR$/myweb/myapp/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -673,53 +113,54 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/$urlTry.coverage" NAME="urlTry Coverage Results" MODIFIED="1517750184260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$testGame.coverage" NAME="testGame Coverage Results" MODIFIED="1517590643627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$tengxunPachong.coverage" NAME="tengxunPachong Coverage Results" MODIFIED="1519389701143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$Week1.coverage" NAME="Week1 Coverage Results" MODIFIED="1523017519437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week1" />
-    <SUITE FILE_PATH="coverage/$item3Stu.coverage" NAME="item3Stu Coverage Results" MODIFIED="1523095497373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
     <SUITE FILE_PATH="coverage/$5.coverage" NAME="5 Coverage Results" MODIFIED="1523023910716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
     <SUITE FILE_PATH="coverage/$tryTheSub.coverage" NAME="tryTheSub Coverage Results" MODIFIED="1519653612652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$2.coverage" NAME="2 Coverage Results" MODIFIED="1523018913933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$game__1_.coverage" NAME="game (1) Coverage Results" MODIFIED="1523123275681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
     <SUITE FILE_PATH="coverage/$finalTestGame.coverage" NAME="finalTestGame Coverage Results" MODIFIED="1517595329481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$test2.coverage" NAME="test2 Coverage Results" MODIFIED="1517236145280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$listL.coverage" NAME="listL Coverage Results" MODIFIED="1517235520170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$outTryThis.coverage" NAME="outTryThis Coverage Results" MODIFIED="1517329620070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$2048Game.coverage" NAME="2048Game Coverage Results" MODIFIED="1517407174552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$qiepian.coverage" NAME="qiepian Coverage Results" MODIFIED="1517232713115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1523018902723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
+    <SUITE FILE_PATH="coverage/$publisher.coverage" NAME="publisher Coverage Results" MODIFIED="1517729530800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$file.coverage" NAME="file Coverage Results" MODIFIED="1522939432406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
+    <SUITE FILE_PATH="coverage/$winControl.coverage" NAME="winControl Coverage Results" MODIFIED="1523100600243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
+    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1523088752159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
+    <SUITE FILE_PATH="coverage/$tryCopy.coverage" NAME="tryCopy Coverage Results" MODIFIED="1517239771769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$dongman.coverage" NAME="dongman Coverage Results" MODIFIED="1521289725457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$getCSDN.coverage" NAME="getCSDN Coverage Results" MODIFIED="1517935812564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$databasepy.coverage" NAME="databasepy Coverage Results" MODIFIED="1523081496758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
+    <SUITE FILE_PATH="coverage/$rename.coverage" NAME="rename Coverage Results" MODIFIED="1517239839748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$testGame.coverage" NAME="testGame Coverage Results" MODIFIED="1517590643627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$tengxunPachong.coverage" NAME="tengxunPachong Coverage Results" MODIFIED="1519389701143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$item3Stu.coverage" NAME="item3Stu Coverage Results" MODIFIED="1523095497373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
+    <SUITE FILE_PATH="coverage/$game__1_.coverage" NAME="game (1) Coverage Results" MODIFIED="1523123275681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
     <SUITE FILE_PATH="coverage/$JDPaChong.coverage" NAME="JDPaChong Coverage Results" MODIFIED="1519745150759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$6.coverage" NAME="6 Coverage Results" MODIFIED="1523079863590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$listL.coverage" NAME="listL Coverage Results" MODIFIED="1517235520170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$deleteafter.coverage" NAME="deleteafter Coverage Results" MODIFIED="1519454686847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$3.coverage" NAME="3 Coverage Results" MODIFIED="1523021416345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
     <SUITE FILE_PATH="coverage/$fileDeal.coverage" NAME="fileDeal Coverage Results" MODIFIED="1517401273519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$others.coverage" NAME="others Coverage Results" MODIFIED="1522152331992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$game.coverage" NAME="game Coverage Results" MODIFIED="1523122227926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$outTryThis.coverage" NAME="outTryThis Coverage Results" MODIFIED="1517329620070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$2048Game.coverage" NAME="2048Game Coverage Results" MODIFIED="1517407174552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$os.coverage" NAME="os Coverage Results" MODIFIED="1522939448580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/ioFiles" />
     <SUITE FILE_PATH="coverage/$dd.coverage" NAME="dd Coverage Results" MODIFIED="1520259900979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dangdang/dangdang/spiders" />
     <SUITE FILE_PATH="coverage/$zhihuSpider.coverage" NAME="zhihuSpider Coverage Results" MODIFIED="1522919416443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$btfsp.coverage" NAME="btfsp Coverage Results" MODIFIED="1521018888572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$qiepian.coverage" NAME="qiepian Coverage Results" MODIFIED="1517232713115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$1.coverage" NAME="1 Coverage Results" MODIFIED="1523018902723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$publisher.coverage" NAME="publisher Coverage Results" MODIFIED="1517729530800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$4.coverage" NAME="4 Coverage Results" MODIFIED="1523021903750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$file.coverage" NAME="file Coverage Results" MODIFIED="1522939432406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
     <SUITE FILE_PATH="coverage/$zidingyibianliang.coverage" NAME="zidingyibianliang Coverage Results" MODIFIED="1517719036431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$testPachong.coverage" NAME="testPachong Coverage Results" MODIFIED="1521959429212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$stu.coverage" NAME="stu Coverage Results" MODIFIED="1523085195763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
-    <SUITE FILE_PATH="coverage/$winControl.coverage" NAME="winControl Coverage Results" MODIFIED="1523100600243" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$test.coverage" NAME="test Coverage Results" MODIFIED="1523088752159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
     <SUITE FILE_PATH="coverage/$tengxundm.coverage" NAME="tengxundm Coverage Results" MODIFIED="1521223679747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$testOther.coverage" NAME="testOther Coverage Results" MODIFIED="1517243889230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$DirControl.coverage" NAME="DirControl Coverage Results" MODIFIED="1517244558070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$urllibtoxpath.coverage" NAME="urllibtoxpath Coverage Results" MODIFIED="1520267578406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$tryCopy.coverage" NAME="tryCopy Coverage Results" MODIFIED="1517239771769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$DaMa.coverage" NAME="DaMa Coverage Results" MODIFIED="1520265190303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$testCSDNGet.coverage" NAME="testCSDNGet Coverage Results" MODIFIED="1520342420654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$dongman.coverage" NAME="dongman Coverage Results" MODIFIED="1521289725457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$getCSDN.coverage" NAME="getCSDN Coverage Results" MODIFIED="1517935812564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$phantomjsjichu.coverage" NAME="phantomjsjichu Coverage Results" MODIFIED="1521028718576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$99.coverage" NAME="99 Coverage Results" MODIFIED="1517231838538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/$databasepy.coverage" NAME="databasepy Coverage Results" MODIFIED="1523081496758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
-    <SUITE FILE_PATH="coverage/$rename.coverage" NAME="rename Coverage Results" MODIFIED="1517239839748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/$helloworld.coverage" NAME="helloworld Coverage Results" MODIFIED="1523379235920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gamepra" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -739,23 +180,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="game.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NewStart/Week2/game.py">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/myapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="27">
+              <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week3/BootStrap创建/main.html">
+      <file leaf-file-name="district.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/district.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="197">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/demo2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/tpdemo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1522">
+              <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/tpdemo/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27">
+              <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/myapp/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/myapp/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -767,6 +276,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -793,6 +303,7 @@
       <find>&quot;./index_files</find>
       <find>index_files/hm.js</find>
       <find>index_files</find>
+      <find>myweb</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -801,57 +312,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/zhihuCrawl/zhihu.js" />
-        <option value="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/settings.py" />
-        <option value="$PROJECT_DIR$/zhihuCrawl/zhihuCrawl/spiders/zhihuSpider.py" />
-        <option value="$PROJECT_DIR$/testPachong.py" />
-        <option value="$PROJECT_DIR$/others.py" />
-        <option value="$PROJECT_DIR$/zhihuSpider.py" />
-        <option value="$PROJECT_DIR$/myweb1/blog/views.py" />
-        <option value="$PROJECT_DIR$/myweb1/templates/test.html" />
-        <option value="$PROJECT_DIR$/myweb2/myweb2/__init__.py" />
-        <option value="$PROJECT_DIR$/myweb2/myweb2/settings.py" />
-        <option value="$PROJECT_DIR$/myweb1/myweb1/settings.py" />
-        <option value="$PROJECT_DIR$/myweb1/home/models.py" />
-        <option value="$PROJECT_DIR$/myweb1/home/admin.py" />
-        <option value="$PROJECT_DIR$/myweb1/home/form.py" />
-        <option value="$PROJECT_DIR$/myweb1/templates/reg1.html" />
-        <option value="$PROJECT_DIR$/myweb1/templates/reg2.html" />
-        <option value="$PROJECT_DIR$/myweb1/templates/login.html" />
-        <option value="$PROJECT_DIR$/myweb1/templates/index1.html" />
-        <option value="$PROJECT_DIR$/myweb1/myweb1/urls.py" />
-        <option value="$PROJECT_DIR$/myweb1/home/views.py" />
-        <option value="$PROJECT_DIR$/myweb1/templates/article.html" />
-        <option value="$PROJECT_DIR$/blogsite/home/models.py" />
-        <option value="$PROJECT_DIR$/blogsite/blogtemps/首页.html" />
-        <option value="$PROJECT_DIR$/blogsite/home/admin.py" />
-        <option value="$PROJECT_DIR$/blogsite/blogtemps/reg.html" />
-        <option value="$PROJECT_DIR$/blogsite/blogtemps/login.html" />
-        <option value="$PROJECT_DIR$/blogsite/home/views.py" />
-        <option value="$PROJECT_DIR$/blogsite/blogtemps/index.html" />
-        <option value="$PROJECT_DIR$/blogsite/blogsite/settings.py" />
-        <option value="$PROJECT_DIR$/blogsite/blogsite/urls.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week1/1.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week1/2.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week1/file.py" />
-        <option value="$PROJECT_DIR$/NewStart/ioFiles/os.py" />
-        <option value="$PROJECT_DIR$/ClassHomeWork/Week1/Week1.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/1.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/2.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/3.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/4.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/5.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/6.py" />
-        <option value="$PROJECT_DIR$/ClassHomeWork/Week2/item2.sql" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/databasepy.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week1/stu.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week1/test.py" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/85eed0ac-7c27-467c-81df-dca5022ac6aa/console.sql" />
-        <option value="$PROJECT_DIR$/ClassHomeWork/Week2/item3Stu.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/a.txt" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/winControl.py" />
-        <option value="$PROJECT_DIR$/NewStart/Week2/game.py" />
-        <option value="$PROJECT_DIR$/ClassHomeWork/Week2/game.py" />
+        <option value="$PROJECT_DIR$/ClassHomeWork/Week3/CSS创建/index.html" />
+        <option value="$PROJECT_DIR$/ClassHomeWork/Week3/BootStrap创建/prodlist.html" />
+        <option value="$PROJECT_DIR$/ClassHomeWork/Week3/BootStrap创建/proddetail.html" />
+        <option value="$PROJECT_DIR$/ClassHomeWork/Week3/BootStrap创建/main.html" />
+        <option value="$PROJECT_DIR$/gamepra/helloworld.py" />
+        <option value="$PROJECT_DIR$/myweb/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/myweb/myweb/urls.py" />
+        <option value="$PROJECT_DIR$/myweb/myweb/__init__.py" />
+        <option value="$PROJECT_DIR$/myweb/myweb/settings.py" />
+        <option value="$PROJECT_DIR$/myweb/myapp/models.py" />
+        <option value="$PROJECT_DIR$/myweb/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/urldemo/urls.py" />
+        <option value="$PROJECT_DIR$/urldemo/urldemo/urls.py" />
+        <option value="$PROJECT_DIR$/urldemo/templates/404.html" />
+        <option value="$PROJECT_DIR$/urldemo/urldemo/settings.py" />
+        <option value="$PROJECT_DIR$/urldemo/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/urldemo/myapp/views.py" />
+        <option value="$PROJECT_DIR$/myweb/myapp/views.py" />
+        <option value="$PROJECT_DIR$/myweb3/myweb3/__init__.py" />
+        <option value="$PROJECT_DIR$/myweb3/myapp/models.py" />
+        <option value="$PROJECT_DIR$/myweb3/myweb3/urls.py" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/index.html" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/users/menu.html" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/users/add.html" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/users/info.html" />
+        <option value="$PROJECT_DIR$/myweb3/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/users/index.html" />
+        <option value="$PROJECT_DIR$/myweb3/myapp/views.py" />
+        <option value="$PROJECT_DIR$/myweb3/templates/myapp/users/edit.html" />
+        <option value="$PROJECT_DIR$/myweb3/myweb3/settings.py" />
+        <option value="$PROJECT_DIR$/myweb5/myweb5/settings.py" />
+        <option value="$PROJECT_DIR$/myweb5/myweb5/urls.py" />
+        <option value="$PROJECT_DIR$/myweb4/myweb4/settings.py" />
+        <option value="$PROJECT_DIR$/myweb4/myapp/views.py" />
+        <option value="$PROJECT_DIR$/myweb5/templates/myapp/index.html" />
+        <option value="$PROJECT_DIR$/myweb5/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/myweb5/templates/myapp/rpdemo.html" />
+        <option value="$PROJECT_DIR$/myweb5/myapp/views.py" />
+        <option value="$PROJECT_DIR$/tpdemo/tpdemo/urls.py" />
+        <option value="$PROJECT_DIR$/tpdemo/myapp/templatetags/__init__.py" />
+        <option value="$PROJECT_DIR$/tpdemo/myapp/templatetags/pagetag.py" />
+        <option value="$PROJECT_DIR$/tpdemo/templates/myapp/demo1.html" />
+        <option value="$PROJECT_DIR$/tpdemo/templates/myapp/base.html" />
+        <option value="$PROJECT_DIR$/tpdemo/templates/myapp/demo2.html" />
+        <option value="$PROJECT_DIR$/tpdemo/tpdemo/__init__.py" />
+        <option value="$PROJECT_DIR$/tpdemo/myapp/models.py" />
+        <option value="$PROJECT_DIR$/tpdemo/myapp/urls.py" />
+        <option value="$PROJECT_DIR$/tpdemo/myapp/views.py" />
+        <option value="$PROJECT_DIR$/tpdemo/templates/myapp/index.html" />
+        <option value="$PROJECT_DIR$/tpdemo/tpdemo/settings.py" />
+        <option value="$PROJECT_DIR$/tpdemo/templates/myapp/district.html" />
       </list>
     </option>
   </component>
@@ -882,6 +393,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -893,20 +405,7 @@
             <path>
               <item name="练习" type="b2602c69:ProjectViewProjectNode" />
               <item name="练习" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassHomeWork" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="练习" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassHomeWork" type="462c0819:PsiDirectoryNode" />
-              <item name="Week3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
-              <item name="练习" type="462c0819:PsiDirectoryNode" />
-              <item name="ClassHomeWork" type="462c0819:PsiDirectoryNode" />
-              <item name="Week3" type="462c0819:PsiDirectoryNode" />
-              <item name="BootStrap创建" type="462c0819:PsiDirectoryNode" />
+              <item name="tpdemo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="练习" type="b2602c69:ProjectViewProjectNode" />
@@ -921,7 +420,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -929,9 +427,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../第一周作业" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Python\练习\urldemo\myapp" />
+      <recent name="D:\Python\练习\urldemo\myapp\migrations" />
       <recent name="D:\Python\练习\zhihuCrawl\zhihuCrawl\spiders" />
       <recent name="D:\Python\练习" />
     </key>
@@ -948,7 +449,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.game (1)">
+  <component name="RunManager" selected="Python.helloworld">
     <configuration name="game (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -985,6 +486,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="helloworld" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gamepra" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="练习" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gamepra/helloworld.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="item3Stu" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -999,24 +518,6 @@
       <module name="练习" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ClassHomeWork/Week2/item3Stu.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NewStart/Week1" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="练习" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewStart/Week1/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -1041,18 +542,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.item3Stu" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test" />
-      <item index="2" class="java.lang.String" itemvalue="Python.winControl" />
-      <item index="3" class="java.lang.String" itemvalue="Python.game" />
-      <item index="4" class="java.lang.String" itemvalue="Python.game (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Python.winControl" />
+      <item index="2" class="java.lang.String" itemvalue="Python.game" />
+      <item index="3" class="java.lang.String" itemvalue="Python.game (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.helloworld" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.game (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.game" />
-        <item index="2" class="java.lang.String" itemvalue="Python.winControl" />
-        <item index="3" class="java.lang.String" itemvalue="Python.item3Stu" />
-        <item index="4" class="java.lang.String" itemvalue="Python.test" />
+        <item index="0" class="java.lang.String" itemvalue="Python.helloworld" />
+        <item index="1" class="java.lang.String" itemvalue="Python.game (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.game" />
+        <item index="3" class="java.lang.String" itemvalue="Python.winControl" />
+        <item index="4" class="java.lang.String" itemvalue="Python.item3Stu" />
       </list>
     </recent_temporary>
   </component>
@@ -1259,35 +760,79 @@
       <option name="project" value="LOCAL" />
       <updated>1523375230900</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="2018-04-10">
+      <created>1523375275405</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375275405</updated>
+    </task>
+    <task id="LOCAL-00029" summary="2018-04-10">
+      <created>1523375490817</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1523375490817</updated>
+    </task>
+    <task id="LOCAL-00030" summary="2018-04-10">
+      <created>1523376993321</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1523376993321</updated>
+    </task>
+    <task id="LOCAL-00031" summary="2018-04-12">
+      <created>1523464972042</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1523464972042</updated>
+    </task>
+    <task id="LOCAL-00032" summary="2018-04-10">
+      <created>1523469944555</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1523469944555</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23880596" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4659218" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4659218" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="找到" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1310,359 +855,474 @@
     <MESSAGE value="2018-04-07 V2" />
     <MESSAGE value="2018-04-07" />
     <MESSAGE value="2018-04-08" />
+    <MESSAGE value="2018-04-12" />
     <MESSAGE value="2018-04-10" />
     <option name="LAST_COMMIT_MESSAGE" value="2018-04-10" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/myweb/myapp/views.py</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/others.py">
+    <entry file="file://$PROJECT_DIR$/myweb/myapp/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="286" column="95" lean-forward="false" selection-start-line="286" selection-start-column="90" selection-end-line="286" selection-end-column="95" />
+        <state relative-caret-position="216">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/test.html">
+    <entry file="das://table:/b06006f7/85eed0ac-7c27-467c-81df-dca5022ac6aa/mydemo.stu">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urldemo/myapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="12" selection-end-column="12" />
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/blog/views.py">
+    <entry file="file://$PROJECT_DIR$/urldemo/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="4" selection-end-column="37" />
+        <state relative-caret-position="189">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urldemo/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urldemo/urldemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <element signature="e#631#663#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urldemo/urldemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="25" column="12" lean-forward="false" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="20" column="37" lean-forward="false" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/myapp/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myweb2/myweb2/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        <state relative-caret-position="216">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="82" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myweb2/myweb2/__init__.py">
+    <entry file="file://$PROJECT_DIR$/myweb3/myweb3/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="28" />
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/article.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="210" column="43" lean-forward="false" selection-start-line="210" selection-start-column="43" selection-end-line="210" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/index1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/myweb3/myapp/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/reg2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/templates/reg1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/home/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/myweb1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/home/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/home/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="23" column="29" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/blogtemps/首页.html" />
-    <entry file="file://$PROJECT_DIR$/blogsite/blogtemps/bloglist.html" />
-    <entry file="file://$PROJECT_DIR$/blogsite/blogtemps/reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/blogtemps/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="7" lean-forward="false" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/blogtemps/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-629">
-          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/blogsite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="122" column="1" lean-forward="false" selection-start-line="122" selection-start-column="1" selection-end-line="122" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="90" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myweb1/myweb1/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="65" column="70" lean-forward="false" selection-start-line="65" selection-start-column="70" selection-end-line="65" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/blogsite/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/home/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="32" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blogsite/home/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="53" column="125" lean-forward="false" selection-start-line="53" selection-start-column="125" selection-end-line="53" selection-end-column="125" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2048Game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="176" column="12" lean-forward="false" selection-start-line="176" selection-start-column="12" selection-end-line="176" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week1/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week1/Week1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="246" column="44" lean-forward="false" selection-start-line="246" selection-start-column="44" selection-end-line="247" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/ioFiles/os.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="19" column="37" lean-forward="false" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week1/file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="656">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/ioFiles/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="49" column="22" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/5.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/6.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week2/blogdb.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week2/item2.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="13" selection-end-column="151" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/student.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week1/stu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/databasepy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#28#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/85eed0ac-7c27-467c-81df-dca5022ac6aa/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="84" lean-forward="false" selection-start-line="0" selection-start-column="84" selection-end-line="0" selection-end-column="84" />
+          <caret line="0" column="109" lean-forward="false" selection-start-line="0" selection-start-column="109" selection-end-line="0" selection-end-column="109" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week2/item3Stu.py">
+    <entry file="file://$PROJECT_DIR$/myweb3/myweb3/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="100" column="21" lean-forward="false" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="21" />
+        <state relative-caret-position="334">
+          <caret line="27" column="19" lean-forward="false" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week1/test.py">
+    <entry file="file://$PROJECT_DIR$/myweb3/myweb3/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/a.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/winControl.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="34" lean-forward="true" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week2/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="30" column="92" lean-forward="false" selection-start-line="30" selection-start-column="92" selection-end-line="30" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NewStart/Week2/game.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="253">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#630#662#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week3/BootStrap创建/main.html">
+    <entry file="file://$PROJECT_DIR$/myweb3/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/users/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="42" column="25" lean-forward="false" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/users/add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/users/info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/users/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/users/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="32" column="39" lean-forward="true" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb3/templates/myapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myapp/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/myweb5/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="57" column="49" lean-forward="false" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myweb4/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myweb4/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="8" />
+          <folding>
+            <element signature="e#639#679#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/myweb5/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#630#662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#32#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="83" column="21" lean-forward="false" selection-start-line="83" selection-start-column="21" selection-end-line="83" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/templates/myapp/rpdemo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myweb4/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="61" lean-forward="false" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+          <folding>
+            <element signature="e#222#231#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/templates/myapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="48" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb5/templates/myapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="38" column="67" lean-forward="false" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myweb4/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/tpdemo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#630#662#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/demo1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="73" column="18" lean-forward="false" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#td#3;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/myapp/templatetags/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/myapp/templatetags/pagetag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/demo2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/tpdemo/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="28" lean-forward="false" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/myapp/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/myapp/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/myapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="50" lean-forward="false" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/tpdemo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1522">
+          <caret line="127" column="1" lean-forward="false" selection-start-line="127" selection-start-column="1" selection-end-line="127" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpdemo/templates/myapp/district.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
