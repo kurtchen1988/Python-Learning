@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加相册信息</title>
+</head>
+<body>
+<center>
+{% include "myapp/header.html"%}
+	<h2>添加相册信息</h2>
+    <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data">
+        <input type="file" name="mypic"/>
+        <input type="submit" value="上传">
+    </form>
+</center>
+</body>
+</html>

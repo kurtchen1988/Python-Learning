@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传</title>
+</head>
+<body>
+    <h2>文件上传表单</h2>
+    <a href="{% url 'index' %}">返回首页</a>
+    <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="mypic"/>
+        <input type="submit" value="上传">
+    </form>
+
+</body>
+</html>

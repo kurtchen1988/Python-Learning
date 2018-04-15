@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <table>
+        {% for vo in ulist %}
+            <tr>
+                <td>{{ vo.id }}</td>
+                <td>{{ vo.name }}</td>
+                <td>{{ vo.age }}</td>
+                <td>{{ vo.phone }}</td>
+                <td>{{ vo.addtime|date:'Y-m-d H:i:s' }}</td>
+            </tr>
+
+        {% endfor %}
+    </table>
+    {% for i in plist %}
+        {% if i == pIndex %}
+            <b style="color:red">{{i}}</b>
+        {% else %}
+            <a href="{% url 'demo2' i %}">{{i}}</a>
+        {% endif %}
+    {% endfor %}
+</center>
+</body>
+</html>
