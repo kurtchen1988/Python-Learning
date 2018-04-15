@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>文件上传</title>
+</head>
+<body>
+	<h2>文件上传表单</h2>
+	<a href="{% url 'index' %}">返回首页</a><br/><br/>
+    <form method="post" action="{% url 'upload' %}" enctype="multipart/form-data">
+       
+        <input type="file" name="mypic"/>
+        <input type="submit" value="上传">
+    </form>
+</body>
+</html>
