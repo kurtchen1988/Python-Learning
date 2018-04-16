@@ -1,3 +1,4 @@
+<!-- 主显示页码 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +27,7 @@
             <th>时间</th>
             <th>操作</th>
         </tr>
+        <!--遍历并显示信息-->
 {% for pic in ulist %}
                     <tr>
                         <td>{{ pic.id }}</td>
@@ -38,6 +40,7 @@
                     </tr>
                 {% endfor %}
     </table>
+    <!-- 显示页码的方法 -->
         {% for i in plist %}
                 {% if i == pIndex %}
                     <b style="color:red">{{i}}</b>

@@ -5,7 +5,7 @@ from datetime import datetime
 from django.core.paginator import Paginator
 from django.views.decorators.csrf import csrf_exempt
 import time,os
-from PIL import Image
+
 # Create your views here.
 def index(request):
     '''
@@ -114,7 +114,12 @@ def subeditpic(request):
         return HttpResponseRedirect("../info/6")
 
 def info(request, inID):
-
+    '''
+    处理各种提示信息
+    :param request: 网页响应参数
+    :param inID:
+    :return: 返回到信息提示页，并传递相应信息
+    '''
     if int(inID) == 1:
         context = {'info':'已成功删除图片！'}
         return render(request, "myapp/info.html", context)

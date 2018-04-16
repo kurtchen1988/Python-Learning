@@ -18,6 +18,8 @@ from django.urls import path
 from django.conf.urls import url,include
 
 urlpatterns = [
+    # 管理界面路由
     path('admin/', admin.site.urls),
+    # 进入myapp路由
     url(r'^',include("myapp.urls"))
 ]
