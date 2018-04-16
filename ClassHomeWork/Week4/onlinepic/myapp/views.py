@@ -76,7 +76,7 @@ def addpic(request):
     try:
         myfile = request.FILES.get("mypic", None)
         if not myfile:
-            return HttpResponse("没有上传文件信息")
+            return HttpResponseRedirect("../info/4")
         filename = str(time.time()) + "." + myfile.name.split('.').pop()
         destination = open("./static/pictures/" + filename, "wb+")
         for chunk in myfile.chunks():  # 分块写入文件
