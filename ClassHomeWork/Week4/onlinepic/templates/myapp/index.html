@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>浏览相册图片信息</title>
+     <script>
+            //自定义执行信息删除提示判断，参数uu是成功的删除url地址
+            function doDel(uu){
+                if(confirm("确定要删除吗？")){
+                    //网页跳转
+                    window.location=uu;
+                }
+            }
+
+        </script>
 </head>
 <body>
 <center>
@@ -20,8 +30,11 @@
                     <tr>
                         <td>{{ pic.id }}</td>
                         <td>{{ pic.title }}</td>
-                        <td><img width="230" height="150" src="../../static/pictures/{{ pic.pic }}" alt="{{pic.pic}}"></td>
+                        <td><img width="230" height="150" src="../../static/pictures/{{ pic.pic }}" alt="{{pic.pic}}"><p/>
+                            <a href="../../static/pictures/{{ pic.pic }}">查看原图</a>
+                        </td>
                         <td>{{ pic.timeupload|date:'Y-m-d H:i:s' }}</td>
+                        <td><a href="{% url 'editpic' pic.id %}">编辑</a> <a href="javascript:doDel('{% url 'delpic' pic.id %}');">删除</a> </td>
                     </tr>
                 {% endfor %}
     </table>

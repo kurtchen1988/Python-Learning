@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改相册信息</title>
+</head>
+<body>
+<center>
+{% include "myapp/header.html"%}
+	<h2>修改相册信息</h2>
+    <form method="post" action="{% url 'subeditpic' %}" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{{plist.id}}">
+        标题：<input type="text" name="title" value="{{plist.title}}"/><p/>
+        图片：<input type="file" name="pic" value="{{plist.pic}}"/><p/>
+        <input type="submit" value="修改">
+        <input type="reset" value="重置">
+    </form>
+            <img src="../../static/pictures/{{plist.pic}}"/><p/>
+</center>
+</body>
+</html>
