@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript">
+        <!--自动跳转功能,3000毫秒后自动跳转到展示页-->
+    onload=function(){
+    setTimeout(go, 3000);
+    };
+    function go(){
+    location.href="{% url 'piclist' 1%}";
+    }
+    </script>
+    <title>信息提示</title>
+</head>
+<body>
+<center>
+{% include "myapp/header.html"%}
+	<h2>信息提示</h2>
+    <!--这里的info是通过视图判断而得到不同的信息-->
+    <h3>{{info}}浏览器将自动跳转至浏览相册信息页</h3>
+    <h3><a href="{% url 'piclist' 1%}">如果浏览器没有自动跳转，请点击这里</a> </h3>
+
+</center>
+</body>
+</html>
