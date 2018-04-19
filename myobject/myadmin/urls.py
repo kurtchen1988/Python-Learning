@@ -16,8 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
-from myadmin.views import index
+from myadmin.views import index, users
 
 urlpatterns = [
     url(r'^$', index.index, name='myadmin_ubdex'),
+    url(r'^users$', users.index, name='myadmin_users'),
+    url(r'^users/add$', users.add, name='myadmin_add'),
+    url(r'^users/insert$', users.insert, name='myadmin_insert'),
+    url(r'^users/del/(?P<uid>[0-9]+)$', users.delete, name='myadmin_del'),
+    url(r'^users/edit/(?P<uid>[0-9]+)$', users.index, name='myadmin_edit'),
+    url(r'^users/update/(?P<uid>[0-9]+)$', users.index, name='myadmin_update'),
 ]
