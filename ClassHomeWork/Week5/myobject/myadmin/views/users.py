@@ -1,13 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.core.paginator import Paginator
 from datetime import datetime
-
 from common.models import Users
 # Create your views here.
-def index(request):
+def index(request, pIndex):
     '''浏览信息'''
-    list = Users.objects.all()
-    context = {"userslist":list}
+    list = Users.objects.get_queryset().order_by('id')
+    p = Paginator(list, 5)  # 一页显示五个用户信息
+    if pIndex == ":":
+        pIndex = "1"
+    list2 = p.page(pIndex)
+    plist = p.page_range
+    context = {"userslist":list2, "plist":plist,"pIndex":int(pIndex)}
     return render(request,"myadmin/users/index.html",context)
 
 def add(request):
@@ -78,3 +83,43 @@ def update(request,uid):
         print(err)
         context={"info":"修改失败"}
     return render(request,"myadmin/info.html",context)
+
+def passch(request, uid):
+    try:
+        ob = Users.objects.get(id = uid)
+        context = {"user":ob}
+        return render(request, "myadmin/users/passchan.html",context)
+    except Exception as err:
+        print(err)
+        context = {"info":"没有找到要修改的信息！"}
+        return render(request, "myadmin/info.html", context)
+
+def passup(request,uid):
+    try:
+        ob = Users.objects.get(id = uid)
+        import hashlib
+        m = hashlib.md5()
+        m.update(bytes(request.POST['password1'],encoding="utf8"))
+        ob.password = m.hexdigest()
+        ob.save()
+        context = {"info": "用户密码修改成功！"}
+        return render(request, "myadmin/info.html", context)
+    except Exception as err:
+        print(err)
+        context = {"info": "没有找到要修改的信息！"}
+        return render(request, "myadmin/info.html", context)
+
+def search(request):
+    print(request.POST['keyword'])
+    try:
+        list = Users.objects.filter(name=request.POST.get('keyword'))
+        print(list)
+        p = Paginator(list, 5)  # 一页显示五个用户信息
+        list2 = p.page(1)
+        plist = p.page_range
+        context = {"userslist": list2, "plist": plist, "pIndex": 1}
+        return render(request, "myadmin/users/index.html", context)
+
+    except Exception as err:
+        context = {"info": "搜索出错！"}
+        return render(request, "myadmin/info.html", context)

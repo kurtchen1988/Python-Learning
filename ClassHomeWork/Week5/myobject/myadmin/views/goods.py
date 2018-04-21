@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+import os
 from common.models import Goods,Types
 from datetime import datetime
 from PIL import Image
@@ -88,8 +88,13 @@ def edit(request,tid):
     '''加载编辑信息页面'''
     try:
         ob = Goods.objects.get(id=tid)
-        context={"goods":ob}
+        #context={"goods":ob}
+        tlist = Types.objects.extra(select={'_has': 'concat(path,id)'}).order_by('_has')
+        for ox in tlist:
+            ox.pname = '. . .' * (ox.path.count(',') - 1)
+        context = {"goods":ob, 'typelist': tlist}
         return render(request,"myadmin/goods/edit.html",context)
+
     except Exception as err:
         context={"info":"没有找到要修改的信息！"}
         return render(request,"myadmin/info.html",context)
@@ -98,10 +103,60 @@ def update(request,tid):
     '''执行编辑信息'''
     try:
         ob = Goods.objects.get(id=tid)
-        ob.name = request.POST['name']
-        ob.save()
-        context={"info":"修改成功！"}
+
+        print(request.FILES.get("pic", None))
+        if(request.FILES.get("pic", None) == None):
+            ob.goods = request.POST['goods']
+            ob.typeid = request.POST['typeid']
+            ob.company = request.POST['company']
+            ob.price = request.POST['price']
+            ob.store = request.POST['store']
+            ob.content = request.POST['content']
+            ob.save()
+            context = {"info": "商品信息修改成功！"}
+        else:
+            # 图片的上传处理
+            os.remove("./static/goods/" +ob.picname) # 删掉大图片
+            os.remove("./static/goods/m_"+ob.picname) # 删掉中号图片
+            os.remove("./static/goods/s_" +ob.picname) # 删掉小号图片
+            myfile = request.FILES.get("pic", None)
+            if not myfile:
+                return HttpResponse("没有上传文件信息")
+            filename = str(time.time()) + "." + myfile.name.split('.').pop()
+            destination = open("./static/goods/" + filename, "wb+")
+
+            for chunk in myfile.chunks():  # 分块写入文件
+                destination.write(chunk)
+            destination.close()
+
+            # 图片的缩放
+            im = Image.open("./static/goods/" + filename)
+            # 缩放到375*375(缩放后的宽高比例不变):
+            im.thumbnail((375, 375))
+            im.save("./static/goods/" + filename, None)
+
+            im = Image.open("./static/goods/" + filename)
+            # 缩放到220*220(缩放后的宽高比例不变):
+            im.thumbnail((220, 220))
+            im.save("./static/goods/m_" + filename, None)
+
+            im = Image.open("./static/goods/" + filename)
+            # 缩放到75*75(缩放后的宽高比例不变):
+            im.thumbnail((75, 75))
+            im.save("./static/goods/s_" + filename, None)
+
+            # 保存商品信息
+            ob.goods = request.POST['goods']
+            ob.typeid = request.POST['typeid']
+            ob.company = request.POST['company']
+            ob.price = request.POST['price']
+            ob.store = request.POST['store']
+            ob.content = request.POST['content']
+            ob.picname = filename
+            ob.save()
+            context = {"info": "商品信息修改成功！"}
+
     except Exception as err:
         print(err)
-        context={"info":"修改失败"}
+        context={"info":"商品信息修改失败"}
     return render(request,"myadmin/info.html",context)

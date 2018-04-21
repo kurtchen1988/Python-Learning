@@ -57,8 +57,10 @@
 									</ul>
 								</li>
 							</ul>
-							<form class="navbar-search pull-left" action="">
-								<input type="text" class="search-query span2" placeholder="Search" />
+
+							<form class="navbar-search pull-left" action="{% url 'myadmin_users_search' %}" method="post">
+								{% csrf_token %}
+								<input type="text" name="keyword" class="search-query span2" placeholder="输入用户名关键字搜索" />
 							</form>
 							<ul class="nav pull-right">
 								<li>
@@ -89,7 +91,7 @@
 								会员管理
 							</li>
 							<li>
-								<a href="{% url 'myadmin_users_index' %}"><i class="icon-folder-open"></i> 浏览会员</a>
+								<a href="{% url 'myadmin_users_index' 1 %}"><i class="icon-folder-open"></i> 浏览会员</a>
 							</li>
 							<li>
 								<a href="{% url 'myadmin_users_add' %}"><i class="icon-check"></i> 添加会员</a>

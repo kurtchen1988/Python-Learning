@@ -13,12 +13,15 @@ urlpatterns = [
     url(r'^verify$', index.verify, name="myadmin_verify"), #验证码
 
     # 会员信息管理路由
-    url(r'^users$', users.index, name="myadmin_users_index"),
+    url(r'^users/(?P<pIndex>[0-9]+)$', users.index, name="myadmin_users_index"),# 带页码的用户浏览
     url(r'^users/add$', users.add, name="myadmin_users_add"),
     url(r'^users/insert$', users.insert, name="myadmin_users_insert"),
+    url(r'^users/search$', users.search, name="myadmin_users_search"),# 搜索功能，在网页头部
     url(r'^users/del/(?P<uid>[0-9]+)$', users.delete, name="myadmin_users_del"),
     url(r'^users/edit/(?P<uid>[0-9]+)$', users.edit, name="myadmin_users_edit"),
     url(r'^users/update/(?P<uid>[0-9]+)$', users.update, name="myadmin_users_update"),
+    url(r'^users/passch/(?P<uid>[0-9]+)$', users.passch, name="myadmin_users_passch"),# 修改密码展示页
+    url(r'^users/passup/(?P<uid>[0-9]+)$', users.passup, name="myadmin_users_passup"),# 执行修改密码
 
      # 商品类别信息管理路由
     url(r'^type$', type.index, name="myadmin_type_index"),
@@ -32,8 +35,8 @@ urlpatterns = [
     url(r'^goods$', goods.index, name="myadmin_goods_index"),
     url(r'^goods/add$', goods.add, name="myadmin_goods_add"),
     url(r'^goods/insert$', goods.insert, name="myadmin_goods_insert"),
-    url(r'^goods/del/(?P<uid>[0-9]+)$', goods.delete, name="myadmin_goods_del"),
-    url(r'^goods/edit/(?P<uid>[0-9]+)$', goods.edit, name="myadmin_goods_edit"),
-    url(r'^goods/update/(?P<uid>[0-9]+)$', goods.update, name="myadmin_goods_update"),
+    url(r'^goods/del/(?P<tid>[0-9]+)$', goods.delete, name="myadmin_goods_del"),
+    url(r'^goods/edit/(?P<tid>[0-9]+)$', goods.edit, name="myadmin_goods_edit"),
+    url(r'^goods/update/(?P<tid>[0-9]+)$', goods.update, name="myadmin_goods_update"),
 
 ]

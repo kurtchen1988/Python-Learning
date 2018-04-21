@@ -29,6 +29,7 @@
 			<td>{{ vo.addtime }}</td>
 			<td>{{ vo.state }}</td>
 			<td>
+				<a href="{% url 'myadmin_users_passch' vo.id %}" class="view-link">重置密码</a>
 				<a href="{% url 'myadmin_users_edit' vo.id %}" class="view-link">编辑</a>
 				<a href="{% url 'myadmin_users_del' vo.id %}" class="view-link">删除</a>
 			</td>
@@ -38,24 +39,17 @@
 </table>				
 <div class="pagination">
 	<ul>
-		<li class="disabled">
-			<a href="#">&laquo;</a>
+
+
+		{% for page in plist %}
+		{% if page == pIndex %}<li class="active">{% else %}<li>{% endif %}
+
+			<a href="{% url 'myadmin_users_index' page %}">{{page}}</a>
+
 		</li>
-		<li class="active">
-			<a href="#">1</a>
-		</li>
-		<li>
-			<a href="#">2</a>
-		</li>
-		<li>
-			<a href="#">3</a>
-		</li>
-		<li>
-			<a href="#">4</a>
-		</li>
-		<li>
-			<a href="#">&raquo;</a>
-		</li>
+		{% endfor %}
+
+
 	</ul>
 </div>
 {% endblock %}
