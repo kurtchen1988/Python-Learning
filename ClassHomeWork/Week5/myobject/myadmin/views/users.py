@@ -113,12 +113,15 @@ def search(request):
     print(request.POST['keyword'])
     try:
         list = Users.objects.filter(name=request.POST.get('keyword'))
-        print(list)
-        p = Paginator(list, 5)  # 一页显示五个用户信息
-        list2 = p.page(1)
-        plist = p.page_range
-        context = {"userslist": list2, "plist": plist, "pIndex": 1}
-        return render(request, "myadmin/users/index.html", context)
+        if(list != None):
+            p = Paginator(list, 5)  # 一页显示五个用户信息
+            list2 = p.page(1)
+            plist = p.page_range
+            context = {"userslist": list2, "plist": plist, "pIndex": 1}
+            return render(request, "myadmin/users/index.html", context)
+        else:
+            context = {"info": "无搜索结果！"}
+            return render(request, "myadmin/info.html", context)
 
     except Exception as err:
         context = {"info": "搜索出错！"}
