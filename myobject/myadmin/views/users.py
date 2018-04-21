@@ -51,8 +51,29 @@ def delete(request, uid):
 
 def edit(request, uid):
     '''加载编辑信息页面'''
-    pass
+    try:
+        ob = Users.objects.get(id=uid)
+        context = {"user": ob}
+        return render(request, "myadmin/users/edit.html", context)
+    except Exception as err:
+        context = {"info": "没有找到要修改的信息"}
+        return render(request, "myadmin/info.html", context)
 
 def update(request, uid):
     '''执行编辑信息'''
-    pass
+    try:
+        ob = Users.objects.get(id = uid)
+        ob.name = request.POST["name"]
+        #ob.password = request.POST["password"]
+        ob.sex = request.POST["sex"]
+        ob.address = request.POST["address"]
+        ob.code = request.POST["code"]
+        ob.phone = request.POST["phone"]
+        ob.email = request.POST["email"]
+        ob.state = request.POST["state"]
+        ob.save()
+        context = {"info": "修改成功"}
+    except Exception as err:
+        print(err)
+        context = {"info":"修改失败"}
+    return render(request,"myadmin/info.html", context)

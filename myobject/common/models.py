@@ -16,8 +16,37 @@ class Users(models.Model):
 
     def toDict(self):
         return {'id':self.id,'username':self.username,'name':self.name,'password':self.password,'sex':self.sex,'address':
-                self.address,'code':self.code, 'phone':self.phone, 'email':self.email, 'state':self.state, 'addtime':
-                self.addtime}
+                self.address,'code':self.code, 'phone':self.phone, 'email':self.email, 'state':self.state}
 
+# 商品类型信息模型
     class Meta:
         db_table = "users"
+
+class Types(models.Model):
+    name = models.CharField(max_length=32)
+    pid = models.IntegerField(default=0)
+    path = models.CharField(max_length=255)
+
+
+    class Meta:
+        db_table = "type"
+
+#商品信息模型
+class Goods(models.Model):
+    typeid = models.IntegerField()
+    goods = models.CharField(max_length=32)
+    company = models.CharField(max_length=50)
+    content = models.TextField()
+    price = models.FloatField()
+    picname = models.CharField(max_length=255)
+    store = models.IntegerField(default=0)
+    num = models.IntegerField(default=0)
+    clicknum = models.IntegerField(default=0)
+    state = models.IntegerField(default=1)
+    addtime = models.DateTimeField(default=datetime.now)
+
+    def toDict(self):
+        return {'id':self.id,'typeid':self.typeid,'goods':self.goods,'company':self.company,'price':self.price,'picname':self.picname,'store':self.store,'num':self.num,'clicknum':self.clicknum,'state':self.state}
+
+    class Meta:
+        db_table = "goods"  # 更改表名

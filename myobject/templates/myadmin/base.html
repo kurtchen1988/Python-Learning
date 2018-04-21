@@ -62,10 +62,10 @@
 							</form>
 							<ul class="nav pull-right">
 								<li>
-									<a href="profile.htm">@管理员</a>
+									<a href="profile.htm">@{{request.session.adminuser.name}}</a>
 								</li>
 								<li>
-									<a href="login.htm">退出</a>
+									<a href="{% url 'myadmin_logout' %}">退出</a>
 								</li>
 							</ul>
 						</div>
@@ -98,20 +98,20 @@
 								商品类别管理
 							</li>
 							<li>
-								<a href="messages.htm"><i class="icon-envelope"></i> 浏览商品类别</a>
+								<a href="{% url 'myadmin_type_index' %}"><i class="icon-envelope"></i> 浏览商品类别</a>
 							</li>
 							<li>
-								<a href="files.htm"><i class="icon-file"></i> 添加商品类别</a>
+								<a href="{% url 'myadmin_type_add' 0 %}"><i class="icon-file"></i> 添加商品类别</a>
 							</li>
 
 							<li class="nav-header">
 								商品信息管理
 							</li>
 							<li>
-								<a href="profile.htm"><i class="icon-user"></i> 浏览商品信息</a>
+								<a href="{% url 'myadmin_goods_index' %}"><i class="icon-user"></i> 浏览商品信息</a>
 							</li>
 							<li>
-								<a href="settings.htm"><i class="icon-cog"></i> 添加商品信息</a>
+								<a href="{% url 'myadmin_goods_add' %}"><i class="icon-cog"></i> 添加商品信息</a>
 							</li>
 							<li class="divider">
 							</li>
