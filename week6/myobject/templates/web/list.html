@@ -64,7 +64,7 @@
                 </ul>
               </div>
             </div>
-          </div>     
+          </div>
         </div>
       </div>
       <!-- 分类列表 E -->
@@ -88,7 +88,7 @@
           </label>
         </div>
       </div>
-		
+
       <!-- 移动端结构 -->
       <!--<div class="list-filter" id="J_listFilter">
         <ul class="flex">
@@ -116,7 +116,7 @@
       <!-- 商品列表 -->
       <div class="goods-list">
         <div class="row">
-            {% for goods in goodslist %}
+          {% for goods in goodslist %}
           <div class="col-md-3 col-sm-6 col-xs-6">
             <div class="gl-item">
               <div class="compare-btn-list" >
@@ -127,11 +127,12 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                   <div role="tabpanel" class="tab-pane active mod-pic" id="list-p1">
-                    <a href="./meilanx.html">
+                    <a href="{% url 'detail' goods.id %}">
                       <img class="lazy j-modProduct" src="/static/goods/m_{{goods.picname}}" width="220" height="220">
                     </a>
                   </div>
 
+                </div>
 
                 <!-- Nav tabs -->
                 <div class="item-slide j-pro-wrap  hidden-xs hidden-sm">
@@ -158,23 +159,39 @@
                     <span  class="next iconfont"></span>
                 </div>
 
-                <h2>{{goods.goods}}</h2>
-                <h3 class="red" title="现货速发  双瞳如小窗 佳景观历历">
-                现货速发  双瞳如小窗 佳景观历历
-                </h3>
+                <h2 onclick="window.location='{% url 'detail' goods.id %}'">{{goods.goods}}</h2>
+
                 <dd class="mod-price">
                     <span>￥</span>
-                    <span class="vm-price">2880</span>
+                    <span class="vm-price">{{goods.price}}</span>
                     <span class="vm-start">起</span>
                 </dd>
               </div>
             </div>
           </div>
-            {% endfor %}
+          {% endfor %}
         </div>
+
       </div>
       <!-- 商品列表 -->
 
+      <nav aria-label="Page navigation" class="text-center">
+        <ul class="pagination">
+          <li>
+            <a href="{% url 'list' pIndex|add:-1  %}?{{mywhere|join:'&'}}" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          {% for p in plist %}
+            <li {% if p == pIndex %}class="active"{% endif %}><a href="{% url 'list' p %}?{{mywhere|join:'&'}}">{{p}}</a></li>
+          {% endfor %}
+          <li>
+            <a href="{% url 'list' pIndex|add:1 %}?{{mywhere|join:'&'}}" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
 
     </div>
   </div>

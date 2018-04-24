@@ -3,7 +3,11 @@ from django.http import HttpResponse
 from django.shortcuts import redirect
 #from django.core.urlresolvers import reverse
 from django.urls import reverse
-from common.models import Users, Types, Goods
+from django.core.paginator import Paginator
+
+
+from common.models import Users,Types,Goods
+
 # 公共信息加载函数
 def loadinfo(request):
     lists = Types.objects.filter(pid=0)
@@ -13,26 +17,51 @@ def loadinfo(request):
 def index(request):
     '''项目前台首页'''
     context = loadinfo(request)
-    return render(request,"web/index.html", context)
+
+    return render(request,"web/index.html",context)
 
 def lists(request,pIndex=1):
     '''商品列表页'''
     context = loadinfo(request)
-    # 查询商品信息
+    #查询商品信息
     mod = Goods.objects
+    mywhere = []
+    #判断封装搜索条件
     tid = int(request.GET.get("tid",0))
-    if tid>0:
+    if tid > 0:
         list = mod.filter(typeid__in=Types.objects.only('id').filter(pid=tid))
+        mywhere.append('tid='+str(tid))
     else:
         list = mod.filter()
 
-    context['goodslist'] = list
-    return render(request,"web/list.html", context)
+    #执行分页处理
+    pIndex = int(pIndex)
+    page = Paginator(list,8) #以8条每页创建分页对象
+    maxpages = page.num_pages #最大页数
+    #判断页数是否越界
+    if pIndex > maxpages:
+        pIndex = maxpages
+    if pIndex < 1:
+        pIndex = 1
+    list2 = page.page(pIndex) #当前页数据
+    plist = page.page_range   #页码数列表
+
+    #封装模板中需要的信息
+    context['goodslist'] = list2
+    context['plist'] = plist
+    context['pIndex'] = pIndex
+    context['pIndex'] = pIndex
+    context['mywhere'] = mywhere
+    return render(request,"web/list.html",context)
 
 def detail(request,gid):
     '''商品详情页'''
     context = loadinfo(request)
-    return render(request,"web/detail.html", context)
+    ob = Goods.objects.get(id=gid)
+    ob.clicknum += 1
+    ob.save()
+    context['goods'] = ob
+    return render(request,"web/detail.html",context)
 
 # ==============前台会员登录====================
 def login(request):
