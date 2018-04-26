@@ -8,37 +8,46 @@ from django.core.paginator import Paginator
 
 from common.models import Types,Goods
 
-# 公共信息加载函数
+# 公共信息加载
 def loadinfo(request):
+    '''公共信息加载'''
+    context = {}
     lists = Types.objects.filter(pid=0)
-    context = {'typelist':lists}
+    context['typelist'] = lists
     return context
 
 def index(request):
     '''浏览购物车'''
     context = loadinfo(request)
     if 'shoplist' not in request.session:
-        request.session['shoplist'] = {}
-    return render(request,"web/cart.html", context)
+        request.session['shoplist']={}
+    return render(request,"web/cart.html",context)
 
-def add(request, gid):
-    '''浏览购物车'''
+def add(request,gid):
+    '''在购物车中放入商品信息'''
+    #获取要放入购物车中的商品信息
     goods = Goods.objects.get(id=gid)
-    shop = goods.toDict()
-    shop['m'] = int(request.POST.get("m",1))
-    shoplist = request.session.get("shoplist",{})
-    #判断购物车中是否已存在要购买的商品
+    shop = goods.toDict();
+    shop['m'] = int(request.POST.get('m',1))  #添加一个购买量属性m
+    #从session获取购物车信息，没有默认空字典
+    shoplist = request.session.get('shoplist',{})
+    #判断此商品是否在购物车中
     if gid in shoplist:
-        shoplist[gid][m] += shop['m']
+        #商品数量加
+        shoplist[gid]['m']+=shop['m']
     else:
-        shoplist[gid] = shop
-    #将购物车中的商品信息放回到session中
-    request.session['shoplist'] = shoplist
-    #跳转查看购物车
-    return redirect(reverse('cart_index'))
+        #新商品添加
+        shoplist[gid]=shop
 
-def delete(request, gid):
-    '''删除购物车中的商品'''
+    #将购物车信息放回到session
+    request.session['shoplist'] = shoplist
+
+    #重定向到浏览购物车页
+    return redirect(reverse('cart_index'))
+    #return render(request,"web/cart.html")
+
+def delete(request,gid):
+    '''删除一个商品'''
     shoplist = request.session['shoplist']
     del shoplist[gid]
     request.session['shoplist'] = shoplist
@@ -46,16 +55,20 @@ def delete(request, gid):
 
 def clear(request):
     '''清空购物车'''
+    context = loadinfo(request)
     request.session['shoplist'] = {}
-    return redirect(reverse('cart_index'))
+    return render(request,"web/cart.html",context)
 
 def change(request):
-    '''购物车信息修改'''
+    '''更改购物车中的商品信息'''
+    #context = loadinfo(request)
     shoplist = request.session['shoplist']
-    shopid = request.GET.get("gid",0)
-    num = int(request.GET.get('num',1))
-    if num < 1:
+    #获取信息
+    shopid = request.GET.get('gid','0')
+    num = int(request.GET['num'])
+    if num<1:
         num = 1
-    shoplist[shopid]['m'] = num
+    shoplist[shopid]['m'] = num #更改商品数量
     request.session['shoplist'] = shoplist
     return redirect(reverse('cart_index'))
+    #return render(request,"web/cart.html",context)

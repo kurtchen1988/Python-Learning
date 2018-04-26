@@ -35,8 +35,8 @@
             <tbody>
             {% for shop in request.session.shoplist.values %}
               <tr class="cart-product">
-                <td class="cart-col-select col-md-3 col-xs-4 col-sm-4">  
-                  <div class="mz-checkbox" gid="{{shop.id}}" price="{% widthratio  shop.price 1 shop.m %}"></div> 
+                <td class="cart-col-select col-md-3 col-xs-4 col-sm-4">
+                  <div class="mz-checkbox" gid="{{shop.id}}" price="{% widthratio  shop.price 1 shop.m %}"></div>
                   <a href="{% url 'detail' shop.id %}" class="cart-product-link" target="_blank">
                     <img src="/static/goods/s_{{ shop.picname }}" class="cart-product-img" alt="{{ shop.goods }}" width="50">
                   </a>
@@ -124,6 +124,7 @@
 
 {% block myjs %}
     //全选
+
     allSelect();
     //登录图片鼠标经过
     //topLogin();

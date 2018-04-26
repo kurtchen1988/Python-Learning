@@ -25,16 +25,16 @@
     <!-- 自定义 -->
     <link rel="stylesheet" type="text/css" href="{% static 'web/css/global.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'web/css/app.css' %}">
-    
+
     {% block mylink %}
     {% endblock %}
 
     <script type="text/javascript" src="{% static 'web/js/rem.js' %}"></script>
-    <script type="text/javascript" src="{% static 'web/js/topNav.js' %}"></script>
+    <script type="text/javascript" src="{% static 'web/js/topNav.js' %}?id=45678945"></script>
 
 </head>
 <body>
-  <!-- 导航 --> 
+  <!-- 导航 -->
   <div class="layout-header" id="scroll-wrap">
     <nav class="navbar navbar-default navbar-fixed-top header hidden-xs hidden-sm">
       <div class="container clearfix">
@@ -54,7 +54,7 @@
                   <ul class="layout-user-downmenu-list">
                   {% if request.session.vipuser %}
                     <li class="layout-user-downmenu-item">
-                      <a href="#" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
+                      <a href="{% url 'vip_orders' %}" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">个人中心</a>
                     </li>
                     <li class="layout-user-downmenu-item">
                       <a href="#" class="layout-user-downmenu-link" data-mtype="wmz_public_grzx_myorder">我的订单</a>
@@ -74,10 +74,10 @@
                 </div>
             </li>
             <li class="layout-header-service-item layout-header-service-cart" id="layoutHeaderCart">
-                <a class="layout-header-service-link" href="{% url 'cart_index' %}" data-mtype="wmz_public_yt_cart">
+                <a class="layout-header-service-link" href="{% url 'cart_index'%}" data-mtype="wmz_public_yt_cart">
                     <i class="glyphicon glyphicon-shopping-cart"></i>
                     <span class="layout-header-service-cart-num">
-                        {{request.session.shoplist.values|length}}
+                      {{request.session.shoplist.values|length}}
                     </span>
                 </a>
             </li>
@@ -332,9 +332,9 @@
         </div>
     </div>
   </footer><!-- 底部区域 E -->
-  
+
   <!-- 返回顶部 -->
-  <div class="layout-magnet layout-magnet-show">  
+  <div class="layout-magnet layout-magnet-show">
     <div class="layout-magnet-item layout-magnet-item-top">
       <a href="javascript:void(0);" class="layout-magnet-link" data-mtype="wmz_public_cbxf_top">
         <div class="layout-magnet-icon">
@@ -343,7 +343,7 @@
       </a>
     </div>
   </div><!-- 返回顶部 E-->
-          
+
 
 
   <script type="text/javascript">
@@ -359,6 +359,6 @@
      leftNav();
    {% endblock %}
   </script>
-    
+
 </body>
 </html>
