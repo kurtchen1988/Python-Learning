@@ -706,6 +706,7 @@
           <div class="tab-content home-floor-product">
             <div role="tabpanel" class="tab-pane active" id="phone1">
               <ul class="item active clearfix">
+                <!-- 显示所有在大种类下的商品，由于原本设计缺陷，只能这样完成 -->
                 {% for prods in prodlist %}
                 {% for t in alltypes %}
                 {% if type.id == t.pid %}

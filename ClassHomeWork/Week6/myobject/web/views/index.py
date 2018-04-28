@@ -10,19 +10,21 @@ from common.models import Users,Types,Goods
 
 # 公共信息加载函数
 def loadinfo(request):
+    '''
+    加强版的公共信息加载。由于数据库和模式的设计并不完美，为了达到一些功能，只能牺牲性能。
+    :param request: 网页相应参数
+    :return: 带有主分类，前五个最多被点击的商品，所有商品和所有种类
+    '''
     lists = Types.objects.filter(pid=0)
     tops = Goods.objects.order_by('-clicknum')[:5]
-    #eachprod = Goods.objects.filter(typeid__in=Types.objects.only('-id').filter(pid=1)).order_by('-id')[:4]
     eachprod = Goods.objects.all().order_by('-id')
     alltype = Types.objects.all()
-    #print(eachprod)
     context = {'typelist':lists, 'toplist': tops, 'prodlist':eachprod, 'alltypes':alltype}
     return context
 
 def index(request):
     '''项目前台首页'''
     context = loadinfo(request)
-
     return render(request,"web/index.html",context)
 
 def lists(request,pIndex=1):
