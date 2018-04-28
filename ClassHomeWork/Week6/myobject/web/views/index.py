@@ -11,7 +11,12 @@ from common.models import Users,Types,Goods
 # 公共信息加载函数
 def loadinfo(request):
     lists = Types.objects.filter(pid=0)
-    context = {'typelist':lists}
+    tops = Goods.objects.order_by('-clicknum')[:5]
+    #eachprod = Goods.objects.filter(typeid__in=Types.objects.only('-id').filter(pid=1)).order_by('-id')[:4]
+    eachprod = Goods.objects.all().order_by('-id')
+    alltype = Types.objects.all()
+    #print(eachprod)
+    context = {'typelist':lists, 'toplist': tops, 'prodlist':eachprod, 'alltypes':alltype}
     return context
 
 def index(request):

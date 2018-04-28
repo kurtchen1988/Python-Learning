@@ -63,7 +63,21 @@ def update(request):
     return render(request,'web/vipinfo.html', context)
 
 def resetps(request):
-    pass
+    return render(request, 'web/vippass.html')
 
 def doresetps(request):
-    pass
+    user = Users.objects.get(id = request.session['vipuser']['id'])
+    passwd = request.POST['password']
+    passwd2 = request.POST['password2']
+
+    if passwd != passwd2:
+        context = {'info':'您输入的密码不相同，请重新输入！'}
+        return render(request, 'web/vippass.html', context)
+    else:
+        import hashlib
+        m = hashlib.md5()
+        m.update(bytes(passwd2, encoding="utf8"))
+        user.password = m.hexdigest()
+        user.save()
+        context = {'info':'您的密码修改成功！'}
+        return render(request, 'web/vippass.html', context)

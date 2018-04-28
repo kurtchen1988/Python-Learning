@@ -1,0 +1,73 @@
+{% extends "web/base.html" %}
+{% load static from staticfiles %}
+
+{% block mylink %}
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/order.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/order-app.css' %}">
+{% endblock %}
+
+{% block mainbody %}
+<div class="mainbody order">
+  <div class="container">
+	<!-- 面包屑导航 -->
+	<div class="crumbs col-xs-12 col-sm-12">
+	  <ol class="breadcrumb">
+		<li class="hidden-xs hidden-sm"><a href="index.html">首页</a></li>
+		<li class="hidden-xs hidden-sm"><a href="member.html">我的商城</a></li>
+		<li class="active">我的订单</li>
+	  </ol>
+	</div><!-- 面包屑导航 E-->
+		
+	<div class="main clearfix">
+		<!-- 左侧导航 -->
+		<div class="left-nav f-fl col-md-4 hidden-xs hidden-sm">
+			<div class="nav-main">
+				<a href="{% url 'vip_orders' %}" class="type-title"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>订单中心</a>
+				<a href="order.html" class="ml active" >我的订单</a>
+				<a href="#" class="ml " >我的回购单</a>
+				<a href="#" class="ml " >我的意外保</a>
+				<a href="{% url 'vip_info' %}" class="type-title"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>个人中心</a>
+				<a href="{% url 'vip_info' %}" class="ml " >会员信息修改</a>
+				<a href="{% url 'vip_resetps' %}" class="ml " >重置密码</a>
+			</div>
+		</div><!-- 左侧导航 E-->
+			
+		<!-- 会员信息修改与展示 -->
+		<div class="right-content f-fr col-md-8 col-xs-12 col-sm-12">
+			{% if info %}
+			<h3>{{info}}</h3>
+			<h4><a href="{% url 'vip_resetps' %}">返回密码修改</a> </h4>
+			{% else %}
+					<form id="edit-profile" action="{% url 'vip_doresetps' %}" class="form-horizontal" method="post">
+					    {% csrf_token %}
+					        <legend>修改密码</legend>
+					        <div class="control-group">
+
+					            <label class="control-label" for="input01">请输入新密码：</label>
+
+					            <div class="controls">
+					                <input type="password" name="password" class="input-xlarge" id="input01" value="{{i.username}}" />
+					            </div>
+
+					        </div>
+					        <div class="control-group">
+					            <label class="control-label" for="input01">请再次输入密码：</label>
+					            <div class="controls">
+					                <input type="password" name="password2" class="input-xlarge" id="input01" value="{{i.name}}" />
+					            </div>
+					        </div>
+							<div class="form-actions">
+					            <button type="submit" class="btn btn-primary">保存</button> <button type="reset" class="btn">重置</button>
+					        </div>
+
+					</form>
+			{% endif %}
+			<!--	</div> -->
+
+			<!-- </form> -->
+		</div>
+	</div>
+  </div>
+</div>
+<!-- 主内容区域 E-->
+{% endblock %}
