@@ -7,7 +7,7 @@ import requests, json, random
 youdaoURL = 'http://fanyi.youdao.com/translate?smartresult=dict&smartresult=rule'
 tongchenURL = 'http://bj.58.com/dashanzi/chuzu/pn'
 movieURL = 'http://maoyan.com/board/4?offset=0'
-titlePat = 'tongji_label="listclick"onclick="clickLog(\'from=fcpc_zflist_gzcount\');"target="_blank"  rel="nofollow" >(.*?)</a>'
+titlePat = 'rel="nofollow" >(.*?)</a>'
 picPat = ''
 typePat = ''
 pricePat = ''
@@ -58,8 +58,10 @@ def getyoudaoUR():
 
 
 def gettongcheng(page):
-    html = 1
+    res = request.urlopen(tongchenURL+str(page)+'/')
+    html = res.read().decode('utf-8')
+    print(re.findall(titlePat,html))
     pass
 
 if __name__ == "__main__":
-    getyoudaoUR()
+    gettongcheng(1)
