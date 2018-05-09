@@ -27,6 +27,9 @@ itemPat = '<article.*>'
 htmlHead = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>Title</title></head><body>'
 htmlFoot = '</body></html>'
 
+namePat = '<h1 class="entry-title">\n.*?<a href=".*?" rel="bookmark">(.*?)</a>'
+urlPat = '&#19979;&#36733;&#22320;&#22336;&#65306;<a href="(.*?)" target="_blank" rel="noopener"'
+
 def getUA():
     return {'User-Agent':random.choice(userAgent)}
 
@@ -59,21 +62,37 @@ def writeToFile(key):
     try:
         stamp = time.strftime('%Y-%m-%d%H%M%S', time.localtime(time.time()))
         file = open('./book'+stamp+'.html','w+',encoding='utf-8')
+        fileTxt = open('./book'+stamp+'.txt','w+',encoding='utf-8')
         file.write(htmlHead)
         if key == 'all':
             for i in range(1,int(getTotals())+1):
                 for content in getItem(getPages(i)):
                     html = etree.tostring(content)
                     file.write(html.decode("utf-8"))
+                    title = re.findall(namePat, html.decode('utf-8'))
+                    fileTxt.write("书名： "+title[0]+"\n")
+                    url = re.findall(urlPat, html.decode('utf-8'))
+                    for n in url:
+                        fileTxt.write("下载链接： "+n+"\n")
+                        fileTxt.write("\n")
+
         else:
             for i in range(1, int(key)+1):
                 for content in getItem(getPages(i)):
                     html = etree.tostring(content)
                     file.write(html.decode("utf-8"))
+                    title = re.findall(namePat, html.decode('utf-8'))
+                    fileTxt.write("书名： "+title[0] + "\n")
+                    url = re.findall(urlPat, html.decode('utf-8'))
+                    for n in url:
+                        fileTxt.write("下载链接： " + n + "\n")
+                        fileTxt.write("\n")
+
         file.write(htmlFoot)
         file.close()
     except Exception as err:
         print(err)
+
 
 def mainControl():
     pass
