@@ -37,8 +37,25 @@ def getPage(url):
 
 
 def parsePagePY(content):
-    doc = PyQuery(content)
+    html = PyQuery(content)
+    items = html("tr.item")
 
+    for item in items:
+        print(item.find("a"))
+    '''
+    doc = PyQuery(content)
+    #解析网页中<div class="item">....</div>信息（一部部电影信息）
+    items = doc("div.item")
+    #遍历并解析每部电影具体信息
+    for item in items.items():
+        yield {
+            'index':item.find('div.pic em').text(),
+            'title':item.find("div.hd span.title").text(),
+            'image':item.find("div.pic img").attr('src'),
+            'actor':item.find("div.bd p:eq(0)").text(),
+            'score':item.find("div.star span.rating_num").text(),
+        }
+    '''
 
 def parsePageXP(content):
     html = etree.HTML(content)
@@ -49,7 +66,7 @@ def parsePageXP(content):
 
         yield {
             'rank': str(int(re.findall("moreurl\(this,{i:'(.*?)'}\)",a[0])[0])+1),
-            'pic': item.xpath('.//img/@src')[0],
+            'pic': item.xpath('.//img[width="90"]/@src')[0],
             'name': item.xpath('.//div/a/@title')[0],
             'mark': item.xpath('.//span[@class="rating_nums"]/text()')[0],
             'author' : item.xpath('//p/text()')[2],
@@ -58,7 +75,21 @@ def parsePageXP(content):
 
 
 def parsePageBS(content):
-    pass
+    html = BeautifulSoup(content,'lxml')
+    items = html.find_all(name="tr", attrs={"class":"item"})
+
+    for item in items:
+        a = item.find(name="a",attrs={'class':'nbg'}).attrs['onclick']
+
+        yield {
+            'rank': item.find(name="a",attrs={'class':'nbg'}).attrs['onclick'],
+            'pic': item.find(name="img", attrs={'width':'90'}).attrs['src'],
+            'name': item.find(name="a", attrs={'title': True}).attrs['title'],
+            'mark': item.select('span.rating_nums')[0].string,
+            'author': item.find(name="p", attrs={"class":True}).string,
+        }
+
+
 
 
 
@@ -67,5 +98,5 @@ def writePage(url):
 
 if __name__ == '__main__':
     html = getPage("https://book.douban.com/top250?start=0")
-    print(parsePageXP(html))
+    parsePagePY(html)
     #print(html)
