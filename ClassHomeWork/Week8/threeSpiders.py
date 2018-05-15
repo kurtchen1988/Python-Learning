@@ -135,23 +135,13 @@ def showCart():
     response = requests.get(url,headers= para)
 
     html = BeautifulSoup(response.text, 'lxml')
-    html = etree.HTML(response.text)
+    name = html.find_all(name='a', attrs={'clstag':'clickcart|keycount|xincart|cart_sku_name'})
+    price = html.find_all(name='div', attrs={'class':'cell p-price p-price-new '})
+    for i in range(0, len(name)):
+        print("详细描述： "+name[i].string)
+        print("价格： "+price[i].find(name='strong').string)
 
-    name = html.xpath('//a[@clstag="clickcart|keycount|xincart|cart_sku_name"]/text()')
-    print(name)
-    '''
-    <a clstag="clickcart|keycount|xincart|cart_sku_name" href="//item.jd.com/10430900577.html" target='_blank'>
-	耐克女鞋 2018春夏季新款ZOOM气垫缓震休闲运动鞋低帮耐磨舒适跑步鞋634835 812655-011/黑白女神款 38/7
-	</a>
-    '''
-    #price = html.find_all(name='div', attrs={'class':'cell p-price p-price-new '})
-    #print(name)
-    '''
-    < div
-    class ="cell p-price p-price-new " >
-    < strong >¥499.00 < / strong >
-    < div >
-    '''
+def picDown(page):
     pass
 
 if __name__ == '__main__':
