@@ -141,7 +141,21 @@ def showCart():
         print("详细描述： "+name[i].string)
         print("价格： "+price[i].find(name='strong').string)
 
-def picDown(page):
+def getImgPage(offset):
+    params = {
+        'tn':'',
+        'ipn':'rj',
+
+    }
+    pass
+
+def getImage(json):
+    pass
+
+def saveImage(item):
+    pass
+
+def picMain(offset):
     pass
 
 if __name__ == '__main__':
