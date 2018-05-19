@@ -1,0 +1,450 @@
+{"rank": "1", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "小王子", "mark": "9.0"}
+{"rank": "2", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "围城", "mark": "8.9"}
+{"rank": "3", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "解忧杂货店", "mark": "8.6"}
+{"rank": "4", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "活着", "mark": "9.1"}
+{"rank": "5", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "白夜行", "mark": "9.1"}
+{"rank": "6", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "挪威的森林", "mark": "8.0"}
+{"rank": "7", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "嫌疑人X的献身", "mark": "8.9"}
+{"rank": "8", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "三体", "mark": "8.8"}
+{"rank": "9", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "不能承受的生命之轻", "mark": "8.5"}
+{"rank": "10", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "红楼梦", "mark": "9.6"}
+{"rank": "11", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "梦里花落知多少", "mark": "7.1"}
+{"rank": "12", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "达·芬奇密码", "mark": "8.2"}
+{"rank": "13", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "看见", "mark": "8.8"}
+{"rank": "14", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "百年孤独", "mark": "9.2"}
+{"rank": "15", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "1988：我想和这个世界谈谈", "mark": "7.9"}
+{"rank": "16", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "何以笙箫默", "mark": "7.8"}
+{"rank": "17", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "平凡的世界（全三部）", "mark": "9.0"}
+{"rank": "18", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "简爱（英文全本）", "mark": "8.5"}
+{"rank": "19", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "哈利·波特与魔法石", "mark": "9.0"}
+{"rank": "20", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "白夜行", "mark": "9.2"}
+{"rank": "21", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "三体Ⅱ", "mark": "9.3"}
+{"rank": "22", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "飘", "mark": "9.3"}
+{"rank": "23", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "送你一颗子弹", "mark": "8.6"}
+{"rank": "24", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "三体Ⅲ", "mark": "9.2"}
+{"rank": "25", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "name": "天才在左 疯子在右", "mark": "8.2"}
+{"name": "小王子", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "pic": "https://img1.doubanio.com/view/subject/m/public/s1237549.jpg"}
+{"name": "围城", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "mark": "8.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s1070222.jpg"}
+{"name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "mark": "8.6", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "mark": "9.1", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "mark": "9.1", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "mark": "8.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "mark": "8.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "mark": "8.8", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "mark": "8.5", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "mark": "9.6", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "mark": "7.1", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "mark": "8.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "mark": "8.8", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "mark": "9.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "mark": "7.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "mark": "7.8", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "mark": "9.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "mark": "8.5", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "mark": "9.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "mark": "9.2", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "mark": "9.3", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "mark": "9.3", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "mark": "8.6", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "mark": "9.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "mark": "8.2", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"name": "小王子", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "pic": "https://img1.doubanio.com/view/subject/m/public/s1237549.jpg"}
+{"name": "围城", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "mark": "8.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s1070222.jpg"}
+{"name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "mark": "8.6", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "mark": "9.1", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "mark": "9.1", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "mark": "8.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "mark": "8.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "mark": "8.8", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "mark": "8.5", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "mark": "9.6", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "mark": "7.1", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "mark": "8.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "mark": "8.8", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "mark": "9.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "mark": "7.9", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "mark": "7.8", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "mark": "9.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "mark": "8.5", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "mark": "9.0", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "mark": "9.2", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "mark": "9.3", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "mark": "9.3", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "mark": "8.6", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "mark": "9.2", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "mark": "8.2", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "name": "围城", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9"}
+{"author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "name": "解忧杂货店", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6"}
+{"author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "name": "活着", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1"}
+{"author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "name": "白夜行", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1"}
+{"author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "name": "挪威的森林", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0"}
+{"author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "name": "嫌疑人X的献身", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "name": "三体", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8"}
+{"author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "name": "不能承受的生命之轻", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5"}
+{"author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "name": "红楼梦", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6"}
+{"author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "name": "梦里花落知多少", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1"}
+{"author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "name": "达·芬奇密码", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2"}
+{"author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "name": "看见", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8"}
+{"author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "name": "百年孤独", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2"}
+{"author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "name": "1988：我想和这个世界谈谈", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9"}
+{"author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "name": "何以笙箫默", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8"}
+{"author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "name": "平凡的世界（全三部）", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0"}
+{"author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "name": "简爱（英文全本）", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5"}
+{"author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "name": "哈利·波特与魔法石", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0"}
+{"author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "name": "白夜行", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "name": "三体Ⅱ", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3"}
+{"author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "name": "飘", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3"}
+{"author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "name": "送你一颗子弹", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6"}
+{"author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "name": "三体Ⅲ", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2"}
+{"author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "name": "天才在左 疯子在右", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2"}
+{"author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "name": "傲慢与偏见", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8"}
+{"author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "name": "围城", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9"}
+{"author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "name": "解忧杂货店", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6"}
+{"author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "name": "活着", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1"}
+{"author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "name": "白夜行", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1"}
+{"author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "name": "挪威的森林", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0"}
+{"author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "name": "嫌疑人X的献身", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "name": "三体", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8"}
+{"author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "name": "不能承受的生命之轻", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5"}
+{"author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "name": "红楼梦", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6"}
+{"author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "name": "梦里花落知多少", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1"}
+{"author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "name": "达·芬奇密码", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2"}
+{"author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "name": "看见", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8"}
+{"author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "name": "百年孤独", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2"}
+{"author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "name": "1988：我想和这个世界谈谈", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9"}
+{"author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "name": "何以笙箫默", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8"}
+{"author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "name": "平凡的世界（全三部）", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0"}
+{"author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "name": "简爱（英文全本）", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5"}
+{"author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "name": "哈利·波特与魔法石", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0"}
+{"author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "name": "白夜行", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "name": "三体Ⅱ", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3"}
+{"author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "name": "飘", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3"}
+{"author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "name": "送你一颗子弹", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6"}
+{"author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "name": "三体Ⅲ", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2"}
+{"author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "name": "天才在左 疯子在右", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2"}
+{"author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "name": "傲慢与偏见", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8"}
+{"author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "name": "围城", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9"}
+{"author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "name": "解忧杂货店", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6"}
+{"author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "name": "活着", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1"}
+{"author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "name": "白夜行", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1"}
+{"author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "name": "挪威的森林", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0"}
+{"author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "name": "嫌疑人X的献身", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "name": "三体", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8"}
+{"author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "name": "不能承受的生命之轻", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5"}
+{"author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "name": "红楼梦", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6"}
+{"author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "name": "梦里花落知多少", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1"}
+{"author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "name": "达·芬奇密码", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2"}
+{"author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "name": "看见", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8"}
+{"author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "name": "百年孤独", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2"}
+{"author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "name": "1988：我想和这个世界谈谈", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9"}
+{"author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "name": "何以笙箫默", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8"}
+{"author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "name": "平凡的世界（全三部）", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0"}
+{"author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "name": "简爱（英文全本）", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5"}
+{"author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "name": "哈利·波特与魔法石", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0"}
+{"author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "name": "白夜行", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2"}
+{"author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "name": "三体Ⅱ", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3"}
+{"author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "name": "飘", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3"}
+{"author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "name": "送你一颗子弹", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6"}
+{"author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "name": "三体Ⅲ", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2"}
+{"author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "name": "天才在左 疯子在右", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2"}
+{"author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "name": "傲慢与偏见", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8"}
+{"name": "围城", "rank": "1", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00"}
+{"name": "解忧杂货店", "rank": "2", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元"}
+{"name": "活着", "rank": "3", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元"}
+{"name": "白夜行", "rank": "4", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元"}
+{"name": "挪威的森林", "rank": "5", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元"}
+{"name": "嫌疑人X的献身", "rank": "6", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00"}
+{"name": "三体", "rank": "7", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00"}
+{"name": "不能承受的生命之轻", "rank": "8", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元"}
+{"name": "红楼梦", "rank": "9", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元"}
+{"name": "梦里花落知多少", "rank": "10", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元"}
+{"name": "达·芬奇密码", "rank": "11", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元"}
+{"name": "看见", "rank": "12", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元"}
+{"name": "百年孤独", "rank": "13", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元"}
+{"name": "1988：我想和这个世界谈谈", "rank": "14", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元"}
+{"name": "何以笙箫默", "rank": "15", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元"}
+{"name": "平凡的世界（全三部）", "rank": "16", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元"}
+{"name": "简爱（英文全本）", "rank": "17", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元"}
+{"name": "哈利·波特与魔法石", "rank": "18", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元"}
+{"name": "白夜行", "rank": "19", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元"}
+{"name": "三体Ⅱ", "rank": "20", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00"}
+{"name": "飘", "rank": "21", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元"}
+{"name": "送你一颗子弹", "rank": "22", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元"}
+{"name": "三体Ⅲ", "rank": "23", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元"}
+{"name": "天才在左 疯子在右", "rank": "24", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元"}
+{"name": "傲慢与偏见", "rank": "25", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元"}
+{"name": "围城", "rank": "1", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00"}
+{"name": "解忧杂货店", "rank": "2", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元"}
+{"name": "活着", "rank": "3", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元"}
+{"name": "白夜行", "rank": "4", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元"}
+{"name": "挪威的森林", "rank": "5", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元"}
+{"name": "嫌疑人X的献身", "rank": "6", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00"}
+{"name": "三体", "rank": "7", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00"}
+{"name": "不能承受的生命之轻", "rank": "8", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元"}
+{"name": "红楼梦", "rank": "9", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元"}
+{"name": "梦里花落知多少", "rank": "10", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元"}
+{"name": "达·芬奇密码", "rank": "11", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元"}
+{"name": "看见", "rank": "12", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元"}
+{"name": "百年孤独", "rank": "13", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元"}
+{"name": "1988：我想和这个世界谈谈", "rank": "14", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元"}
+{"name": "何以笙箫默", "rank": "15", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元"}
+{"name": "平凡的世界（全三部）", "rank": "16", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元"}
+{"name": "简爱（英文全本）", "rank": "17", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元"}
+{"name": "哈利·波特与魔法石", "rank": "18", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元"}
+{"name": "白夜行", "rank": "19", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元"}
+{"name": "三体Ⅱ", "rank": "20", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00"}
+{"name": "飘", "rank": "21", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元"}
+{"name": "送你一颗子弹", "rank": "22", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元"}
+{"name": "三体Ⅲ", "rank": "23", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元"}
+{"name": "天才在左 疯子在右", "rank": "24", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元"}
+{"name": "傲慢与偏见", "rank": "25", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元"}
+{"name": "围城", "rank": "1", "pic": "https://book.douban.com/subject/1008145/", "mark": "8.9", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00"}
+{"name": "解忧杂货店", "rank": "2", "pic": "https://book.douban.com/subject/25862578/", "mark": "8.6", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元"}
+{"name": "活着", "rank": "3", "pic": "https://book.douban.com/subject/1082154/", "mark": "9.1", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元"}
+{"name": "白夜行", "rank": "4", "pic": "https://book.douban.com/subject/3259440/", "mark": "9.1", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元"}
+{"name": "挪威的森林", "rank": "5", "pic": "https://book.douban.com/subject/1046265/", "mark": "8.0", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元"}
+{"name": "嫌疑人X的献身", "rank": "6", "pic": "https://book.douban.com/subject/3211779/", "mark": "8.9", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00"}
+{"name": "三体", "rank": "7", "pic": "https://book.douban.com/subject/2567698/", "mark": "8.8", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00"}
+{"name": "不能承受的生命之轻", "rank": "8", "pic": "https://book.douban.com/subject/1017143/", "mark": "8.5", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元"}
+{"name": "红楼梦", "rank": "9", "pic": "https://book.douban.com/subject/1007305/", "mark": "9.6", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元"}
+{"name": "梦里花落知多少", "rank": "10", "pic": "https://book.douban.com/subject/1016300/", "mark": "7.1", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元"}
+{"name": "达·芬奇密码", "rank": "11", "pic": "https://book.douban.com/subject/1040771/", "mark": "8.2", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元"}
+{"name": "看见", "rank": "12", "pic": "https://book.douban.com/subject/20427187/", "mark": "8.8", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元"}
+{"name": "百年孤独", "rank": "13", "pic": "https://book.douban.com/subject/6082808/", "mark": "9.2", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元"}
+{"name": "1988：我想和这个世界谈谈", "rank": "14", "pic": "https://book.douban.com/subject/5275059/", "mark": "7.9", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元"}
+{"name": "何以笙箫默", "rank": "15", "pic": "https://book.douban.com/subject/1461903/", "mark": "7.8", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元"}
+{"name": "平凡的世界（全三部）", "rank": "16", "pic": "https://book.douban.com/subject/1200840/", "mark": "9.0", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元"}
+{"name": "简爱（英文全本）", "rank": "17", "pic": "https://book.douban.com/subject/1141406/", "mark": "8.5", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元"}
+{"name": "哈利·波特与魔法石", "rank": "18", "pic": "https://book.douban.com/subject/1041007/", "mark": "9.0", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元"}
+{"name": "白夜行", "rank": "19", "pic": "https://book.douban.com/subject/10554308/", "mark": "9.2", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元"}
+{"name": "三体Ⅱ", "rank": "20", "pic": "https://book.douban.com/subject/3066477/", "mark": "9.3", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00"}
+{"name": "飘", "rank": "21", "pic": "https://book.douban.com/subject/1068920/", "mark": "9.3", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元"}
+{"name": "送你一颗子弹", "rank": "22", "pic": "https://book.douban.com/subject/4238362/", "mark": "8.6", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元"}
+{"name": "三体Ⅲ", "rank": "23", "pic": "https://book.douban.com/subject/5363767/", "mark": "9.2", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元"}
+{"name": "天才在左 疯子在右", "rank": "24", "pic": "https://book.douban.com/subject/4242172/", "mark": "8.2", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元"}
+{"name": "傲慢与偏见", "rank": "25", "pic": "https://book.douban.com/subject/1083428/", "mark": "8.8", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元"}
+{"mark": "8.6", "name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "rank": "1", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"mark": "9.1", "name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "rank": "2", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"mark": "9.1", "name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "rank": "3", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"mark": "8.0", "name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "rank": "4", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"mark": "8.9", "name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "rank": "5", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"mark": "8.8", "name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "rank": "6", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"mark": "8.5", "name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "rank": "7", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"mark": "9.6", "name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "rank": "8", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"mark": "7.1", "name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "rank": "9", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"mark": "8.2", "name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "rank": "10", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"mark": "8.8", "name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "rank": "11", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"mark": "9.2", "name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "rank": "12", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"mark": "7.9", "name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "rank": "13", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"mark": "7.8", "name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "rank": "14", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"mark": "9.0", "name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "rank": "15", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"mark": "8.5", "name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "rank": "16", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"mark": "9.0", "name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "rank": "17", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"mark": "9.2", "name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "rank": "18", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"mark": "9.3", "name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "rank": "19", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"mark": "9.3", "name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "rank": "20", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"mark": "8.6", "name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "rank": "21", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"mark": "9.2", "name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "rank": "22", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"mark": "8.2", "name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "rank": "23", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"mark": "8.8", "name": "傲慢与偏见", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "rank": "24", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg"}
+{"mark": "8.5", "name": "倾城之恋", "author": "张爱玲 / 花城出版社 / 1997-3-1 / 11.00", "rank": "25", "pic": "https://img3.doubanio.com/view/subject/m/public/s1077102.jpg"}
+{"mark": "8.6", "name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "rank": "1", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"mark": "9.1", "name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "rank": "2", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"mark": "9.1", "name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "rank": "3", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"mark": "8.0", "name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "rank": "4", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"mark": "8.9", "name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "rank": "5", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"mark": "8.8", "name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "rank": "6", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"mark": "8.5", "name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "rank": "7", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"mark": "9.6", "name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "rank": "8", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"mark": "7.1", "name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "rank": "9", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"mark": "8.2", "name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "rank": "10", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"mark": "8.8", "name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "rank": "11", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"mark": "9.2", "name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "rank": "12", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"mark": "7.9", "name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "rank": "13", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"mark": "7.8", "name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "rank": "14", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"mark": "9.0", "name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "rank": "15", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"mark": "8.5", "name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "rank": "16", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"mark": "9.0", "name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "rank": "17", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"mark": "9.2", "name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "rank": "18", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"mark": "9.3", "name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "rank": "19", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"mark": "9.3", "name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "rank": "20", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"mark": "8.6", "name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "rank": "21", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"mark": "9.2", "name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "rank": "22", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"mark": "8.2", "name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "rank": "23", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"mark": "8.8", "name": "傲慢与偏见", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "rank": "24", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg"}
+{"mark": "8.5", "name": "倾城之恋", "author": "张爱玲 / 花城出版社 / 1997-3-1 / 11.00", "rank": "25", "pic": "https://img3.doubanio.com/view/subject/m/public/s1077102.jpg"}
+{"mark": "8.6", "name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "rank": "1", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"mark": "9.1", "name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "rank": "2", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"mark": "9.1", "name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "rank": "3", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"mark": "8.0", "name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "rank": "4", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"mark": "8.9", "name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "rank": "5", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"mark": "8.8", "name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "rank": "6", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"mark": "8.5", "name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "rank": "7", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"mark": "9.6", "name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "rank": "8", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"mark": "7.1", "name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "rank": "9", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"mark": "8.2", "name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "rank": "10", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"mark": "8.8", "name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "rank": "11", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"mark": "9.2", "name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "rank": "12", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"mark": "7.9", "name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "rank": "13", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"mark": "7.8", "name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "rank": "14", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"mark": "9.0", "name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "rank": "15", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"mark": "8.5", "name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "rank": "16", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"mark": "9.0", "name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "rank": "17", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"mark": "9.2", "name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "rank": "18", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"mark": "9.3", "name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "rank": "19", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"mark": "9.3", "name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "rank": "20", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"mark": "8.6", "name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "rank": "21", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"mark": "9.2", "name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "rank": "22", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"mark": "8.2", "name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "rank": "23", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"mark": "8.8", "name": "傲慢与偏见", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "rank": "24", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg"}
+{"mark": "8.5", "name": "倾城之恋", "author": "张爱玲 / 花城出版社 / 1997-3-1 / 11.00", "rank": "25", "pic": "https://img3.doubanio.com/view/subject/m/public/s1077102.jpg"}
+{"mark": "8.6", "name": "解忧杂货店", "author": "[日] 东野圭吾 / 李盈春 / 南海出版公司 / 2014-5 / 39.50元", "rank": "1", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg"}
+{"mark": "9.1", "name": "活着", "author": "余华 / 南海出版公司 / 1998-5 / 12.00元", "rank": "2", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg"}
+{"mark": "9.1", "name": "白夜行", "author": "[日] 东野圭吾 / 刘姿君 / 南海出版公司 / 2008-9 / 29.80元", "rank": "3", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg"}
+{"mark": "8.0", "name": "挪威的森林", "author": "[日] 村上春树 / 林少华 / 上海译文出版社 / 2001-2 / 18.80元", "rank": "4", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg"}
+{"mark": "8.9", "name": "嫌疑人X的献身", "author": "[日] 东野圭吾 / 刘子倩 / 南海出版公司 / 2008-9 / 28.00", "rank": "5", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg"}
+{"mark": "8.8", "name": "三体", "author": "刘慈欣 / 重庆出版社 / 2008-1 / 23.00", "rank": "6", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg"}
+{"mark": "8.5", "name": "不能承受的生命之轻", "author": "[捷克] 米兰·昆德拉 / 许钧 / 上海译文出版社 / 2003-7 / 23.00元", "rank": "7", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg"}
+{"mark": "9.6", "name": "红楼梦", "author": "[清] 曹雪芹 著 / 人民文学出版社 / 1996-12 / 59.70元", "rank": "8", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg"}
+{"mark": "7.1", "name": "梦里花落知多少", "author": "郭敬明 / 春风文艺出版社 / 2003-11 / 20.00元", "rank": "9", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg"}
+{"mark": "8.2", "name": "达·芬奇密码", "author": "[美] 丹·布朗 / 朱振武 / 上海人民出版社 / 2004-2 / 28.00元", "rank": "10", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg"}
+{"mark": "8.8", "name": "看见", "author": "柴静 / 广西师范大学出版社 / 2013-1-1 / 39.80元", "rank": "11", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg"}
+{"mark": "9.2", "name": "百年孤独", "author": "[哥伦比亚] 加西亚·马尔克斯 / 范晔 / 南海出版公司 / 2011-6 / 39.50元", "rank": "12", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg"}
+{"mark": "7.9", "name": "1988：我想和这个世界谈谈", "author": "韩寒 / 国际文化出版公司 / 2010-9 / 25.00元", "rank": "13", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg"}
+{"mark": "7.8", "name": "何以笙箫默", "author": "顾漫 / 朝华出版社 / 2007-4 / 15.00元", "rank": "14", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg"}
+{"mark": "9.0", "name": "平凡的世界（全三部）", "author": "路遥 / 人民文学出版社 / 2005-1 / 64.00元", "rank": "15", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg"}
+{"mark": "8.5", "name": "简爱（英文全本）", "author": "[英] 夏洛蒂·勃朗特 / 世界图书出版公司 / 2003-11 / 18.00元", "rank": "16", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg"}
+{"mark": "9.0", "name": "哈利·波特与魔法石", "author": "[英] J. K. 罗琳 / 苏农 / 人民文学出版社 / 2000-9 / 19.50元", "rank": "17", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg"}
+{"mark": "9.2", "name": "白夜行", "author": "东野圭吾 / 刘姿君 / 南海出版公司 / 2013-1-1 / 39.50元", "rank": "18", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg"}
+{"mark": "9.3", "name": "三体Ⅱ", "author": "刘慈欣 / 重庆出版社 / 2008-5 / 32.00", "rank": "19", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg"}
+{"mark": "9.3", "name": "飘", "author": "[美国] 玛格丽特·米切尔 / 李美华 / 译林出版社 / 2000-9 / 40.00元", "rank": "20", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg"}
+{"mark": "8.6", "name": "送你一颗子弹", "author": "刘瑜 / 上海三联书店 / 2010-1 / 25.00元", "rank": "21", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg"}
+{"mark": "9.2", "name": "三体Ⅲ", "author": "刘慈欣 / 重庆出版社 / 2010-11 / 38.00元", "rank": "22", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg"}
+{"mark": "8.2", "name": "天才在左 疯子在右", "author": "高铭 / 武汉大学出版社 / 2010-2 / 29.80元", "rank": "23", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg"}
+{"mark": "8.8", "name": "傲慢与偏见", "author": "[英] 奥斯丁 / 张玲 / 人民文学出版社 / 1993-7 / 13.00元", "rank": "24", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg"}
+{"mark": "8.5", "name": "倾城之恋", "author": "张爱玲 / 花城出版社 / 1997-3-1 / 11.00", "rank": "25", "pic": "https://img3.doubanio.com/view/subject/m/public/s1077102.jpg"}
+{"rank": "1", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "小王子"}
+{"rank": "2", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.9", "name": "围城"}
+{"rank": "3", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.6", "name": "解忧杂货店"}
+{"rank": "4", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.1", "name": "活着"}
+{"rank": "5", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.1", "name": "白夜行"}
+{"rank": "6", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.0", "name": "挪威的森林"}
+{"rank": "7", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.9", "name": "嫌疑人X的献身"}
+{"rank": "8", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.8", "name": "三体"}
+{"rank": "9", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.5", "name": "不能承受的生命之轻"}
+{"rank": "10", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.6", "name": "红楼梦"}
+{"rank": "11", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.1", "name": "梦里花落知多少"}
+{"rank": "12", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.2", "name": "达·芬奇密码"}
+{"rank": "13", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.8", "name": "看见"}
+{"rank": "14", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "百年孤独"}
+{"rank": "15", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.9", "name": "1988：我想和这个世界谈谈"}
+{"rank": "16", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.8", "name": "何以笙箫默"}
+{"rank": "17", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "平凡的世界（全三部）"}
+{"rank": "18", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.5", "name": "简爱（英文全本）"}
+{"rank": "19", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "哈利·波特与魔法石"}
+{"rank": "20", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "白夜行"}
+{"rank": "21", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.3", "name": "三体Ⅱ"}
+{"rank": "22", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.3", "name": "飘"}
+{"rank": "23", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.6", "name": "送你一颗子弹"}
+{"rank": "24", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "三体Ⅲ"}
+{"rank": "25", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.2", "name": "天才在左 疯子在右"}
+{"rank": "1", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "小王子"}
+{"rank": "2", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.9", "name": "围城"}
+{"rank": "3", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.6", "name": "解忧杂货店"}
+{"rank": "4", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.1", "name": "活着"}
+{"rank": "5", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.1", "name": "白夜行"}
+{"rank": "6", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.0", "name": "挪威的森林"}
+{"rank": "7", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.9", "name": "嫌疑人X的献身"}
+{"rank": "8", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.8", "name": "三体"}
+{"rank": "9", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.5", "name": "不能承受的生命之轻"}
+{"rank": "10", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.6", "name": "红楼梦"}
+{"rank": "11", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.1", "name": "梦里花落知多少"}
+{"rank": "12", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.2", "name": "达·芬奇密码"}
+{"rank": "13", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.8", "name": "看见"}
+{"rank": "14", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "百年孤独"}
+{"rank": "15", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.9", "name": "1988：我想和这个世界谈谈"}
+{"rank": "16", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "7.8", "name": "何以笙箫默"}
+{"rank": "17", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "平凡的世界（全三部）"}
+{"rank": "18", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.5", "name": "简爱（英文全本）"}
+{"rank": "19", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.0", "name": "哈利·波特与魔法石"}
+{"rank": "20", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "白夜行"}
+{"rank": "21", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.3", "name": "三体Ⅱ"}
+{"rank": "22", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.3", "name": "飘"}
+{"rank": "23", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.6", "name": "送你一颗子弹"}
+{"rank": "24", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "9.2", "name": "三体Ⅲ"}
+{"rank": "25", "author": "[法] 圣埃克苏佩里 / 马振聘 / 人民文学出版社 / 2003-8 / 22.00元", "mark": "8.2", "name": "天才在左 疯子在右"}
+{"name": "围城", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1070222.jpg", "rank": "1", "mark": "8.9"}
+{"name": "解忧杂货店", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg", "rank": "2", "mark": "8.6"}
+{"name": "活着", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg", "rank": "3", "mark": "9.1"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg", "rank": "4", "mark": "9.1"}
+{"name": "挪威的森林", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg", "rank": "5", "mark": "8.0"}
+{"name": "嫌疑人X的献身", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg", "rank": "6", "mark": "8.9"}
+{"name": "三体", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg", "rank": "7", "mark": "8.8"}
+{"name": "不能承受的生命之轻", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg", "rank": "8", "mark": "8.5"}
+{"name": "红楼梦", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg", "rank": "9", "mark": "9.6"}
+{"name": "梦里花落知多少", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg", "rank": "10", "mark": "7.1"}
+{"name": "达·芬奇密码", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg", "rank": "11", "mark": "8.2"}
+{"name": "看见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg", "rank": "12", "mark": "8.8"}
+{"name": "百年孤独", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg", "rank": "13", "mark": "9.2"}
+{"name": "1988：我想和这个世界谈谈", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg", "rank": "14", "mark": "7.9"}
+{"name": "何以笙箫默", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg", "rank": "15", "mark": "7.8"}
+{"name": "平凡的世界（全三部）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg", "rank": "16", "mark": "9.0"}
+{"name": "简爱（英文全本）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg", "rank": "17", "mark": "8.5"}
+{"name": "哈利·波特与魔法石", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg", "rank": "18", "mark": "9.0"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg", "rank": "19", "mark": "9.2"}
+{"name": "三体Ⅱ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg", "rank": "20", "mark": "9.3"}
+{"name": "飘", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg", "rank": "21", "mark": "9.3"}
+{"name": "送你一颗子弹", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg", "rank": "22", "mark": "8.6"}
+{"name": "三体Ⅲ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg", "rank": "23", "mark": "9.2"}
+{"name": "天才在左 疯子在右", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg", "rank": "24", "mark": "8.2"}
+{"name": "傲慢与偏见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg", "rank": "25", "mark": "8.8"}
+{"name": "围城", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1070222.jpg", "rank": "1", "mark": "8.9"}
+{"name": "解忧杂货店", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg", "rank": "2", "mark": "8.6"}
+{"name": "活着", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg", "rank": "3", "mark": "9.1"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg", "rank": "4", "mark": "9.1"}
+{"name": "挪威的森林", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg", "rank": "5", "mark": "8.0"}
+{"name": "嫌疑人X的献身", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg", "rank": "6", "mark": "8.9"}
+{"name": "三体", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg", "rank": "7", "mark": "8.8"}
+{"name": "不能承受的生命之轻", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg", "rank": "8", "mark": "8.5"}
+{"name": "红楼梦", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg", "rank": "9", "mark": "9.6"}
+{"name": "梦里花落知多少", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg", "rank": "10", "mark": "7.1"}
+{"name": "达·芬奇密码", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg", "rank": "11", "mark": "8.2"}
+{"name": "看见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg", "rank": "12", "mark": "8.8"}
+{"name": "百年孤独", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg", "rank": "13", "mark": "9.2"}
+{"name": "1988：我想和这个世界谈谈", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg", "rank": "14", "mark": "7.9"}
+{"name": "何以笙箫默", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg", "rank": "15", "mark": "7.8"}
+{"name": "平凡的世界（全三部）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg", "rank": "16", "mark": "9.0"}
+{"name": "简爱（英文全本）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg", "rank": "17", "mark": "8.5"}
+{"name": "哈利·波特与魔法石", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg", "rank": "18", "mark": "9.0"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg", "rank": "19", "mark": "9.2"}
+{"name": "三体Ⅱ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg", "rank": "20", "mark": "9.3"}
+{"name": "飘", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg", "rank": "21", "mark": "9.3"}
+{"name": "送你一颗子弹", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg", "rank": "22", "mark": "8.6"}
+{"name": "三体Ⅲ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg", "rank": "23", "mark": "9.2"}
+{"name": "天才在左 疯子在右", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg", "rank": "24", "mark": "8.2"}
+{"name": "傲慢与偏见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg", "rank": "25", "mark": "8.8"}
+{"name": "围城", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1070222.jpg", "rank": "1", "mark": "8.9"}
+{"name": "解忧杂货店", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s27264181.jpg", "rank": "2", "mark": "8.6"}
+{"name": "活着", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s23836852.jpg", "rank": "3", "mark": "9.1"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4610502.jpg", "rank": "4", "mark": "9.1"}
+{"name": "挪威的森林", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1228930.jpg", "rank": "5", "mark": "8.0"}
+{"name": "嫌疑人X的献身", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3254244.jpg", "rank": "6", "mark": "8.9"}
+{"name": "三体", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s2768378.jpg", "rank": "7", "mark": "8.8"}
+{"name": "不能承受的生命之轻", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1091698.jpg", "rank": "8", "mark": "8.5"}
+{"name": "红楼梦", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1070959.jpg", "rank": "9", "mark": "9.6"}
+{"name": "梦里花落知多少", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1513378.jpg", "rank": "10", "mark": "7.1"}
+{"name": "达·芬奇密码", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1513425.jpg", "rank": "11", "mark": "8.2"}
+{"name": "看见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s24468373.jpg", "rank": "12", "mark": "8.8"}
+{"name": "百年孤独", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s6384944.jpg", "rank": "13", "mark": "9.2"}
+{"name": "1988：我想和这个世界谈谈", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4477716.jpg", "rank": "14", "mark": "7.9"}
+{"name": "何以笙箫默", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2529195.jpg", "rank": "15", "mark": "7.8"}
+{"name": "平凡的世界（全三部）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s2335693.jpg", "rank": "16", "mark": "9.0"}
+{"name": "简爱（英文全本）", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s5924326.jpg", "rank": "17", "mark": "8.5"}
+{"name": "哈利·波特与魔法石", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s1990480.jpg", "rank": "18", "mark": "9.0"}
+{"name": "白夜行", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s29384019.jpg", "rank": "19", "mark": "9.2"}
+{"name": "三体Ⅱ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s3078482.jpg", "rank": "20", "mark": "9.3"}
+{"name": "飘", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s1078958.jpg", "rank": "21", "mark": "9.3"}
+{"name": "送你一颗子弹", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s4243447.jpg", "rank": "22", "mark": "8.6"}
+{"name": "三体Ⅲ", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s26012674.jpg", "rank": "23", "mark": "9.2"}
+{"name": "天才在左 疯子在右", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img1.doubanio.com/view/subject/m/public/s6340977.jpg", "rank": "24", "mark": "8.2"}
+{"name": "傲慢与偏见", "author": "钱锺书 / 人民文学出版社 / 1991-2 / 19.00", "pic": "https://img3.doubanio.com/view/subject/m/public/s4250062.jpg", "rank": "25", "mark": "8.8"}
