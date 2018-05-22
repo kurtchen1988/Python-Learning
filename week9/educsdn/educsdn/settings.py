@@ -64,9 +64,15 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'educsdn.pipelines.EducsdnPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'educsdn.pipelines.EducsdnPipeline': 300,
+    'educsdn.pipelines.MysqlPipeline': 301,
+}
+MYSQL_HOST = 'localhost'
+MYSQL_DATABASE = 'csdndb'
+MYSQL_USER = 'root'
+MYSQL_PASS = 'root'
+MYSQL_PORT = 3306
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
