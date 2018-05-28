@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'dangdang.spiders'
 #USER_AGENT = 'dangdang (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -64,9 +64,15 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'dangdang.pipelines.DangdangPipeline': 300,
-#}
+ITEM_PIPELINES = {
+    'dangdang.pipelines.DangdangPipeline': 300,
+    'dangdang.pipelines.MysqlPipeline': 301,
+}
+MYSQL_HOST = 'localhost'
+MYSQL_DATABASE = 'dang'
+MYSQL_USER = 'root'
+MYSQL_PASS = 'root'
+MYSQL_PORT = 3306
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html

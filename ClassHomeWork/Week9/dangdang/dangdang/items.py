@@ -16,6 +16,7 @@ class DangdangItem(scrapy.Item):
     name = scrapy.Field()
     price = scrapy.Field()
     pic = scrapy.Field()
+    author = scrapy.Field()
     publisher = scrapy.Field()
     comments = scrapy.Field()
     pubdate = scrapy.Field()
