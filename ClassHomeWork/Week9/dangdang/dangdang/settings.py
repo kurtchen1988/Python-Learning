@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'dangdang.spiders'
 #USER_AGENT = 'dangdang (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = False # 关闭爬虫守则
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -65,16 +65,16 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'dangdang.pipelines.DangdangPipeline': 300,
-    'dangdang.pipelines.MysqlPipeline': 301,
-    'dangdang.pipelines.ImagePipeline': 302,
+    'dangdang.pipelines.DangdangPipeline': 300, # 处理item的类
+    'dangdang.pipelines.MysqlPipeline': 301, # 把item写入数据库的类
+    'dangdang.pipelines.ImagePipeline': 302, # 下载图片的类
 }
 MYSQL_HOST = 'localhost'
 MYSQL_DATABASE = 'dang'
 MYSQL_USER = 'root'
 MYSQL_PASS = 'root'
 MYSQL_PORT = 3306
-IMAGES_STORE = "./images"
+IMAGES_STORE = "./images" # 存储图片的文件夹
 
 
 # Enable and configure the AutoThrottle extension (disabled by default)

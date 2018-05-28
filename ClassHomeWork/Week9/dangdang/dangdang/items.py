@@ -13,12 +13,12 @@ class DangdangItem(scrapy.Item):
     # name = scrapy.Field()
     '''Item类，包含所有要爬取的信息
     '''
-    name = scrapy.Field()
-    price = scrapy.Field()
-    pic = scrapy.Field()
-    author = scrapy.Field()
-    publisher = scrapy.Field()
-    comments = scrapy.Field()
-    pubdate = scrapy.Field()
-    description = scrapy.Field()
+    name = scrapy.Field() # 书名
+    price = scrapy.Field() # 价格
+    pic = scrapy.Field() # 图片URL
+    author = scrapy.Field() # 作者
+    publisher = scrapy.Field() # 出版商
+    comments = scrapy.Field() # 评论数量
+    pubdate = scrapy.Field() # 发行日期
+    description = scrapy.Field()  # 描述
 

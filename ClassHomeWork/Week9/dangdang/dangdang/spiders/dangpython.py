@@ -6,13 +6,14 @@ class DangpythonSpider(scrapy.Spider):
     name = 'dangpython'
     allowed_domains = ['search.dangdang.com']
     start_urls = ['http://search.dangdang.com/?key=python&act=input']
-    p = 1
+    p = 1 # 爬取页数变量
 
     def parse(self, response):
         '''
-
-        :param response:
-        :return:
+        开始爬取时，调用此方法。首先用xpath拿出所有有效信息，接着在xpath里筛选出对应信息。把对应信息传递给item。
+        变量p在这里控制爬取的页数，爬到相应页数就停止。爬取页数内，调用Request方法并用回调函数parse
+        :param response: 响应参数
+        :return: None
         '''
 
 
