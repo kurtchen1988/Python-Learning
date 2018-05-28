@@ -27,7 +27,7 @@ class DangpythonSpider(scrapy.Spider):
                 item['price'] = price[0]
             else:
                 item['price'] = None
-            item['pic'] = dd.xpath(".//img/@data-original").extract_first()
+            item['pic'] = dd.xpath(".//img/@data-original|.//img/@src").extract_first()
             item['author'] = dd.xpath(".//a[@name='itemlist-author']/@title").extract_first()
             item['publisher'] = dd.xpath(".//a[@name='P_cbs']/text()").extract_first() #good
             item['comments'] = dd.xpath(".//a[@class='search_comment_num']/text()").extract_first() #wrong

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 import pymysql
 from scrapy.exceptions import DropItem
-
+from scrapy import Request
+from scrapy.pipelines.images import ImagesPipeline
 # Define your item pipelines here
 #
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
@@ -48,3 +49,15 @@ class MysqlPipeline(object):
 
     def close_spider(self, spider):
         self.db.close()
+
+class ImagePipeline(ImagesPipeline):
+
+    def get_media_requests(self, item, info):
+        yield Request(item['pic'])
+
+    def item_completed(self, results, item, info):
+        image_paths = [x['path'] for ok, x in results if ok]
+        if not image_paths:
+            raise DropItem("Item contains no images")
+
+        return item

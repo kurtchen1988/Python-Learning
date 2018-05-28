@@ -67,12 +67,15 @@ ROBOTSTXT_OBEY = False
 ITEM_PIPELINES = {
     'dangdang.pipelines.DangdangPipeline': 300,
     'dangdang.pipelines.MysqlPipeline': 301,
+    'dangdang.pipelines.ImagePipeline': 302,
 }
 MYSQL_HOST = 'localhost'
 MYSQL_DATABASE = 'dang'
 MYSQL_USER = 'root'
 MYSQL_PASS = 'root'
 MYSQL_PORT = 3306
+IMAGES_STORE = "./images"
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
