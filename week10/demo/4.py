@@ -9,7 +9,7 @@ proxy_list = [
 ]
 
 proxy = random.choice(proxy_list)
-
+print(proxy)
 proxies = {
     'http':'http://'+proxy,
     'https':'https://'+proxy,

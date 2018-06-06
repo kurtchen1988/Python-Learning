@@ -4,142 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/ClassHomeWork/Week5/myobject/myadmin/views/goods.py" line="156" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3a68548-a1b2-48a2-97ed-571363020e21" name="默认的" comment="2018-05-28 V2">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2048Game.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/99.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/99reverse.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DaMa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DirControl.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JDPaChong.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/btfsp.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/chaoshi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cuowu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/di3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dongman.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exceptionTry.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fileDeal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/finalTestGame.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/func.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/getCSDN.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/getQingqiu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/getURLRequest.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ghostdriver.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/importFangfa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/importMoudle.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipdaili.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipdaili2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ipdailichi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/listL.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/liulanqi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/login.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/man.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mycrawl.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/oop.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/others.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/outTryThis.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/paquNews.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/phantomjsjichu.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/publisher.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/py4.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/qiepian.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/qiushibaike.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/re1.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/re2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/re3.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rename.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tengxunJiandan.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tengxunPachong.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tengxundm.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCSDNGet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testGame.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testGit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testOther.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testPachong.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tihuan.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/try.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tryCopy.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tryTheSub.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urlPractive.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urlTry.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/urllibtoxpath.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yichangChuli.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yonghudailichi.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zhihuSpider.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/zidingyibianliang.py" afterPath="" />
+    <list default="true" id="b3a68548-a1b2-48a2-97ed-571363020e21" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/1.pptx" afterPath="$PROJECT_DIR$/oldFiles/1.pptx" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/2048Game.py" afterPath="$PROJECT_DIR$/oldFiles/2048Game.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/99.py" afterPath="$PROJECT_DIR$/oldFiles/99.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/99reverse.py" afterPath="$PROJECT_DIR$/oldFiles/99reverse.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DaMa.py" afterPath="$PROJECT_DIR$/oldFiles/DaMa.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/DirControl.py" afterPath="$PROJECT_DIR$/oldFiles/DirControl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/JDPaChong.py" afterPath="$PROJECT_DIR$/oldFiles/JDPaChong.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/oldFiles/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btfsp.py" afterPath="$PROJECT_DIR$/oldFiles/btfsp.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/chaoshi.py" afterPath="$PROJECT_DIR$/oldFiles/chaoshi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cuowu.py" afterPath="$PROJECT_DIR$/oldFiles/cuowu.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/di3.py" afterPath="$PROJECT_DIR$/oldFiles/di3.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dongman.py" afterPath="$PROJECT_DIR$/oldFiles/dongman.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/exceptionTry.py" afterPath="$PROJECT_DIR$/oldFiles/exceptionTry.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/fileDeal.py" afterPath="$PROJECT_DIR$/oldFiles/fileDeal.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/finalTestGame.py" afterPath="$PROJECT_DIR$/oldFiles/finalTestGame.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/func.py" afterPath="$PROJECT_DIR$/oldFiles/func.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getCSDN.py" afterPath="$PROJECT_DIR$/oldFiles/getCSDN.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getQingqiu.py" afterPath="$PROJECT_DIR$/oldFiles/getQingqiu.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/getURLRequest.py" afterPath="$PROJECT_DIR$/oldFiles/getURLRequest.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ghostdriver.log" afterPath="$PROJECT_DIR$/oldFiles/ghostdriver.log" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/importFangfa.py" afterPath="$PROJECT_DIR$/oldFiles/importFangfa.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/importMoudle.py" afterPath="$PROJECT_DIR$/oldFiles/importMoudle.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ipdaili.py" afterPath="$PROJECT_DIR$/oldFiles/ipdaili.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ipdaili2.py" afterPath="$PROJECT_DIR$/oldFiles/ipdaili2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ipdailichi.py" afterPath="$PROJECT_DIR$/oldFiles/ipdailichi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/listL.py" afterPath="$PROJECT_DIR$/oldFiles/listL.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/liulanqi.py" afterPath="$PROJECT_DIR$/oldFiles/liulanqi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/login.py" afterPath="$PROJECT_DIR$/oldFiles/login.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/man.py" afterPath="$PROJECT_DIR$/oldFiles/man.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mycrawl.py" afterPath="$PROJECT_DIR$/oldFiles/mycrawl.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/oop.py" afterPath="$PROJECT_DIR$/oldFiles/oop.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/others.py" afterPath="$PROJECT_DIR$/oldFiles/others.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/outTryThis.py" afterPath="$PROJECT_DIR$/oldFiles/outTryThis.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/paquNews.py" afterPath="$PROJECT_DIR$/oldFiles/paquNews.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/phantomjsjichu.py" afterPath="$PROJECT_DIR$/oldFiles/phantomjsjichu.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/publisher.py" afterPath="$PROJECT_DIR$/oldFiles/publisher.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/py4.py" afterPath="$PROJECT_DIR$/oldFiles/py4.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/qiepian.py" afterPath="$PROJECT_DIR$/oldFiles/qiepian.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/qiushibaike.py" afterPath="$PROJECT_DIR$/oldFiles/qiushibaike.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/re1.py" afterPath="$PROJECT_DIR$/oldFiles/re1.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/re2.py" afterPath="$PROJECT_DIR$/oldFiles/re2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/re3.py" afterPath="$PROJECT_DIR$/oldFiles/re3.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/rename.py" afterPath="$PROJECT_DIR$/oldFiles/rename.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tengxunJiandan.py" afterPath="$PROJECT_DIR$/oldFiles/tengxunJiandan.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tengxunPachong.py" afterPath="$PROJECT_DIR$/oldFiles/tengxunPachong.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tengxundm.py" afterPath="$PROJECT_DIR$/oldFiles/tengxundm.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test.py" afterPath="$PROJECT_DIR$/oldFiles/test.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test1.txt" afterPath="$PROJECT_DIR$/oldFiles/test1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test2.py" afterPath="$PROJECT_DIR$/oldFiles/test2.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/test2.txt" afterPath="$PROJECT_DIR$/oldFiles/test2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testCSDNGet.py" afterPath="$PROJECT_DIR$/oldFiles/testCSDNGet.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testGame.py" afterPath="$PROJECT_DIR$/oldFiles/testGame.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testGit.py" afterPath="$PROJECT_DIR$/oldFiles/testGit.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testOther.py" afterPath="$PROJECT_DIR$/oldFiles/testOther.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/testPachong.py" afterPath="$PROJECT_DIR$/oldFiles/testPachong.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tihuan.py" afterPath="$PROJECT_DIR$/oldFiles/tihuan.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/try.py" afterPath="$PROJECT_DIR$/oldFiles/try.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tryCopy.py" afterPath="$PROJECT_DIR$/oldFiles/tryCopy.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tryTheSub.py" afterPath="$PROJECT_DIR$/oldFiles/tryTheSub.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/urlPractive.py" afterPath="$PROJECT_DIR$/oldFiles/urlPractive.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/urlTry.py" afterPath="$PROJECT_DIR$/oldFiles/urlTry.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/urllibtoxpath.py" afterPath="$PROJECT_DIR$/oldFiles/urllibtoxpath.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/yichangChuli.py" afterPath="$PROJECT_DIR$/oldFiles/yichangChuli.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/yonghudailichi.py" afterPath="$PROJECT_DIR$/oldFiles/yonghudailichi.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/zhihuSpider.py" afterPath="$PROJECT_DIR$/oldFiles/zhihuSpider.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/zidingyibianliang.py" afterPath="$PROJECT_DIR$/oldFiles/zidingyibianliang.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week10/demo/4.py" afterPath="$PROJECT_DIR$/week10/demo/4.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -177,7 +44,7 @@
     <SUITE FILE_PATH="coverage/$saltySpider.coverage" NAME="saltySpider Coverage Results" MODIFIED="1525690599960" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SaltTiger" />
     <SUITE FILE_PATH="coverage/$databasepy.coverage" NAME="databasepy Coverage Results" MODIFIED="1523081496758" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
     <SUITE FILE_PATH="coverage/$6_1.coverage" NAME="6.1 Coverage Results" MODIFIED="1526308017909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week8" />
-    <SUITE FILE_PATH="coverage/$damai.coverage" NAME="damai Coverage Results" MODIFIED="1527510054656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/damai" />
+    <SUITE FILE_PATH="coverage/$damai.coverage" NAME="damai Coverage Results" MODIFIED="1527697687169" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/damai" />
     <SUITE FILE_PATH="coverage/$rename.coverage" NAME="rename Coverage Results" MODIFIED="1517239839748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$1_3.coverage" NAME="1.3 Coverage Results" MODIFIED="1525701158443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week8" />
     <SUITE FILE_PATH="coverage/$testGame.coverage" NAME="testGame Coverage Results" MODIFIED="1517590643627" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -186,6 +53,7 @@
     <SUITE FILE_PATH="coverage/$item3Stu.coverage" NAME="item3Stu Coverage Results" MODIFIED="1523095497373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
     <SUITE FILE_PATH="coverage/$game__1_.coverage" NAME="game (1) Coverage Results" MODIFIED="1523123275681" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ClassHomeWork/Week2" />
     <SUITE FILE_PATH="coverage/$renren4.coverage" NAME="renren4 Coverage Results" MODIFIED="1525174218207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week7" />
+    <SUITE FILE_PATH="coverage/$1__1_.coverage" NAME="1 (1) Coverage Results" MODIFIED="1527698212730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week10" />
     <SUITE FILE_PATH="coverage/$JDPaChong.coverage" NAME="JDPaChong Coverage Results" MODIFIED="1519745150759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$6.coverage" NAME="6 Coverage Results" MODIFIED="1523079863590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
     <SUITE FILE_PATH="coverage/$deleteafter.coverage" NAME="deleteafter Coverage Results" MODIFIED="1519454686847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -198,7 +66,7 @@
     <SUITE FILE_PATH="coverage/$zhihuSpider.coverage" NAME="zhihuSpider Coverage Results" MODIFIED="1522919416443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$btfsp.coverage" NAME="btfsp Coverage Results" MODIFIED="1521018888572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$4_1.coverage" NAME="4.1 Coverage Results" MODIFIED="1525742694242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week8" />
-    <SUITE FILE_PATH="coverage/$4.coverage" NAME="4 Coverage Results" MODIFIED="1523021903750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week2" />
+    <SUITE FILE_PATH="coverage/$4.coverage" NAME="4 Coverage Results" MODIFIED="1528288331167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week10/demo" />
     <SUITE FILE_PATH="coverage/$zidingyibianliang.coverage" NAME="zidingyibianliang Coverage Results" MODIFIED="1517719036431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$testPachong.coverage" NAME="testPachong Coverage Results" MODIFIED="1521959429212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/$stu.coverage" NAME="stu Coverage Results" MODIFIED="1523085195763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewStart/Week1" />
@@ -244,7 +112,70 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="617">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/middlewares.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="73" column="89" lean-forward="false" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="defer.py" pinned="false" current-in-tab="false">
+        <entry file="file://D:/Python35/Lib/site-packages/twisted/internet/defer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="848">
+              <caret line="1385" column="23" lean-forward="false" selection-start-line="1385" selection-start-column="23" selection-end-line="1385" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wx.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/spiders/wx.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="30" column="77" lean-forward="false" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="759">
+              <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -256,7 +187,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cycle</find>
       <find>sub_url_continue</find>
       <find>paq</find>
       <find>系统未能抓取有效数据</find>
@@ -286,6 +216,7 @@
       <find>热品推荐</find>
       <find>typelist</find>
       <find>base</find>
+      <find>service_args=crawler.settings.get</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -294,18 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/week7/1.1.py" />
-        <option value="$PROJECT_DIR$/week7/form.html" />
-        <option value="$PROJECT_DIR$/week7/1.2.py" />
-        <option value="$PROJECT_DIR$/week7/2.py" />
-        <option value="$PROJECT_DIR$/week7/2.1.py" />
-        <option value="$PROJECT_DIR$/week7/3.1.py" />
-        <option value="$PROJECT_DIR$/week7/3.2.py" />
-        <option value="$PROJECT_DIR$/week7/58spider.py" />
-        <option value="$PROJECT_DIR$/week7/58spider2.py" />
-        <option value="$PROJECT_DIR$/week7/baidu.py" />
-        <option value="$PROJECT_DIR$/week7/baidu2.py" />
-        <option value="$PROJECT_DIR$/week7/renren.py" />
         <option value="$PROJECT_DIR$/week7/renren2.py" />
         <option value="$PROJECT_DIR$/week7/renren3.py" />
         <option value="$PROJECT_DIR$/week7/renren4.py" />
@@ -345,6 +264,18 @@
         <option value="$PROJECT_DIR$/damai.py" />
         <option value="$PROJECT_DIR$/damai/damaimobile.py" />
         <option value="$PROJECT_DIR$/damai/damai.py" />
+        <option value="$PROJECT_DIR$/week10/1.py" />
+        <option value="$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/pipelines.py" />
+        <option value="$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/items.py" />
+        <option value="$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/middlewares.py" />
+        <option value="$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/settings.py" />
+        <option value="$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/spiders/taobao.py" />
+        <option value="$PROJECT_DIR$/week10/demo/4.py" />
+        <option value="$PROJECT_DIR$/week10/weixin/weixin/spiders/wx.py" />
+        <option value="$PROJECT_DIR$/week10/weixin/weixin/pipelines.py" />
+        <option value="$PROJECT_DIR$/week10/weixin/weixin/items.py" />
+        <option value="$PROJECT_DIR$/week10/weixin/weixin/settings.py" />
+        <option value="$PROJECT_DIR$/week10/weixin/weixin/middlewares.py" />
       </list>
     </option>
   </component>
@@ -375,12 +306,45 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="练习" type="b2602c69:ProjectViewProjectNode" />
               <item name="练习" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
+              <item name="damai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
+              <item name="week10" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
+              <item name="week10" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
+              <item name="week10" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="练习" type="b2602c69:ProjectViewProjectNode" />
+              <item name="练习" type="462c0819:PsiDirectoryNode" />
+              <item name="week10" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="weixin" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="练习" type="b2602c69:ProjectViewProjectNode" />
@@ -395,8 +359,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -434,7 +396,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.damai">
+  <component name="RunManager" selected="Python.4">
+    <configuration name="1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week10" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="练习" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week10/1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -453,38 +433,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="4.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week10/demo" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="练习" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week8/4.1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="6.1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week8" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="练习" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week8/6.1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week10/demo/4.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -526,19 +488,19 @@
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.4.1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.6.1" />
-      <item index="2" class="java.lang.String" itemvalue="Python.threeSpiders" />
-      <item index="3" class="java.lang.String" itemvalue="Python.1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.damai" />
+      <item index="0" class="java.lang.String" itemvalue="Python.threeSpiders" />
+      <item index="1" class="java.lang.String" itemvalue="Python.1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.damai" />
+      <item index="3" class="java.lang.String" itemvalue="Python.1 (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.4" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.damai" />
-        <item index="1" class="java.lang.String" itemvalue="Python.1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.threeSpiders" />
-        <item index="3" class="java.lang.String" itemvalue="Python.6.1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.4.1" />
+        <item index="0" class="java.lang.String" itemvalue="Python.4" />
+        <item index="1" class="java.lang.String" itemvalue="Python.1 (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.damai" />
+        <item index="3" class="java.lang.String" itemvalue="Python.1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.threeSpiders" />
       </list>
     </recent_temporary>
   </component>
@@ -555,34 +517,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517231196209</updated>
-    </task>
-    <task id="LOCAL-00018" summary="2018-04-06">
-      <created>1522950861301</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1522950861301</updated>
-    </task>
-    <task id="LOCAL-00019" summary="2018-04-07">
-      <created>1523091122875</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1523091122875</updated>
-    </task>
-    <task id="LOCAL-00020" summary="2018-04-07 V2">
-      <created>1523091513514</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1523091513514</updated>
-    </task>
-    <task id="LOCAL-00021" summary="2018-04-07">
-      <created>1523106323336</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1523106323336</updated>
     </task>
     <task id="LOCAL-00022" summary="2018-04-08">
       <created>1523123150957</created>
@@ -899,7 +833,35 @@
       <option name="project" value="LOCAL" />
       <updated>1527519328082</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="2018-05-30">
+      <created>1527692583335</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1527692583336</updated>
+    </task>
+    <task id="LOCAL-00068" summary="2018-05-31">
+      <created>1527698501586</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1527698501586</updated>
+    </task>
+    <task id="LOCAL-00069" summary="2018-06-04 V1">
+      <created>1528122226574</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1528122226575</updated>
+    </task>
+    <task id="LOCAL-00070" summary="2018-06-04 V1">
+      <created>1528220161318</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1528220161318</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView">
@@ -914,7 +876,7 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1096" height="1896" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27895752" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29633203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910663" sideWeight="0.507722" order="14" side_tool="true" content_ui="tabs" />
@@ -922,7 +884,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910663" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910663" sideWeight="0.49227798" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32910663" sideWeight="0.49227798" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25244957" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -947,9 +909,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="02/01/2018" />
-    <MESSAGE value="2018-04-06 Final" />
-    <MESSAGE value="2018-04-06" />
     <MESSAGE value="2018-04-07 V2" />
     <MESSAGE value="2018-04-07" />
     <MESSAGE value="2018-04-08" />
@@ -972,7 +931,10 @@
     <MESSAGE value="2018-05-22" />
     <MESSAGE value="2018-05-28 V3" />
     <MESSAGE value="2018-05-28 V2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018-05-28 V2" />
+    <MESSAGE value="2018-05-30" />
+    <MESSAGE value="2018-05-31" />
+    <MESSAGE value="2018-06-04 V1" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-06-04 V1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -986,55 +948,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SaltTiger/books.html" />
-    <entry file="file://$PROJECT_DIR$/week7/renren.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week7/baidu2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week7/baidu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="15" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week7/threeSpiders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2530">
-          <caret line="110" column="37" lean-forward="false" selection-start-line="110" selection-start-column="37" selection-end-line="110" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ClassHomeWork/Week1/Week1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4002">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05010154.txt" />
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05005840.txt" />
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05010416.txt" />
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05010545.txt" />
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05010646.html" />
-    <entry file="file://$PROJECT_DIR$/SaltTiger/book2018-05-05010646.txt" />
-    <entry file="file://$PROJECT_DIR$/week8/1.3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week8/1.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="805">
@@ -1281,20 +1194,128 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/damai.py" />
-    <entry file="file://$PROJECT_DIR$/damai/damai.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="44" column="46" lean-forward="false" selection-start-line="44" selection-start-column="46" selection-end-line="44" selection-end-column="46" />
-          <folding>
-            <element signature="e#59#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/damai/damaimobile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
           <caret line="33" column="54" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/damai/damai.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="54" column="7" lean-forward="true" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#30#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="56" column="1" lean-forward="false" selection-start-line="56" selection-start-column="1" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/spiders/taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#58#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="26" column="22" lean-forward="false" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+          <folding>
+            <element signature="e#169#195#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/demo/4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/scrapyselenuimtest/scrapyselenuimtest/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="27" lean-forward="false" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Python35/Lib/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="1385" column="23" lean-forward="false" selection-start-line="1385" selection-start-column="23" selection-end-line="1385" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/spiders/wx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="30" column="77" lean-forward="false" selection-start-line="30" selection-start-column="77" selection-end-line="30" selection-end-column="77" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week10/weixin/weixin/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="73" column="89" lean-forward="false" selection-start-line="73" selection-start-column="89" selection-end-line="73" selection-end-column="89" />
           <folding />
         </state>
       </provider>
