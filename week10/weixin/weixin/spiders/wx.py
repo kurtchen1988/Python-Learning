@@ -8,6 +8,8 @@ class WxSpider(scrapy.Spider):
     start_urls = ['http://weixin.sogou.com/weixin?query=python&type=2&page=1&ie=utf8']
 
     def parse(self, response):
+        if response.status != 200:
+            yield scrapy.Request(url=response.url, callback=self.parse)
         #解析出当前页面中的所有文章信息
         ullist = response.selector.css("ul.news-list li")
         #遍历文章信息
