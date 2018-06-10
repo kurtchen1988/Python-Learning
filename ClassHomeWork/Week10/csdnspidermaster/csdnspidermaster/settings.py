@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for csdnspider project
+# Scrapy settings for csdnspidermaster project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'csdnspider'
+BOT_NAME = 'csdnspidermaster'
 
-SPIDER_MODULES = ['csdnspider.spiders']
-NEWSPIDER_MODULE = 'csdnspider.spiders'
+SPIDER_MODULES = ['csdnspidermaster.spiders']
+NEWSPIDER_MODULE = 'csdnspidermaster.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'csdnspider (+http://www.yourdomain.com)'
+#USER_AGENT = 'csdnspidermaster (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'csdnspider.middlewares.CsdnspiderSpiderMiddleware': 543,
+#    'csdnspidermaster.middlewares.CsdnspidermasterSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'csdnspider.middlewares.CsdnspiderDownloaderMiddleware': 543,
+#    'csdnspidermaster.middlewares.CsdnspidermasterDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,8 +65,7 @@ ROBOTSTXT_OBEY = False
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    # 'csdnspider.pipelines.CsdnspiderPipeline': 300,
-    'scrapy_redis.pipelines.RedisPipeline': 400,
+    'csdnspidermaster.pipelines.CsdnspidermasterPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -89,7 +88,6 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
 DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
 
 SCHEDULER = "scrapy_redis.scheduler.Scheduler"
