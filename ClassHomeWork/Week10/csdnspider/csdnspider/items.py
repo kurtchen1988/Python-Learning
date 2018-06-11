@@ -11,16 +11,17 @@ from scrapy.loader.processors import MapCompose, TakeFirst, Join
 
 
 class CsdnspiderItem(scrapy.Item):
-    # define the fields for your item here like:
-    title = scrapy.Field()
-    hours = scrapy.Field()
-    teacher = scrapy.Field()
-    people = scrapy.Field()
-    number = scrapy.Field()
-    price = scrapy.Field()
-    desciption = scrapy.Field()
+    # 爬取参数的设置
+    title = scrapy.Field()  # 标题
+    hours = scrapy.Field()  # 课时长度
+    teacher = scrapy.Field() # 讲师
+    people = scrapy.Field()  # 适合人群
+    number = scrapy.Field()  # 参加人数
+    price = scrapy.Field()  # 价格
+    desciption = scrapy.Field()  # 介绍
 
 class CsdnLoader(ItemLoader):
+    # 对redis loader的设置
     default_item_class = CsdnspiderItem
     default_input_processor = MapCompose(lambda s: s.strip())
     default_output_processor = TakeFirst()

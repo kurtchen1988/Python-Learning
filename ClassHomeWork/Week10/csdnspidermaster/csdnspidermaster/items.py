@@ -12,6 +12,6 @@ from scrapy.loader.processors import MapCompose, TakeFirst, Join
 
 
 class CsdnMasterItem(scrapy.Item):
-    # define the fields for your item here like:
-    url = scrapy.Field()
+    # 设置爬取的url参数
+    url = scrapy.Field()  # 课程具体url
 

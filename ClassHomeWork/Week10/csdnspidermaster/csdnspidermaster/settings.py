@@ -88,16 +88,18 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'
+DUPEFILTER_CLASS = 'scrapy_redis.dupefilter.RFPDupeFilter'  # 使用scrapy-redis的去重功能
 
-SCHEDULER = "scrapy_redis.scheduler.Scheduler"
+SCHEDULER = "scrapy_redis.scheduler.Scheduler" # 使用scrapy-redis的调度器
 
-SCHEDULER_PERSIST = True
+SCHEDULER_PERSIST = True  # 在redis中保持scrapy-redis用到的各个队列，从而允许暂停和暂停后恢复，也就是不清理redis queues
 
 SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
+# 指定排序爬取地址时使用的队列，
+# 默认的 按优先级排序(Scrapy默认)，由sorted set实现的一种非FIFO、LIFO方式。
 
 REDIS_URL = None  # 一般情况可以省去
 REDIS_HOST = '127.0.0.1'  # 也可以根据情况改成 localhost
 REDIS_PORT = 6379
 
-MAX_PAGE = 3
+MAX_PAGE = 50  # 爬取页数的设置
