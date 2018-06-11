@@ -99,3 +99,5 @@ SCHEDULER_QUEUE_CLASS = 'scrapy_redis.queue.SpiderPriorityQueue'
 REDIS_URL = None  # 一般情况可以省去
 REDIS_HOST = '127.0.0.1'  # 也可以根据情况改成 localhost
 REDIS_PORT = 6379
+
+MAX_PAGE = 3
