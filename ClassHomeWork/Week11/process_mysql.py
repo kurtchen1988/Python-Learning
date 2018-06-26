@@ -20,3 +20,6 @@ def main():
 
         cursor.execute(sql)
         mysqldb.commit()
+
+if __name__ == '__main__':
+    main()

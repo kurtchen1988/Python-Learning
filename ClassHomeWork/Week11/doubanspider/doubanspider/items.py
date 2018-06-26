@@ -10,5 +10,18 @@ import scrapy
 
 class DoubanspiderItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    BookID = scrapy.Field()
+    BookName = scrapy.Field()
+    Author = scrapy.Field()
+    Publisher = scrapy.Field()
+    OriginName = scrapy.Field()
+    Translatoer = scrapy.Field()
+    YearPublish = scrapy.Field()
+    PageNumber= scrapy.Field()
+    Price = scrapy.Field()
+    Binding = scrapy.Field()
+    Collection = scrapy.Field()
+    ISBN = scrapy.Field()
+    Rates = scrapy.Field()
+    CommentNum = scrapy.Field()
     pass
