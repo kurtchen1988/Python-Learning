@@ -72,10 +72,7 @@ class DoubanspidermasterDownloaderMiddleware(object):
         # Called for each request that goes through the downloader
         # middleware.
         proxy = requests.get('http://tvp.daxiangdaili.com/ip/?tid=555850358533092&num=1').text
-        request.meta['proxy'] = {
-            'http': 'http://' + proxy,
-            'https': 'https://' + proxy,
-        }
+        request.meta['proxy'] = 'http://' + proxy
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object
