@@ -34,7 +34,7 @@ def index_page(page):
 def main():
     '''遍历爬取每页信息'''
     for i in range(1,11):
-        index(i)
+        index_page(i)
 
 if __name__ == '__main__':
     main()
