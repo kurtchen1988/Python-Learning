@@ -6,7 +6,7 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
-
+import requests
 
 class DoubanspiderSpiderMiddleware(object):
     # Not all methods need to be defined. If a method is not defined,
@@ -69,16 +69,23 @@ class DoubanspiderDownloaderMiddleware(object):
         return s
 
     def process_request(self, request, spider):
+        '''
+        设置代理IP防止反爬
+        :param request: 页面请求
+        :param spider: 爬虫超类
+        :return: None
+        '''
         # Called for each request that goes through the downloader
         # middleware.
-
+        proxy = requests.get('http://tvp.daxiangdaili.com/ip/?tid=555850358533092&num=1').text
+        request.meta['proxy'] = 'http://' + proxy
         # Must either:
         # - return None: continue processing this request
         # - or return a Response object
         # - or return a Request object
         # - or raise IgnoreRequest: process_exception() methods of
         #   installed downloader middleware will be called
-        return None
+        # return None
 
     def process_response(self, request, response, spider):
         # Called with the response returned from the downloader.
