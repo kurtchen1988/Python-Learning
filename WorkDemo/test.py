@@ -1,6 +1,8 @@
 a = [1,2,3,4,5]
 
-for b in range(0,len(a)):
-    print(b)
-    print(a[b])
-    print("-------")
+s = 0
+for x in a:
+    s += x
+
+
+print(s)
