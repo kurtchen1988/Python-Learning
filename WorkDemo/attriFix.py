@@ -43,10 +43,11 @@ class attriSQL:
         print(self.itemList)
 
     def __del__(self):
-        self.dbProd.close()
-        self.dbItem.close()
         self.curItem.close()
         self.curProd.close()
+        self.dbProd.close()
+        self.dbItem.close()
+
 
 if __name__=='__main__':
     a = attriSQL()
