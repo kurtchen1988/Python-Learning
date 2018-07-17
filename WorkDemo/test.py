@@ -1,5 +1,5 @@
 import re
-
+'''
 data = '10.26'
 a = []
 b = []
@@ -29,3 +29,37 @@ elif re.match('\d{1,2}\.\d{2,}',data):
     print(validate)
 
     print(third)
+'''
+'''
+data = '07'
+
+print(data)
+
+data = int(data)
+
+print(data)
+
+data = str(data)
+
+print(data)
+'''
+
+import sys
+from time import sleep
+
+
+def viewBar(i):
+    """
+    进度条效果
+    :param i:
+    :return:
+    """
+    output = sys.stdout
+    for count in range(0, i + 1):
+        second = 0.1
+        sleep(second)
+        output.write('\rcomplete percent ----->:%.0f%%' % count)
+    output.flush()
+
+
+viewBar(100)

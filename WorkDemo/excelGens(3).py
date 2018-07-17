@@ -14,6 +14,8 @@ class excelGen:
     sql6 = "SELECT name FROM db_item.parana_brands where  name like '%%%s%%';" #车辆品牌：
     sql7 = "select plate_no from  db_car_manage.cm_car_stock where vin_no = '%s';" #车架号
     sql8 = "select plate_no from  db_car_manage.cm_car_stock where engine_no = '%s';" #发动机号
+    sql9 = "select org_name from  db_car_manage.cm_car_stock where vin_no = '%s';" #车架号
+    sql10 = "select org_name from  db_car_manage.cm_car_stock where engine_no = '%s';" #发动机号
 
     user = 'devread'
     passwd = 'devR3343'
@@ -108,8 +110,7 @@ class excelGen:
                     self.sheetSuccess.cell(row=row, column=col).value = val
                 #self.sheetSuccess.cell(row=row, column=col).value = val
                 col = col + 1
-                sys.stdout.write("success>>")
-                sys.stdout.flush()
+              
 
         elif flag == 0:
             col = 1
@@ -138,8 +139,7 @@ class excelGen:
                 else: # 其它
                     self.sheetFail.cell(row=row, column=col).value = val
                 col = col + 1
-                sys.stdout.write("failure>>")
-                sys.stdout.flush()
+               
         #fileExcel.save(file)
 
     def modifyData(self):
@@ -157,9 +157,11 @@ class excelGen:
         oriRow = sheetOri.max_row
 
         print("一共"+str(oriRow)+"条数据")
+        output = sys.stdout
 
         for row in range(1, oriRow + 1):
-            print("正在处理第"+str(row)+"条数据")
+            output.write(str('%.2f%%'%((row/oriRow)*100)))
+
             if row == 1:
                 data = self.readExcel(file,row)
                 self.writeFile(1,data, row)
@@ -179,6 +181,7 @@ class excelGen:
                     rowFile2=rowFile2+1
 
             self.failMessage = []
+        sys.stdout.flush()
         self.fileExcelGood.save(file1)
         self.fileExcelBad.save(file2)
 
@@ -372,7 +375,7 @@ class excelGen:
             if(self.deterSQL(self.sql7 % data[9], self.curprd)==data[2]):
                 self.failMessage.append(str(data[2])+":车架号重复(属同一车辆/平台已存在)")
             else:
-                self.failMessage.append(str(data[2])+"的车架号重复(已被["+self.deterSQL(self.sql7 % data[9], self.curprd)+"]占用，请提供行驶证的完整车架号)")
+                self.failMessage.append(str(data[2])+"的车架号["+data[9]+"]重复(已被["+self.deterSQL(self.sql9 % data[9], self.curprd)+"-"+self.deterSQL(self.sql7 % data[9], self.curprd)+"]占用，请提供行驶证的完整车架号)")
             #print("车架号重复")
             flag.append(1)
         if self.deterSQL(self.sql7 % data[9], self.curprd) == None:
@@ -383,7 +386,7 @@ class excelGen:
             if (self.deterSQL(self.sql8 % data[10], self.curprd) == data[2]):
                 self.failMessage.append(str(data[2])+":发动机号重复(属同一车辆/平台已存在)")
             else:
-                self.failMessage.append(str(data[2])+"的发动机号重复(已被["+self.deterSQL(self.sql8 % data[10], self.curprd)+"]占用，请提供行驶证的完整发动机号)")
+                self.failMessage.append(str(data[2])+"的发动机号["+data[10]+"]重复(已被["+self.deterSQL(self.sql10 % data[10], self.curprd)+"-"+self.deterSQL(self.sql8 % data[10], self.curprd)+"]占用，请提供行驶证的完整发动机号)")
             #print("发动机号重复")
             flag.append(1)
         if self.deterSQL(self.sql8 % data[10], self.curprd) == None:
