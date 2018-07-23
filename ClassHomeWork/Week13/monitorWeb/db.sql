@@ -18,6 +18,7 @@ id int(11) NOT NULL AUTO_INCREMENT,
 machine_id int(10) NOT NULL,
 cpu varchar(255) NOT NULL DEFAULT '',
 memory varchar(255) NOT NULL DEFAULT '',
+harddrive VARCHAR(255) NOT NULL DEFAULT '',
 created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '新增时间',
 PRIMARY KEY (id),
 KEY(machine_id)

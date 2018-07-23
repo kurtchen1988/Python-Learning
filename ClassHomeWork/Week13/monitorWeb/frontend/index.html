@@ -9,9 +9,8 @@
 <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
 <div id="app">
-  <h1>运维平台</h1>
+  <h1>监控中心</h1>
   <p>
-    <router-link to="/machine">机器</router-link>
     <router-link to="/deploy">部署</router-link>
   </p>
   <router-view></router-view>
@@ -25,12 +24,20 @@
         <td>ID</td>
         <td>名称</td>
         <td>IP</td>
+        <td>CPU</td>
+        <td>内存</td>
+        <td>硬盘</td>
+        <td>状态</td>
         <td>操作</td>
       </tr>
       <tr v-for="item in machineList">
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
         <td>{{item.ip}}</td>
+        <td>{{item.cpu}}</td>
+        <td>{{item.memory}}</td>
+        <td>{{item.harddrive}}</td>
+        <td>{{item.status}}</td>
         <td>
           <!-- <router-link to="/monitor">查看</router-link> -->
           <router-link :to="{path:'/monitor',query: {id: item.id}}">查看</router-link>
@@ -57,6 +64,7 @@
     <div>监控</div>
     <div>CPU: {{info.cpu_count}}核</div>
     <div>内存: {{info.memory_total}}M</div>
+    <div>硬盘：{{info.hard_drive_total}}</div>
     <div>
       CPU {{info.cpu_percent}}% 
       内存 {{info.memory_percent}}%
@@ -67,12 +75,6 @@
   </div>
 </script>
 
-<script type="text/template" id="tpl-deploy">
-  <div>
-    <div>部署</div>
-    <div>todo...</div>
-  </div>
-</script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/echarts/4.1.0/echarts.common.min.js"></script>
@@ -148,6 +150,7 @@ const Monitor = {
         cpu_count:"",
         memory_total:"",
         cpu_percent:"",
+          hard_drive_total:"",
         memory_percent:"",
       },
       myChart:null,
@@ -242,7 +245,6 @@ const routes = [
   { path: '/machine', component: MachineList },
   { path: '/machine/create', component: MachineCreate },
   { path: '/monitor', component: Monitor },
-  { path: '/deploy', component: Deploy }
 ]
 
 const router = new VueRouter({
