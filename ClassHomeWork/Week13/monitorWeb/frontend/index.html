@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv=Content-Type content="text/html;charset=utf-8">
+  <title>demo</title>
+</head>
+<body>
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+<div id="app">
+  <h1>运维平台</h1>
+  <p>
+    <router-link to="/machine">机器</router-link>
+    <router-link to="/deploy">部署</router-link>
+  </p>
+  <router-view></router-view>
+</div>
+
+<script type="text/template" id="tpl-machine">
+  <div>
+    <router-link to="/machine/create">添加机器</router-link>
+    <table border="1" bordercolor="#ccc" style="border-collapse:collapse;">
+      <tr>
+        <td>ID</td>
+        <td>名称</td>
+        <td>IP</td>
+        <td>操作</td>
+      </tr>
+      <tr v-for="item in machineList">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.ip}}</td>
+        <td>
+          <!-- <router-link to="/monitor">查看</router-link> -->
+          <router-link :to="{path:'/monitor',query: {id: item.id}}">查看</router-link>
+          <a @click="del(item.id)" href="javascript:;">删除</a>
+        </td>
+      </tr>
+    </table>
+    </div>
+</script>
+
+<script type="text/template" id="tpl-machine-create">
+  <div>
+    <h3>添加机器</h3>
+    <div>名称 <input v-model.trim="model.name" /></div>
+    <div>IP <input v-model.trim="model.ip" /></div>
+    <div>用户<input v-model.trim="model.user" /></div>
+    <div>密码<input v-model.trim="model.password" type="password" /></div>
+    <button @click="save">确定</button>
+  </div>
+</script>
+
+<script type="text/html" id="tpl-monitor">
+  <div>
+    <div>监控</div>
+    <div>CPU: {{info.cpu_count}}核</div>
+    <div>内存: {{info.memory_total}}M</div>
+    <div>
+      CPU {{info.cpu_percent}}% 
+      内存 {{info.memory_percent}}%
+
+      <div id="echarts" style="width: 600px;height:400px;"></div>
+
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="tpl-deploy">
+  <div>
+    <div>部署</div>
+    <div>todo...</div>
+  </div>
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/echarts/4.1.0/echarts.common.min.js"></script>
+<script>
+
+const MachineList = {
+  template: "#tpl-machine",
+  data: function () {
+        return {
+            machineList: [
+                //{'id': 1, 'name': 'test','ip':'192.168.99.99'}
+            ]
+        }
+    },
+    mounted: function () {
+       this.init()
+    },
+    methods:{
+      init:function(){
+        $.get("http://127.0.0.1:5000/machine", (data)=>{
+          this.machineList = data
+        })
+      },
+      del: function(id){
+        if(!confirm("确定要删除吗?")){
+            return
+        }
+        $.get("http://127.0.0.1:5000/machine/delete", {id:id}, (res)=>{
+          if (res.status){
+            this.init()
+          }else{
+            alert(res.data)
+          }
+        })
+      },
+    },
+}
+
+
+
+// const MachineCreate = { template: "#tpl-machine-create" }
+const MachineCreate = { 
+  template: "#tpl-machine-create",
+  data:function(){
+    return {
+      model: {
+        name:"",
+        "ip":"",
+        "user":"",
+        "password":""
+      }
+    }
+  },
+  methods: {
+    save: function () {
+            $.post('http://127.0.0.1:5000/machine/create', this.model, (res) => {
+              if (res.status){
+                this.$router.push('/machine')
+              }else{
+                alert(res.data)
+              }
+            })
+        }
+  },
+}
+
+// const Monitor = { template: "#tpl-monitor" }
+const Monitor = {
+  template: "#tpl-monitor",
+  data:function(){
+    return {
+      info: {
+        cpu_count:"",
+        memory_total:"",
+        cpu_percent:"",
+        memory_percent:"",
+      },
+      myChart:null,
+      history:{
+        time:[],
+        cpu:[],
+      },
+    }
+  },
+  mounted:function(){
+    this.get_info()
+    this.chart_init()
+  },
+  methods:{
+    get_info:function(){
+      //api返回的是字符串，这里如果直接用$.get()需要手工将data转为json对象
+      machine_id = this.$route.query.id
+      $.getJSON("http://localhost:5000/monitor", {id: machine_id}, (data)=>{
+        console.log(data)
+        this.info = data
+
+        setTimeout(()=>{
+          this.get_info()
+        }, 1000)
+
+        now = new Date()
+
+        this.history.time.push(now.getHours() + ":" + now.getMinutes()+":"+now.getSeconds())
+        this.history.cpu.push(data.cpu_percent)
+
+        //只保留最近n次数据
+        n = 30
+        this.history.time = this.history.time.slice(-n)
+        this.history.cpu = this.history.cpu.slice(-n)
+
+        this.chart_update()
+      })
+    },
+
+    chart_init:function(){
+
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line'
+            }]
+        };
+
+        myChart.setOption(option);
+
+        this.myChart = myChart
+    },
+
+    chart_update:function(){
+
+       
+        // 指定图表的配置项和数据
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: this.history.time
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: this.history.cpu,
+                type: 'line'
+            }]
+        };
+
+        this.myChart.setOption(option);
+    },
+
+  },
+}
+
+const Deploy = { template: "#tpl-deploy" }
+
+const routes = [
+  { path: '/machine', component: MachineList },
+  { path: '/machine/create', component: MachineCreate },
+  { path: '/monitor', component: Monitor },
+  { path: '/deploy', component: Deploy }
+]
+
+const router = new VueRouter({
+  routes
+})
+
+const app = new Vue({
+  router
+}).$mount('#app')
+
+</script>
+</body>
+</html>
