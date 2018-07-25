@@ -1,6 +1,10 @@
-from flask import Flask
-
+from flask import Flask, request, jsonify
 from helper import models_to_dict
+from flask.json import jsonify
+from model import Machine, db
+import paramiko
+
+
 
 app = Flask(__name__)
 
@@ -8,7 +12,7 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/testdb'
 
 
-from model import db
+
 
 db.init_app(app)
 
@@ -17,16 +21,15 @@ db.init_app(app)
 def machine():
 
 
-    from model import Machine
+
     data = Machine.query.all()
-    from flask import jsonify
+
     return jsonify(models_to_dict(data))
 
 
 @app.route("/machine/create", methods=['POST'])
 def machine_create():
-    from flask.json import jsonify
-    from flask import request
+
     print(request.form)
 
     from model import Machine
@@ -47,9 +50,7 @@ def machine_create():
 
 @app.route("/machine/delete")
 def machine_delete():
-    from flask.json import jsonify
-    from flask import request
-    from model import Machine
+
 
     model = Machine.query.get(request.args['id'])
 
@@ -61,12 +62,11 @@ def machine_delete():
 
 @app.route('/monitor')
 def monitor():
-    from flask import request
-    from model import Machine
+
 
     machine = Machine.query.get(request.args['id'])
+    #???
 
-    import paramiko
 
     # 远程文件传输
     transport = paramiko.Transport((machine.ip, 22))

@@ -11,7 +11,7 @@
 <div id="app">
   <h1>监控中心</h1>
   <p>
-    <router-link to="/deploy">部署</router-link>
+    <router-link to="/machine">机器</router-link>
   </p>
   <router-view></router-view>
 </div>
@@ -37,11 +37,12 @@
         <td>{{item.cpu}}</td>
         <td>{{item.memory}}</td>
         <td>{{item.harddrive}}</td>
-        <td>{{item.status}}</td>
-        <td>
+
+        <td>?</td>
           <!-- <router-link to="/monitor">查看</router-link> -->
+        <td>
           <router-link :to="{path:'/monitor',query: {id: item.id}}">查看</router-link>
-          <a @click="del(item.id)" href="javascript:;">删除</a>
+            <a @click="del(item.id)" href="javascript:;">删除</a>
         </td>
       </tr>
     </table>
@@ -65,9 +66,8 @@
     <div>CPU: {{info.cpu_count}}核</div>
     <div>内存: {{info.memory_total}}M</div>
     <div>硬盘：{{info.hard_drive_total}}</div>
-    <div>
-      CPU {{info.cpu_percent}}% 
-      内存 {{info.memory_percent}}%
+    <div>CPU {{info.cpu_percent}}% </div>
+    <div>内存 {{info.memory_percent}}%</div>
 
       <div id="echarts" style="width: 600px;height:400px;"></div>
 
