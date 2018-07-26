@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from helper import models_to_dict
 from flask.json import jsonify
-from model import Machine, db
+from model import Machine, db, Monitor
 import paramiko
 
 
@@ -19,25 +19,31 @@ db.init_app(app)
 
 @app.route("/machine")
 def machine():
+# 展示所有机器
 
 
-
-    data = Machine.query.all()
-
+    #data = Machine.query.all()
+    data = Monitor.query.all()
     return jsonify(models_to_dict(data))
 
 
 @app.route("/machine/create", methods=['POST'])
 def machine_create():
-
+# 这里才是主控程序
     print(request.form)
 
-    from model import Machine
     model = Machine()
     model.name = request.form['name']
     model.ip = request.form['ip']
     model.user = request.form['user']
     model.password = request.form['password']
+
+    model2 = Monitor()
+    model2.machine_id = request.form['ip']
+    #model2.cpu = request.form['ip']
+    #model2.memory = request.form['ip']
+    #model2.harddrive = request.form['ip']
+
 
     if model.ip.strip() == '':
         return jsonify({"status": False, "data": "请输入IP地址"})
@@ -91,6 +97,16 @@ def monitor():
     ssh.close()
 
     return res
+
+def ping(ip, username, password):
+    try:
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect(hostname=ip, username=username, password=password, port=22)
+    except Exception:
+        return False
+    else:
+        return True
 
 
 @app.after_request

@@ -37,7 +37,6 @@
         <td>{{item.cpu}}</td>
         <td>{{item.memory}}</td>
         <td>{{item.harddrive}}</td>
-
         <td>?</td>
           <!-- <router-link to="/monitor">查看</router-link> -->
         <td>
@@ -116,6 +115,7 @@ const MachineList = {
 
 
 // const MachineCreate = { template: "#tpl-machine-create" }
+//创建新机器！！！
 const MachineCreate = { 
   template: "#tpl-machine-create",
   data:function(){
@@ -242,9 +242,9 @@ const Monitor = {
 const Deploy = { template: "#tpl-deploy" }
 
 const routes = [
-  { path: '/machine', component: MachineList },
-  { path: '/machine/create', component: MachineCreate },
-  { path: '/monitor', component: Monitor },
+  { path: '/machine', component: MachineList }, //展示机器
+  { path: '/machine/create', component: MachineCreate }, //添加机器
+  { path: '/monitor', component: Monitor }, //查看操作
 ]
 
 const router = new VueRouter({
