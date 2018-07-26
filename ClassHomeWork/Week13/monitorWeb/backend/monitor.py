@@ -13,3 +13,9 @@ res['cpu_percent'] = psutil.cpu_percent(1)
 res['memory_percent'] = psutil.virtual_memory().percent
 
 print(json.dumps(res))
+
+'''
+查看cpu型号
+
+dmidecode -s processor-version
+'''

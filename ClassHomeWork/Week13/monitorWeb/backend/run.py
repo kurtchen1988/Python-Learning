@@ -11,7 +11,25 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/testdb'
 
+# 初始化role 并插入数据库
+test_role1 = role(6, 'supervisol', '超超超超级管理员哦')
+test_role2 = role(7, 'your try', '你试试哦')
+db.session.add(test_role1)
+db.session.add(test_role2)
+db.session.commit()
 
+#查询数据库
+db.session.query(role).filter_by(id=2).first()  # 查询role表中id为2的第一个匹配项目，用".字段名"获取字段值
+db.session.query(role).all()  # 得到一个list，返回role表里的所有role实例
+db.session.query(role).filter(role.id == 2).first() # 结果与第一种一致
+# 获取指定字段，返回一个生成器 通过遍历来完成相关操作, 也可以强转为list
+db.session.query(role).filter_by(id=2).values('id', 'name', 'name_cn')
+# 模糊查询
+db.session.query(role).filter(role.name_cn.endswith('管理员')).all()  # 获取role表中name_cn字段以管理员结尾的所有内容
+# 修改数据库内容
+user = db.session.query(role).filter_by(id=6).first()  # 将role表中id为6的name改为change
+user.name = 'change'
+db.session.commit()
 
 
 db.init_app(app)
@@ -20,16 +38,27 @@ db.init_app(app)
 @app.route("/machine")
 def machine():
 # 展示所有机器
-
-
-    #data = Machine.query.all()
+    #server = Machine.query.all()
+    data = Machine.query.all()
+    print(Machine.query.get('ip'))
+    '''
     data = Monitor.query.all()
+    print(server)
+    if(ping(server.ip,server.user,server.password)):
+        status = '运行中'
+    else:
+        status = '不在线'
+    print(data)
+    data = data['status'] = status
+    '''
+    d = models_to_dict(data)
+    print(d)
     return jsonify(models_to_dict(data))
 
 
 @app.route("/machine/create", methods=['POST'])
 def machine_create():
-# 这里才是主控程序
+# 添加机器
     print(request.form)
 
     model = Machine()
@@ -59,8 +88,10 @@ def machine_delete():
 
 
     model = Machine.query.get(request.args['id'])
+    model2 = Monitor.query.get(request.args['id'])
 
     db.session.delete(model)
+    db.session.delete(model2)
     db.session.commit()
 
     return jsonify({'status': True})
