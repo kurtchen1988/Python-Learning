@@ -40,14 +40,14 @@ db.init_app(app)
 def machine():
 # 展示所有机器
     #server = Machine.query.all()
-    data = Monitor.query.filter("machine_id").all()
-    #data2 = Monitor.query.filter_by("machine_id").values('ip')
-    data3 = Monitor.query("machine_id").all()
-    print(models_to_dict(data))
-    print(models_to_dict(data3))
-
-    '''
     data = Monitor.query.all()
+    server = Machine.query.all()
+    #data2 = Monitor.query.filter_by("machine_id").values('ip')
+    #data3 = Monitor.query.all()
+    #print(models_to_dict(data)[0].get('id'))
+    #print(models_to_dict(data3))
+
+    #data = Monitor.query.all()
     print(server)
     if(ping(server.ip,server.user,server.password)):
         status = '运行中'
@@ -55,7 +55,7 @@ def machine():
         status = '不在线'
     print(data)
     data = data['status'] = status
-    '''
+
     d = models_to_dict(data)
     print(d)
     return jsonify(models_to_dict(data))
