@@ -8,6 +8,7 @@ db = SQLAlchemy()
 
 
 class Machine(db.Model):
+    # 机器信息数据库模型
     __tablename__ = 'machine'
 
     id = db.Column(db.Integer, primary_key=True)
@@ -19,10 +20,13 @@ class Machine(db.Model):
 
 
 class Monitor(db.Model):
+    # 监控信息数据库模型
     __tablename__ = 'monitor'
 
     id = db.Column(db.Integer, primary_key=True)
     machine_id = db.Column(db.String(50), nullable=False, index=True)
     cpu = db.Column(db.String(255), nullable=False, server_default=db.FetchedValue())
     memory = db.Column(db.String(255), nullable=False, server_default=db.FetchedValue())
+    harddrive = db.Column(db.String(255), nullable=False, server_default=db.FetchedValue())
     created_at = db.Column(db.DateTime, nullable=False, server_default=db.FetchedValue())
+

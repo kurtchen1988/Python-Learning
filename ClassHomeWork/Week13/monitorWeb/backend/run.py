@@ -2,68 +2,49 @@ from flask import Flask, request, jsonify
 from helper import models_to_dict
 from flask.json import jsonify
 from model import Machine, db, Monitor
-import paramiko
+import paramiko, re, json
 
 
 
 app = Flask(__name__)
-
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/testdb'
-
-'''
-# 初始化role 并插入数据库
-test_role1 = role(6, 'supervisol', '超超超超级管理员哦')
-test_role2 = role(7, 'your try', '你试试哦')
-db.session.add(test_role1)
-db.session.add(test_role2)
-db.session.commit()
-
-#查询数据库
-db.session.query(role).filter_by(id=2).first()  # 查询role表中id为2的第一个匹配项目，用".字段名"获取字段值
-db.session.query(role).all()  # 得到一个list，返回role表里的所有role实例
-db.session.query(role).filter(role.id == 2).first() # 结果与第一种一致
-# 获取指定字段，返回一个生成器 通过遍历来完成相关操作, 也可以强转为list
-db.session.query(role).filter_by(id=2).values('id', 'name', 'name_cn')
-# 模糊查询
-db.session.query(role).filter(role.name_cn.endswith('管理员')).all()  # 获取role表中name_cn字段以管理员结尾的所有内容
-# 修改数据库内容
-user = db.session.query(role).filter_by(id=6).first()  # 将role表中id为6的name改为change
-user.name = 'change'
-db.session.commit()
-'''
-
+# 在此设置数据库连接
 db.init_app(app)
-
+id = None
 
 @app.route("/machine")
 def machine():
-# 展示所有机器
-    #server = Machine.query.all()
+    '''
+    显示机器，同时对每个机器都会进行连接操作，如果成功就显示运行中，不成功就显示不在线
+    :return: 所有机器信息的json
+    '''
+
     data = Monitor.query.all()
     server = Machine.query.all()
-    #data2 = Monitor.query.filter_by("machine_id").values('ip')
-    #data3 = Monitor.query.all()
-    #print(models_to_dict(data)[0].get('id'))
-    #print(models_to_dict(data3))
+    dictMonitor = models_to_dict(data)
+    dictServer = models_to_dict(server)
 
-    #data = Monitor.query.all()
-    print(server)
-    if(ping(server.ip,server.user,server.password)):
-        status = '运行中'
-    else:
-        status = '不在线'
-    print(data)
-    data = data['status'] = status
+    for mon in range(0,len(dictMonitor)):
 
-    d = models_to_dict(data)
-    print(d)
-    return jsonify(models_to_dict(data))
+        dictMonitor[mon]['ip']=dictServer[mon]['ip']
+        if(ping(getVal(dictServer[mon],'ip'),getVal(dictServer[mon],'user'),getVal(dictServer[mon],'password'))):
+            dictMonitor[mon]['status']='运行中'
+        else:
+            dictMonitor[mon]['status'] = '不在线'
 
+    #print(dictMonitor)
+    return jsonify(dictMonitor)
+
+def getVal(dict, key):
+
+    return dict.get(key)
 
 @app.route("/machine/create", methods=['POST'])
 def machine_create():
-# 添加机器
+    '''
+    添加机器，同时在两张表里插入数据，机器的CPU，硬盘和内存是通过调用方法直接从机器中取出信息
+    :return: 当IP地址没输入的时候返回报错json，成功录入返回正确json
+    '''
     print(request.form)
 
     model = Machine()
@@ -72,25 +53,82 @@ def machine_create():
     model.user = request.form['user']
     model.password = request.form['password']
 
+
     model2 = Monitor()
-    model2.machine_id = request.form['ip']
-    #model2.cpu = request.form['ip']
-    #model2.memory = request.form['ip']
-    #model2.harddrive = request.form['ip']
+    model2.machine_id = request.form['name']
+    model2.cpu = getCPU(request.form['ip'],request.form['user'],request.form['password'])
+
+    model2.memory = str(getDriveMemory(request.form['ip'],request.form['user'],request.form['password']).get('memory_total'))+'M'
+    model2.harddrive = getDriveMemory(request.form['ip'],request.form['user'],request.form['password']).get('hard_drive_total')
 
 
     if model.ip.strip() == '':
         return jsonify({"status": False, "data": "请输入IP地址"})
 
+
     db.session.add(model)
+    db.session.add(model2)
     db.session.commit()
 
     return jsonify({"status": True})
 
+def getCPU(ip, user, passwd):
+    '''
+    拿到CPU具体型号，使用系统命令获得并通过正则筛选数据
+    :param ip: 服务器ip地址
+    :param user: 服务器用户名
+    :param passwd: 服务器密码
+    :return: CPU具体型号的字符串
+    '''
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+    ssh.connect(hostname=ip, username=user, password=passwd, port=22)
+
+    command = "dmidecode -s processor-version"
+    stdin, stdout, stderr = ssh.exec_command(command)
+    res = stdout.read().decode()
+    a = re.findall('.*\n', res)[0]
+    ssh.close()
+    return a
+
+def getDriveMemory(ip, user, passwd):
+    '''
+    复用监控代码，通过上传脚本拿到机器的硬盘和内存信息
+    :param ip: 服务器ip地址
+    :param user: 服务器用户名
+    :param passwd: 服务器密码
+    :return: 转换成字典的机器信息
+    '''
+    # 远程文件传输
+    transport = paramiko.Transport((ip, 22))
+    transport.connect(username=user, password=passwd)
+    sftp = paramiko.SFTPClient.from_transport(transport)
+
+    # 上传到远程主机
+    sftp.put('./monitor.py', '/tmp/monitor.py')
+    sftp.close()
+    transport.close()
+
+    # 远程主机上执行命令
+    ssh = paramiko.SSHClient()
+    ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())  # 允许连接不在know_hosts文件中的主机
+    ssh.connect(hostname=ip, username=user, password=passwd, port=22)
+
+    command = "python3 /tmp/monitor.py && rm -f /tmp/monitor.py"
+    stdin, stdout, stderr = ssh.exec_command(command)
+    res = stdout.read().decode()
+
+
+    ssh.close()
+
+    return json.loads(res)
 
 @app.route("/machine/delete")
 def machine_delete():
-
+    '''
+    删除机器信息，从机器和监控两个表中一同删除机器信息
+    :return: 删除成功返回键为status，值为True的字典
+    '''
 
     model = Machine.query.get(request.args['id'])
     model2 = Monitor.query.get(request.args['id'])
@@ -101,13 +139,54 @@ def machine_delete():
 
     return jsonify({'status': True})
 
+@app.route("/machine/edit")
+def machine_edit():
+    '''
+    修改机器信息，首先展示机器的信息在表格中，拿到机器的id号，根据id号在数据库中查询
+    :return: 机器信息的json
+    '''
+
+    model = Machine.query.get(request.args['id'])
+
+
+    return jsonify({'id':model.id,'name': model.name,'ip':model.ip,'user':model.user,'password':model.password})
+
+@app.route("/machine/edit", methods=['POST'])
+def machine_edit_post():
+    '''
+    修改机器信息，从两个表中一同修改机器信息。机器的cpu，内存以及硬盘信息重新从机器调取
+    :return: 如果没输入ip地址，返回失败信息json，如果成功修改，返回成功信息json
+    '''
+
+    model = Machine.query.get(request.form['id'])
+    model.name = request.form['name']
+    model.ip = request.form['ip']
+    model.user = request.form['user']
+    model.password = request.form['password']
+
+    model2 = Monitor.query.get(request.form['id'])
+    model2.machine_id = request.form['name']
+    model2.cpu = getCPU(request.form['ip'], request.form['user'], request.form['password'])
+
+    model2.memory = str(
+        getDriveMemory(request.form['ip'], request.form['user'], request.form['password']).get('memory_total')) + 'M'
+    model2.harddrive = getDriveMemory(request.form['ip'], request.form['user'], request.form['password']).get(
+        'hard_drive_total')
+
+    if model.ip.strip() == '':
+        return jsonify({"status": False, "data": "请输入IP地址"})
+
+    db.session.commit()
+
+    return jsonify({'status': True})
 
 @app.route('/monitor')
 def monitor():
-
-
+    '''
+    实时监控cpu使用率和内存使用率
+    :return:
+    '''
     machine = Machine.query.get(request.args['id'])
-    #???
 
 
     # 远程文件传输
@@ -132,9 +211,12 @@ def monitor():
 
     ssh.close()
 
+
     return res
 
+
 def ping(ip, username, password):
+    '''用ssh尝试链接主机，如果没报错证明已经连接上'''
     try:
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -147,6 +229,7 @@ def ping(ip, username, password):
 
 @app.after_request
 def after_filter(response):
+    '''设置允许的网页操作'''
     response.headers['Access-Control-Allow-Origin'] = '*'
     response.headers['Access-Control-Allow-Methods'] = 'GET,POST,DELETE,PUT,'
     allow_headers = "Referer,Accept,Origin,User-Agent"
@@ -156,4 +239,5 @@ def after_filter(response):
 
 
 if __name__ == '__main__':
+    '''入口程序'''
     app.run(host='localhost', port=5000, debug=True)

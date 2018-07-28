@@ -11,7 +11,7 @@
 <div id="app">
   <h1>监控中心</h1>
   <p>
-    <router-link to="/machine">机器</router-link>
+    <router-link to="/machine">查看机器</router-link>
   </p>
   <router-view></router-view>
 </div>
@@ -32,15 +32,15 @@
       </tr>
       <tr v-for="item in machineList">
         <td>{{item.id}}</td>
-        <td>{{item.name}}</td>
+        <td>{{item.machine_id}}</td>
         <td>{{item.ip}}</td>
         <td>{{item.cpu}}</td>
         <td>{{item.memory}}</td>
         <td>{{item.harddrive}}</td>
-        <td>?</td>
-          <!-- <router-link to="/monitor">查看</router-link> -->
+        <td>{{item.status}}</td>
         <td>
           <router-link :to="{path:'/monitor',query: {id: item.id}}">查看</router-link>
+            <router-link :to="{path:'/machine/edit',query: {id: item.id}}">修改</router-link>
             <a @click="del(item.id)" href="javascript:;">删除</a>
         </td>
       </tr>
@@ -55,6 +55,18 @@
     <div>IP <input v-model.trim="model.ip" /></div>
     <div>用户<input v-model.trim="model.user" /></div>
     <div>密码<input v-model.trim="model.password" type="password" /></div>
+    <button @click="save">确定</button>
+  </div>
+</script>
+
+<script type="text/template" id="tpl-machine-edit">
+  <div>
+    <h3>修改机器</h3>
+    <input v-model.trim="model.id" value="model.id" type="hidden"/>
+    <div>名称 <input v-model.trim="model.name" value="model.name" placeholder="model.name"/></div>
+    <div>IP <input v-model.trim="model.ip" value="model.ip" placeholder="model.ip"/></div>
+    <div>用户<input v-model.trim="model.user" value="model.user" placeholder="model.user"/></div>
+    <div>密码<input v-model.trim="model.password" value="model.password" type="password" placeholder="model.password"/></div>
     <button @click="save">确定</button>
   </div>
 </script>
@@ -84,7 +96,7 @@ const MachineList = {
   data: function () {
         return {
             machineList: [
-                //{'id': 1, 'name': 'test','ip':'192.168.99.99'}
+
             ]
         }
     },
@@ -113,9 +125,7 @@ const MachineList = {
 }
 
 
-
-// const MachineCreate = { template: "#tpl-machine-create" }
-//创建新机器！！！
+//创建新机器
 const MachineCreate = { 
   template: "#tpl-machine-create",
   data:function(){
@@ -141,7 +151,42 @@ const MachineCreate = {
   },
 }
 
-// const Monitor = { template: "#tpl-monitor" }
+//修改机器信息
+const MachineChange = {
+  template: "#tpl-machine-edit",
+  data:function(){
+    return {
+      model: {
+          id:"",
+        name:"",
+        ip:"",
+        user:"",
+        password:""
+      }
+    }
+  },
+    mounted: function () {
+       this.init()
+    },
+  methods: {
+      init:function () {
+          pcid = this.$route.query.id
+        $.get("http://127.0.0.1:5000/machine/edit",{id:pcid}, (data)=>{
+          this.model = data
+        })
+      },
+    save: function () {
+            $.post('http://127.0.0.1:5000/machine/edit', this.model, (res) => {
+              if (res.status){
+                this.$router.push('/machine')
+              }else{
+                alert(res.data)
+              }
+            })
+        }
+  },
+}
+
 const Monitor = {
   template: "#tpl-monitor",
   data:function(){
@@ -244,6 +289,7 @@ const Deploy = { template: "#tpl-deploy" }
 const routes = [
   { path: '/machine', component: MachineList }, //展示机器
   { path: '/machine/create', component: MachineCreate }, //添加机器
+    { path: '/machine/edit', component: MachineChange }, //修改机器
   { path: '/monitor', component: Monitor }, //查看操作
 ]
 

@@ -1,25 +1,37 @@
 CREATE DATABASE IF NOT EXISTS testdb;
 USE testdb;
 
-CREATE TABLE `machine` (
-`id` int(11) NOT NULL AUTO_INCREMENT,
-`name` varchar(10) NOT NULL DEFAULT '' COMMENT '名称',
-`ip` varchar(50) NOT NULL DEFAULT '' COMMENT 'IP地址',
-`user` varchar(50) NOT NULL DEFAULT '' COMMENT '用户',
-`password` varchar(50) NOT NULL DEFAULT '' COMMENT '密码',
-`created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '新增时间',
-PRIMARY KEY (id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='主机';
+create table machine
+(
+  id         int auto_increment
+    primary key,
+  name       varchar(10) default ''              not null
+  comment '名称',
+  ip         varchar(50) default ''              not null
+  comment 'IP地址',
+  user       varchar(50) default ''              not null
+  comment '用户',
+  password   varchar(50) default ''              not null
+  comment '密码',
+  created_at timestamp default CURRENT_TIMESTAMP not null
+  comment '新增时间'
+)
+  comment '主机'
+  engine = InnoDB;
 
-insert into machine (id,name,ip,user,password) values (1,'test','192.168.137.131','root','root1988824');
+create table monitor
+(
+  id         int auto_increment
+    primary key,
+  machine_id varchar(255)                        not null,
+  cpu        varchar(255) default ''             not null,
+  memory     varchar(255) default ''             not null,
+  harddrive  varchar(255) default ''             not null,
+  created_at timestamp default CURRENT_TIMESTAMP not null
+  comment '新增时间'
+)
+  comment '监控'
+  engine = InnoDB;
 
-CREATE TABLE monitor (
-id int(11) NOT NULL AUTO_INCREMENT,
-machine_id int(10) NOT NULL,
-cpu varchar(255) NOT NULL DEFAULT '',
-memory varchar(255) NOT NULL DEFAULT '',
-harddrive VARCHAR(255) NOT NULL DEFAULT '',
-created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '新增时间',
-PRIMARY KEY (id),
-KEY(machine_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='监控';
+create index machine_id
+  on monitor (machine_id);

@@ -1,3 +1,4 @@
+# 从模型转换成json的小工具
 def to_dict(model, columns=None, append_columns=None):
     '''model to dict'''
     from sqlalchemy.orm import class_mapper
