@@ -22,7 +22,7 @@ class Monitor(db.Model):
     __tablename__ = 'monitor'
 
     id = db.Column(db.Integer, primary_key=True)
-    machine_id = db.Column(db.Integer, nullable=False, index=True)
+    machine_id = db.Column(db.String(50), nullable=False, index=True)
     cpu = db.Column(db.String(255), nullable=False, server_default=db.FetchedValue())
     memory = db.Column(db.String(255), nullable=False, server_default=db.FetchedValue())
     created_at = db.Column(db.DateTime, nullable=False, server_default=db.FetchedValue())

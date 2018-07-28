@@ -11,6 +11,7 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost:3306/testdb'
 
+'''
 # 初始化role 并插入数据库
 test_role1 = role(6, 'supervisol', '超超超超级管理员哦')
 test_role2 = role(7, 'your try', '你试试哦')
@@ -30,7 +31,7 @@ db.session.query(role).filter(role.name_cn.endswith('管理员')).all()  # 获�
 user = db.session.query(role).filter_by(id=6).first()  # 将role表中id为6的name改为change
 user.name = 'change'
 db.session.commit()
-
+'''
 
 db.init_app(app)
 
@@ -39,8 +40,12 @@ db.init_app(app)
 def machine():
 # 展示所有机器
     #server = Machine.query.all()
-    data = Machine.query.all()
-    print(Machine.query.get('ip'))
+    data = Monitor.query.filter("machine_id").all()
+    #data2 = Monitor.query.filter_by("machine_id").values('ip')
+    data3 = Monitor.query("machine_id").all()
+    print(models_to_dict(data))
+    print(models_to_dict(data3))
+
     '''
     data = Monitor.query.all()
     print(server)
