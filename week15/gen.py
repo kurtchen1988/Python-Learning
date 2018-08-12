@@ -34,7 +34,7 @@ cities = ['杭州市',
 '奉化市',
 '临安市',
 '江山市']
-file = open('data/cities.txt','w+')
+file = open('data/cities.txt','w+', encoding='utf-8')
 file.write('排名 城市 平均工资'+'\n')
 
 for i in range(len(cities)):
