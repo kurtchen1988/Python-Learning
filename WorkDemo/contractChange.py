@@ -4,8 +4,7 @@ import hashlib
 class changeCon():
 
     xml = '<?xml version="1.0" encoding="gbk"?><business comment="采购合同修改信息" id="BA_CONTRACT_UPDATE">      <group>   ' \
-      '           <update_id>%s</update_id>              <rec_id>%s</rec_id>              <con_no>'\
-      ' %s</con_no>              <gysmc>%s</gysmc>              ' \
+      '           <update_id>%s</update_id>              <rec_id>%s</rec_id>              <con_no>%s</con_no>              <gysmc>%s</gysmc>              ' \
       '<skyh>%s</skyh>              <yhzh>%s</yhzh>       </group>   ' \
       '    <business comment="附件信息" id="BA_CONTRACT_ACCESS">              <group>                     ' \
       '<access_id>%s</access_id>                     <access_name>%s</access_name>        ' \

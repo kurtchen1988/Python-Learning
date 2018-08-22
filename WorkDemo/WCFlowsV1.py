@@ -76,42 +76,44 @@ class wcHuituiJiesuan:
             #self.cur.close()
             #print(self.id2)
             jiesuanNum = input("请输入结算单的个数")
-            self.jiesuanID = int(input("请输入结算单ID："))
-            reason = input("请输入修改结算单的理由：")
-            i = int(input("请输入此结算单对应的订单个数（请用数字1-9输入）："))
-            for n in range(1, i+1):
-                orderID = input("请输入第"+str(n)+"个订单ID：")
-                self.dingdanID.append(orderID)
-                self.id2.append(tempid2)
-                flag = int(input("请输入您想把订单("+orderID+")修改成的状态：1.订单取消；2.订正回退 （请输入1或2）"))
-                if flag==1:
-                    self.dingdanReason.append(0)
-                elif flag==2:
-                    self.dingdanReason.append(1)
-                self.dingdanReason2.append(input("请输入您修改订单("+orderID+")的理由："))
-                tempid2=tempid2+1
-            print("-- 开始生成回退结算单SQL...\n\n")
+            for m in range(1, jiesuanNum+1):
+                self.jiesuanID = int(input("请输入结算单"+str(m)+"的ID："))
+                reason = input("请输入修改结算单的理由：")
+                i = int(input("请输入此结算单对应的订单个数（请用数字1-9输入）："))
+                for n in range(1, i+1):
+                    orderID = input("请输入第"+str(n)+"个订单ID：")
+                    self.dingdanID.append(orderID)
+                    self.id2.append(tempid2)
+                    flag = int(input("请输入您想把订单("+orderID+")修改成的状态：1.订单取消；2.订正回退 （请输入1或2）"))
+                    if flag==1:
+                        self.dingdanReason.append(0)
+                    elif flag==2:
+                        self.dingdanReason.append(1)
+                    self.dingdanReason2.append(input("请输入您修改订单("+orderID+")的理由："))
+                    tempid2=tempid2+1
+                print("-- 开始生成"+self.jiesuanID+"的回退结算单SQL...\n\n")
 
-            print(self.sql1%self.jiesuanID)
-            print(self.sql2%self.jiesuanID)
-            print(self.sql3%self.jiesuanID)
-            #print(self.sql4,self.id1,self.jiesuanID, reason)
-            print(self.sql4%(self.id1, self.jiesuanID, reason))
-            for a in range(0, len(self.dingdanID)):
-                if(self.dingdanReason[a]==0):
-                    print(self.sql5%('-5',self.dingdanID[a]))
-                elif(self.dingdanReason[a]==1):
-                    print(self.sql5%('6',self.dingdanID[a]))
+                print(self.sql1%self.jiesuanID)
+                print(self.sql2%self.jiesuanID)
+                print(self.sql3%self.jiesuanID)
+                #print(self.sql4,self.id1,self.jiesuanID, reason)
+                print(self.sql4%(self.id1, self.jiesuanID, reason))
+                for a in range(0, len(self.dingdanID)):
+                    if(self.dingdanReason[a]==0):
+                        print(self.sql5%('-5',self.dingdanID[a]))
+                    elif(self.dingdanReason[a]==1):
+                        print(self.sql5%('6',self.dingdanID[a]))
 
-            for b in range(0,len(self.dingdanID)):
-                if (self.dingdanReason[b] == 0):
-                    print(self.sql6 %(self.id2[b], str(int(self.id2[b])+10000000),self.dingdanID[b],str(int(time.time())),'订单取消',self.dingdanReason2[b]))
-                elif (self.dingdanReason[b] == 1):
-                    print(self.sql6 % (self.id2[b], str(int(self.id2[b]) + 10000000), self.dingdanID[b], str(int(time.time())), '订正回退', self.dingdanReason2[b]))
-            print("-- 回退结算单SQL生成完毕...\n\n")
+                for b in range(0,len(self.dingdanID)):
+                    if (self.dingdanReason[b] == 0):
+                        print(self.sql6 %(self.id2[b], str(int(self.id2[b])+10000000),self.dingdanID[b],str(int(time.time())),'订单取消',self.dingdanReason2[b]))
+                    elif (self.dingdanReason[b] == 1):
+                        print(self.sql6 % (self.id2[b], str(int(self.id2[b]) + 10000000), self.dingdanID[b], str(int(time.time())), '订正回退', self.dingdanReason2[b]))
+                print("-- 回退"+self.jiesuanID+"的结算单SQL生成完毕...\n\n")
         except Exception as e:
             raise e
 
+    '''
     def genRollback(self):
 
         self.cur.execute(self.statusroll1%self.jiesuanID)
@@ -147,7 +149,7 @@ class wcHuituiJiesuan:
             print(self.roll6%self.id2[b])
 
         print("-- 回滚SQL生成完毕")
-
+    '''
 
     def mainControl(self):
         pass
