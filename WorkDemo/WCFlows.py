@@ -75,7 +75,7 @@ class wcHuituiJiesuan:
             tempid2 = int(self.cur.fetchall()[0][0]) + 1  # 通过结果给id2赋值
             #self.cur.close()
             #print(self.id2)
-            jiesuanNum = input("请输入结算单的个数")
+
             self.jiesuanID = int(input("请输入结算单ID："))
             reason = input("请输入修改结算单的理由：")
             i = int(input("请输入此结算单对应的订单个数（请用数字1-9输入）："))

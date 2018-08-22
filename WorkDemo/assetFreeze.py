@@ -22,7 +22,7 @@ class freeze:
     itemQuery = "select count(*) from db_item.zcy_item_district_relation where item_id = %s;"
     itemQuery2 = "select sign_district_code from db_item.zcy_item_district_relation where item_id = %s;"
     itemQuery3 = "select status from db_item.zcy_item_district_relation where item_id = %s;"
-    itemQuery4 = "select status from db_item.db_item.parana_items where id = %s;"
+    itemQuery4 = "select status from db_item.parana_items where id = %s;"
     user = 'devread'
     passwd = 'devR3343'
     urlitems = 'rr-9dp30iap52gda17cz.mysql.rds.aliyuncs.com'
@@ -129,10 +129,11 @@ class freeze:
             file.write("-- 回滚语句\n")
             for finalRe in self.finalReSql:
                 print(finalRe)
-                file.write(finalRe)
+                file.write(finalRe+"\n")
             file.close()
+            input("生成sql文件，请查看文件夹下的freeze.sql文件")
         else:
-            print("有问题咯，队列中没有数据")
+            input("有问题咯，队列中没有数据")
 
 
     def __del__(self):

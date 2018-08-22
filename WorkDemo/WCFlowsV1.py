@@ -14,15 +14,15 @@ class wcHuituiJiesuan:
     # 需要生成的sql
     sql1 = "UPDATE db_settlement.settlement_finalstatements SET status='备案中' WHERE id in (%s);" # 结算单id
     sql2 = "UPDATE db_settlement.settlement_recordtables SET status='备案审核中' WHERE `fs_id` in (%s);" # 结算单id
-    sql3 = "DELETE FROM db_settlement.settlement_recordtable_audits WHERE `fs_id` in (%s)" # 结算单id
+    sql3 = "DELETE FROM db_settlement.settlement_recordtable_audits WHERE `fs_id` in (%s);" # 结算单id
     sql4 = "INSERT INTO db_settlement.settlement_finalstatement_logs (`id` ,`fs_id` ,`org_id` ,`org_name` , `operator_id` ,`operator` ,`operation` , `result` , `create_at` , `update_at` ) VALUES(%s,%s,null,'平台',null,'财政内网','内网备案撤销','%s', now(), now());"
     # id1, 结算单id, 理由
-    idsql4 = 'select id from db_settlement.settlement_finalstatement_logs where id < 1000000000000010717 order by id desc limit 1' # 取第一个加一id1
+    idsql4 = 'select id from db_settlement.settlement_finalstatement_logs where id < 1000000000000010717 order by id desc limit 1;' # 取第一个加一id1
     sql5 = "update db_trade.zcy_orders set status=%s where id = %s;" # 订单号id
     # -5或者6分别代表取消或者开始结算
     sql6 = "INSERT INTO db_settlement.zcy_component_timeline_t (`id`,`msg_id`, `biz_type`, `target_id`, `visible_label`, `create_at`, `role_category`, `operator`, `operator_id`,`action`, `detail`) VALUES ('%s','%s', '10001', %s, '-1',%s, '平台', '系统', NULL, '%s', '%s');"
     # id2, msg_id(10000000加id), 订单号id，时间戳(int(time.time())), 订单取消 or 订正回退, 理由
-    idsql6 = 'select id from db_settlement.zcy_component_timeline_t where id < 10000 order by id desc limit 1' # 取第一个加一id2
+    idsql6 = 'select id from db_settlement.zcy_component_timeline_t where id < 10000 order by id desc limit 1;' # 取第一个加一id2
 
     roll1 = "UPDATE db_settlement.settlement_finalstatements SET status='%s' WHERE id in (%s);" # status1, 结算单id|这里status通过查询生成
     statusroll1 = 'select status from db_settlement.settlement_finalstatements where id in (%s);' #结算单id
@@ -45,10 +45,11 @@ class wcHuituiJiesuan:
     id2 = []
 
     enquery1 = "select * from db_settlement.settlement_recordtables where fs_id in(结算单id);"
-    enquery2 = "select * from db_settlement.purchaseplan_relation where purchaseplan_id 采购计划id查询"
+    enquery2 = "select * from db_settlement.purchaseplan_relation where purchaseplan_id in (采购计划id查询);" # 需要加入，在每笔结算单最后
 
+    check0 = "SELECT distinct record_intranet_id FROM recordsync_t where record_id = (SELECT  record_no FROM db_settlement.settlement_recordtables where fs_id in(1608006000000123447));" # 加入最前面，用来验证。一笔结算一个
     check1 = "select * from db_settlement.settlement_finalstatements WHERE id in(结算单id);"
-    check2 = "select * from db_settlement.settlement_recordtables WHERE `fs_id` in(结算单id);"
+    check2 = "select * from db_settlement.settlement_recordtables WHERE `fs_id` in(结算单id);" # 需要加入，在每笔结算单最后
     check3 = "select * from db_settlement.settlement_recordtable_audits WHERE `fs_id` in(结算单id);"
     check4 = "select * from db_settlement.settlement_finalstatement_logs where fs_id = 结算单id;"
     check5 = "select * from db_trade.zcy_orders where id in(订单号id);"
@@ -60,14 +61,15 @@ class wcHuituiJiesuan:
         self.cur = self.db.cursor()
         pass
 
-    def showData(self):
-
-        pass
+    def queryData(self, cur, sql):
+        result = cur.excute(sql)
+        return result.fetchall()[0][0]
 
 
 
     def genSQL(self):
         try:
+            #file = open("./reverse.sql","W+")
             self.cur.execute(self.idsql4)  # 执行拿到最后一条id的语句
             self.id1 = int(self.cur.fetchall() [0][0])+1 # 通过结果给id1赋值
             #print(self.id1)
@@ -76,7 +78,7 @@ class wcHuituiJiesuan:
             #self.cur.close()
             #print(self.id2)
             jiesuanNum = input("请输入结算单的个数")
-            for m in range(1, jiesuanNum+1):
+            for m in range(1, int(jiesuanNum)+1):
                 self.jiesuanID = int(input("请输入结算单"+str(m)+"的ID："))
                 reason = input("请输入修改结算单的理由：")
                 i = int(input("请输入此结算单对应的订单个数（请用数字1-9输入）："))
@@ -91,7 +93,7 @@ class wcHuituiJiesuan:
                         self.dingdanReason.append(1)
                     self.dingdanReason2.append(input("请输入您修改订单("+orderID+")的理由："))
                     tempid2=tempid2+1
-                print("-- 开始生成"+self.jiesuanID+"的回退结算单SQL...\n\n")
+                print("-- 开始生成"+str(self.jiesuanID)+"的回退结算单SQL...\n\n")
 
                 print(self.sql1%self.jiesuanID)
                 print(self.sql2%self.jiesuanID)
@@ -109,11 +111,12 @@ class wcHuituiJiesuan:
                         print(self.sql6 %(self.id2[b], str(int(self.id2[b])+10000000),self.dingdanID[b],str(int(time.time())),'订单取消',self.dingdanReason2[b]))
                     elif (self.dingdanReason[b] == 1):
                         print(self.sql6 % (self.id2[b], str(int(self.id2[b]) + 10000000), self.dingdanID[b], str(int(time.time())), '订正回退', self.dingdanReason2[b]))
-                print("-- 回退"+self.jiesuanID+"的结算单SQL生成完毕...\n\n")
+                print("-- 回退"+str(self.jiesuanID)+"的结算单SQL生成完毕...\n\n")
+                self.genRollback()
         except Exception as e:
             raise e
 
-    '''
+
     def genRollback(self):
 
         self.cur.execute(self.statusroll1%self.jiesuanID)
@@ -149,7 +152,7 @@ class wcHuituiJiesuan:
             print(self.roll6%self.id2[b])
 
         print("-- 回滚SQL生成完毕")
-    '''
+
 
     def mainControl(self):
         pass
