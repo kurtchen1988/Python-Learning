@@ -8,9 +8,6 @@ class wcHuituiJiesuan:
     url = 'rr-9dpnbsn9mds4urq9g.mysql.rds.aliyuncs.com'
 
 
-
-    #1612230000000088852
-
     # 需要生成的sql
     sql1 = "UPDATE db_settlement.settlement_finalstatements SET status='备案中' WHERE id in (%s);" # 结算单id
     sql2 = "UPDATE db_settlement.settlement_recordtables SET status='备案审核中' WHERE fs_id in (%s);" # 结算单id
@@ -44,8 +41,8 @@ class wcHuituiJiesuan:
     settleSql = []
     rollSql = []
     rollArray = [9]
-    id1 = 0
-    id2 = []
+    settlemain_id = 0
+    ordermain_id = 0
 
     enquery1 = "select * from db_settlement.settlement_recordtables where fs_id in(结算单id);"
     enquery2 = "select * from db_settlement.purchaseplan_relation where purchaseplan_id in (采购计划id查询);" # 需要加入，在每笔结算单最后
@@ -86,11 +83,45 @@ class wcHuituiJiesuan:
 
         return self.rollSql
 
+    def rollSqlArray(self, settlement_id):
+        result = self.cur.execute(self.sqlroll3%settlement_id)
+        self.rollArray[0] = result[0][0]
+        self.rollArray[1] = result[0][1]
+        self.rollArray[2] = result[0][2]
+        self.rollArray[3] = result[0][3]
+        self.rollArray[4] = result[0][4]
+        self.rollArray[5] = result[0][5]
+        self.rollArray[6] = result[0][6]
+        self.rollArray[7] = result[0][7]
+        self.rollArray[8] = result[0][8]
+        return self.rollArray
+
     def removeSettleSql(self):
         self.settleSql = []
 
     def removeRollSql(self):
         self.rollSql = []
+
+    def removeRollSqlArray(self):
+        self.rollArray = [9]
+
+
+
+    def queryData(self, sql):
+        result = self.cur.excute(sql)
+        return result.fetchall()[0][0]
+        #return 0
+
+
+    def mainControl(self):
+
+        pass
+
+    def __del__(self):
+
+        self.cur.close()
+        self.db.close()
+        pass
 
     def test(self):
         self.sqlSettleData(settlemain_id=23,settlement_id=45,settleReason="this is test", ordermain_id=50, order_id=60, order_status="test",orderType="back", orderReason="okok")
@@ -100,113 +131,6 @@ class wcHuituiJiesuan:
         self.removeRollSql()
         print(self.settleSql)
         print(self.rollSql)
-
-
-    def rollOrderData(self):
-        pass
-
-    def queryData(self, sql):
-        result = self.cur.excute(sql)
-        return result.fetchall()[0][0]
-        #return 0
-
-
-
-    def genSQL(self):
-        try:
-            #file = open("./reverse.sql","W+")
-            self.cur.execute(self.idsql4)  # 执行拿到最后一条id的语句
-            self.id1 = int(self.cur.fetchall() [0][0])+1 # 通过结果给id1赋值
-            #print(self.id1)
-            self.cur.execute(self.idsql6)  # 执行拿到最后一条id的语句
-            tempid2 = int(self.cur.fetchall()[0][0]) + 1  # 通过结果给id2赋值
-            #self.cur.close()
-            #print(self.id2)
-            jiesuanNum = input("请输入结算单的个数")
-            for m in range(1, int(jiesuanNum)+1):
-                self.jiesuanID = int(input("请输入结算单"+str(m)+"的ID："))
-                reason = input("请输入修改结算单的理由：")
-                i = int(input("请输入此结算单对应的订单个数（请用数字1-9输入）："))
-                for n in range(1, i+1):
-                    orderID = input("请输入第"+str(n)+"个订单ID：")
-                    self.dingdanID.append(orderID)
-                    self.id2.append(tempid2)
-                    flag = int(input("请输入您想把订单("+orderID+")修改成的状态：1.订单取消；2.订正回退 （请输入1或2）"))
-                    if flag==1:
-                        self.dingdanReason.append(0)
-                    elif flag==2:
-                        self.dingdanReason.append(1)
-                    self.dingdanReason2.append(input("请输入您修改订单("+orderID+")的理由："))
-                    tempid2=tempid2+1
-                print("-- 开始生成"+str(self.jiesuanID)+"的回退结算单SQL...\n\n")
-
-                print(self.sql1%self.jiesuanID)
-                print(self.sql2%self.jiesuanID)
-                print(self.sql3%self.jiesuanID)
-                #print(self.sql4,self.id1,self.jiesuanID, reason)
-                print(self.sql4%(self.id1, self.jiesuanID, reason))
-                for a in range(0, len(self.dingdanID)):
-                    if(self.dingdanReason[a]==0):
-                        print(self.sql5%('-5',self.dingdanID[a]))
-                    elif(self.dingdanReason[a]==1):
-                        print(self.sql5%('6',self.dingdanID[a]))
-
-                for b in range(0,len(self.dingdanID)):
-                    if (self.dingdanReason[b] == 0):
-                        print(self.sql6 %(self.id2[b], str(int(self.id2[b])+10000000),self.dingdanID[b],str(int(time.time())),'订单取消',self.dingdanReason2[b]))
-                    elif (self.dingdanReason[b] == 1):
-                        print(self.sql6 % (self.id2[b], str(int(self.id2[b]) + 10000000), self.dingdanID[b], str(int(time.time())), '订正回退', self.dingdanReason2[b]))
-                print("-- 回退"+str(self.jiesuanID)+"的结算单SQL生成完毕...\n\n")
-                self.genRollback()
-        except Exception as e:
-            raise e
-
-
-    def genRollback(self):
-
-        self.cur.execute(self.statusroll1%self.jiesuanID)
-        status1 = str(self.cur.fetchall()[0][0])
-        # print(status1)
-        self.cur.execute(self.statusroll2%self.jiesuanID)
-        status2 = str(self.cur.fetchall()[0][0])
-        # print(status2)
-        self.cur.execute(self.sqlroll3%self.jiesuanID)
-        resultall = self.cur.fetchall()
-        # id, recordtable_id, fs_id, result, detail, start_at, end_at, create_at, update_at
-        id = resultall[0][0]
-        recordtable_id = resultall[0][1]
-        fs_id = resultall[0][2]
-        result = resultall[0][3]
-        detail = resultall[0][4]
-        start_at = resultall[0][5]
-        end_at = resultall[0][6]
-        create_at = resultall[0][7]
-        update_at = resultall[0][8]
-        #self.cur.close()
-        print("-- 开始生成回滚SQL\n\n")
-
-        print(self.roll1%(status1, self.jiesuanID))
-        print(self.roll2%(status2, self.jiesuanID))
-        print(self.roll3%(id, recordtable_id, fs_id, result, detail, start_at, end_at, create_at, update_at))
-        print(self.roll4%self.id1)
-
-        for a in range(0, len(self.dingdanID)):
-            print(self.roll5%self.dingdanID[a])
-
-        for b in range(0, len(self.dingdanID)):
-            print(self.roll6%self.id2[b])
-
-        print("-- 回滚SQL生成完毕")
-
-
-    def mainControl(self):
-        pass
-
-    def __del__(self):
-
-        self.cur.close()
-        self.db.close()
-        pass
 
 if __name__=='__main__':
     a = wcHuituiJiesuan()
