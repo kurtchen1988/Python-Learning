@@ -43,14 +43,14 @@ class wcHuituiJiesuan:
 
     settleSql = []
     rollSql = []
-
+    rollArray = [9]
     id1 = 0
     id2 = []
 
     enquery1 = "select * from db_settlement.settlement_recordtables where fs_id in(结算单id);"
     enquery2 = "select * from db_settlement.purchaseplan_relation where purchaseplan_id in (采购计划id查询);" # 需要加入，在每笔结算单最后
 
-    check0 = "SELECT distinct record_intranet_id FROM recordsync_t where record_id = (SELECT  record_no FROM db_settlement.settlement_recordtables where fs_id in(%));" # 加入最前面，用来验证。一笔结算一个
+    check0 = "SELECT distinct record_intranet_id FROM recordsync_t where record_id = (SELECT  record_no FROM db_settlement.settlement_recordtables where fs_id in(%s));" # 加入最前面，用来验证。一笔结算一个
     check1 = "select * from db_settlement.settlement_finalstatements WHERE id in(结算单id);"
     check2 = "select * from db_settlement.settlement_recordtables WHERE `fs_id` in(结算单id);" # 需要加入，在每笔结算单最后
     check3 = "select * from db_settlement.settlement_recordtable_audits WHERE `fs_id` in(结算单id);"
@@ -64,27 +64,43 @@ class wcHuituiJiesuan:
         self.cur = self.db.cursor()
         pass
 
-    def sqlSettleData(self, settlemain_id, settlement_id, settleReason, ordermain_id, order_id, orderType, orderReason):
+    def sqlSettleData(self, settlemain_id, settlement_id, settleReason, ordermain_id, order_id,order_status, orderType, orderReason):
         self.settleSql.append(self.queryData(self.check0%settlement_id))
         self.settleSql.append(self.sql1%settlement_id)
         self.settleSql.append(self.sql2%settlement_id)
         self.settleSql.append(self.sql3%settlement_id)
         self.settleSql.append(self.sql4%(settlemain_id,settlement_id,settleReason))
-        self.settleSql.append(self.sql5%order_id)
-        self.settleSql.append(self.sql6%(ordermain_id, (10000000+ordermain_id), orderType, orderReason))
+        self.settleSql.append(self.sql5%(order_status, order_id))
+        self.settleSql.append(self.sql6%(ordermain_id, (10000000+ordermain_id), orderType, orderReason, orderType, orderReason))
 
         return self.settleSql
 
 
-    def rollSettleData(self, settlemain_id, insertArray, settlement_id,status, order_id):
-        self.rollSql.append()
-        self.rollSql.append()
-        self.rollSql.append()
-        self.rollSql.append()
-        self.rollSql.append()
-        self.rollSql.append()
+    def rollSettleData(self, settlement_id, settle_status1,settle_status2, insertArray, settlemain_id,order_status, order_id, ordermain_id):
+        self.rollSql.append(self.roll1%(settle_status1,settlement_id))
+        self.rollSql.append(self.roll2%(settle_status2, settlement_id))
+        self.rollSql.append(self.roll3%(insertArray[0],insertArray[1],insertArray[2],insertArray[3],insertArray[4],insertArray[0],insertArray[0],insertArray[0],insertArray[0]))
+        self.rollSql.append(self.roll4%(settlemain_id))
+        self.rollSql.append(self.roll5%(order_status, order_id))
+        self.rollSql.append(self.roll6%(ordermain_id))
 
         return self.rollSql
+
+    def removeSettleSql(self):
+        self.settleSql = []
+
+    def removeRollSql(self):
+        self.rollSql = []
+
+    def test(self):
+        self.sqlSettleData(settlemain_id=23,settlement_id=45,settleReason="this is test", ordermain_id=50, order_id=60, order_status="test",orderType="back", orderReason="okok")
+        self.rollSettleData(settlement_id=23, settle_status1="test", settle_status2="test", insertArray=['test','test','test','test','test','test','test','test','test'],
+                            settlemain_id=20, order_status="test", order_id=30, ordermain_id=40)
+        self.removeSettleSql()
+        self.removeRollSql()
+        print(self.settleSql)
+        print(self.rollSql)
+
 
     def rollOrderData(self):
         pass
@@ -92,6 +108,7 @@ class wcHuituiJiesuan:
     def queryData(self, sql):
         result = self.cur.excute(sql)
         return result.fetchall()[0][0]
+        #return 0
 
 
 
@@ -186,11 +203,14 @@ class wcHuituiJiesuan:
         pass
 
     def __del__(self):
+
         self.cur.close()
         self.db.close()
+        pass
 
 if __name__=='__main__':
     a = wcHuituiJiesuan()
-    a.genSQL()
-    a.genRollback()
-    input("-- 按回车退出程序")
+    a.test()
+    #a.genSQL()
+    #a.genRollback()
+    #input("-- 按回车退出程序")
