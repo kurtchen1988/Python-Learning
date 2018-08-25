@@ -13,14 +13,14 @@ class wcHuituiJiesuan:
 
     # 需要生成的sql
     sql1 = "UPDATE db_settlement.settlement_finalstatements SET status='备案中' WHERE id in (%s);" # 结算单id
-    sql2 = "UPDATE db_settlement.settlement_recordtables SET status='备案审核中' WHERE `fs_id` in (%s);" # 结算单id
-    sql3 = "DELETE FROM db_settlement.settlement_recordtable_audits WHERE `fs_id` in (%s);" # 结算单id
-    sql4 = "INSERT INTO db_settlement.settlement_finalstatement_logs (`id` ,`fs_id` ,`org_id` ,`org_name` , `operator_id` ,`operator` ,`operation` , `result` , `create_at` , `update_at` ) VALUES(%s,%s,null,'平台',null,'财政内网','内网备案撤销','%s', now(), now());"
+    sql2 = "UPDATE db_settlement.settlement_recordtables SET status='备案审核中' WHERE fs_id in (%s);" # 结算单id
+    sql3 = "DELETE FROM db_settlement.settlement_recordtable_audits WHERE fs_id in (%s);" # 结算单id
+    sql4 = "INSERT INTO db_settlement.settlement_finalstatement_logs (id ,fs_id ,org_id ,org_name, operator_id ,operator ,operation , result , create_at , update_at ) VALUES(%s,%s,null,'平台',null,'财政内网','内网备案撤销','%s', now(), now());"
     # id1, 结算单id, 理由
     idsql4 = 'select id from db_settlement.settlement_finalstatement_logs where id < 1000000000000010717 order by id desc limit 1;' # 取第一个加一id1
     sql5 = "update db_trade.zcy_orders set status=%s where id = %s;" # 订单号id
     # -5或者6分别代表取消或者开始结算
-    sql6 = "INSERT INTO db_settlement.zcy_component_timeline_t (`id`,`msg_id`, `biz_type`, `target_id`, `visible_label`, `create_at`, `role_category`, `operator`, `operator_id`,`action`, `detail`) VALUES ('%s','%s', '10001', %s, '-1',%s, '平台', '系统', NULL, '%s', '%s');"
+    sql6 = "INSERT INTO db_settlement.zcy_component_timeline_t (id,msg_id, biz_type, target_id, visible_label, create_at, role_category, operator, operator_id, action, detail) VALUES ('%s','%s', '10001', %s, '-1',%s, '平台', '系统', NULL, '%s', '%s');"
     # id2, msg_id(10000000加id), 订单号id，时间戳(int(time.time())), 订单取消 or 订正回退, 理由
     idsql6 = 'select id from db_settlement.zcy_component_timeline_t where id < 10000 order by id desc limit 1;' # 取第一个加一id2
 
@@ -32,7 +32,7 @@ class wcHuituiJiesuan:
     # id, recordtable_id, 结算单id, result, detail, start_at, end_at, create_at, update_at
     sqlroll3 = "select id, recordtable_id, fs_id, result, detail, start_at, end_at, create_at, update_at from db_settlement.settlement_recordtable_audits where fs_id in (%s);"     # 结算单id
     roll4 = "delete from db_settlement.settlement_finalstatement_logs where id = %s;" # id1
-    roll5 = "update db_trade.zcy_orders set status= 7 where id in(%s);" # 订单号id
+    roll5 = "update db_trade.zcy_orders set status= %s where id in(%s);" # 订单号id
     roll6 = "delete from db_settlement.zcy_component_timeline_t where id = %s;" #id2
     # 需要生成的sql结束
 
@@ -41,13 +41,16 @@ class wcHuituiJiesuan:
     dingdanReason = []
     dingdanReason2 = []
 
+    settleSql = []
+    rollSql = []
+
     id1 = 0
     id2 = []
 
     enquery1 = "select * from db_settlement.settlement_recordtables where fs_id in(结算单id);"
     enquery2 = "select * from db_settlement.purchaseplan_relation where purchaseplan_id in (采购计划id查询);" # 需要加入，在每笔结算单最后
 
-    check0 = "SELECT distinct record_intranet_id FROM recordsync_t where record_id = (SELECT  record_no FROM db_settlement.settlement_recordtables where fs_id in(1608006000000123447));" # 加入最前面，用来验证。一笔结算一个
+    check0 = "SELECT distinct record_intranet_id FROM recordsync_t where record_id = (SELECT  record_no FROM db_settlement.settlement_recordtables where fs_id in(%));" # 加入最前面，用来验证。一笔结算一个
     check1 = "select * from db_settlement.settlement_finalstatements WHERE id in(结算单id);"
     check2 = "select * from db_settlement.settlement_recordtables WHERE `fs_id` in(结算单id);" # 需要加入，在每笔结算单最后
     check3 = "select * from db_settlement.settlement_recordtable_audits WHERE `fs_id` in(结算单id);"
@@ -61,8 +64,33 @@ class wcHuituiJiesuan:
         self.cur = self.db.cursor()
         pass
 
-    def queryData(self, cur, sql):
-        result = cur.excute(sql)
+    def sqlSettleData(self, settlemain_id, settlement_id, settleReason, ordermain_id, order_id, orderType, orderReason):
+        self.settleSql.append(self.queryData(self.check0%settlement_id))
+        self.settleSql.append(self.sql1%settlement_id)
+        self.settleSql.append(self.sql2%settlement_id)
+        self.settleSql.append(self.sql3%settlement_id)
+        self.settleSql.append(self.sql4%(settlemain_id,settlement_id,settleReason))
+        self.settleSql.append(self.sql5%order_id)
+        self.settleSql.append(self.sql6%(ordermain_id, (10000000+ordermain_id), orderType, orderReason))
+
+        return self.settleSql
+
+
+    def rollSettleData(self, settlemain_id, insertArray, settlement_id,status, order_id):
+        self.rollSql.append()
+        self.rollSql.append()
+        self.rollSql.append()
+        self.rollSql.append()
+        self.rollSql.append()
+        self.rollSql.append()
+
+        return self.rollSql
+
+    def rollOrderData(self):
+        pass
+
+    def queryData(self, sql):
+        result = self.cur.excute(sql)
         return result.fetchall()[0][0]
 
 
