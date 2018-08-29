@@ -38,15 +38,11 @@ class wcHuituiJiesuan:
     roll6 = "delete from db_settlement.zcy_component_timeline_t where id = %s;" #id2
     # 需要生成的sql结束
 
-    jiesuanID = ''
-    dingdanID = []
-    dingdanReason = []
-    dingdanReason2 = []
 
-
+    file = None
     settleSql = []
     rollSql = []
-    rollArray = [9]
+    rollArray = []
     purchase = {}
     purchase_idArray = []
     purchase_id = None
@@ -104,15 +100,16 @@ class wcHuituiJiesuan:
 
     def rollSqlArray(self, settlement_id):
         self.cur.execute(self.sqlroll3%settlement_id)
-        self.rollArray.append(self.cur.fetchall()[0][0])
-        self.rollArray.append(self.cur.fetchall()[0][1])
-        self.rollArray.append(self.cur.fetchall()[0][2])
-        self.rollArray.append(self.cur.fetchall()[0][3])
-        self.rollArray.append(self.cur.fetchall()[0][4])
-        self.rollArray.append(self.cur.fetchall()[0][5])
-        self.rollArray.append(self.cur.fetchall()[0][6])
-        self.rollArray.append(self.cur.fetchall()[0][7])
-        self.rollArray.append(self.cur.fetchall()[0][8])
+        roll = self.cur.fetchall()
+        self.rollArray.append(roll[0][0])
+        self.rollArray.append(roll[0][1])
+        self.rollArray.append(roll[0][2])
+        self.rollArray.append(roll[0][3])
+        self.rollArray.append(roll[0][4])
+        self.rollArray.append(roll[0][5])
+        self.rollArray.append(roll[0][6])
+        self.rollArray.append(roll[0][7])
+        self.rollArray.append(roll[0][8])
         return self.rollArray
 
     def purchaseQuery(self, settlement_id):
@@ -133,36 +130,43 @@ class wcHuituiJiesuan:
     def removeRollSqlArray(self):
         self.rollArray = []
 
+    def removePurchaseId(self):
+        self.purchase_id = None
+
 
     def queryData(self, sql):
         self.cur.execute(sql)
         a = self.cur.fetchall()
-        print(a)
+        #print(a)
         return a[0][0]
 
+    def openFile(self):
+        self.file = open("./settlement" + time.strftime('%d%H%M%S') + ".log", "w+")
+
     def writeToFile(self):
-        file = open("./settlement"+time.strftime('%d%H%M%S')+".log","w+")
+
         if len(self.settleSql) != 0:
-            file.write("-- 开始生成结算单回退SQL\n\n")
+            self.file.write("-- 开始生成结算单回退SQL\n\n")
             for sql in self.settleSql:
-                file.write(sql+"\n")
-            file.write("-- 回退SQL生成完毕\n\n")
+                self.file.write(str(sql)+"\n")
+            self.file.write("-- 回退SQL生成完毕\n\n")
         else:
             print("SQL生成数组长度为0，有问题！")
 
         if len(self.rollSql) != 0:
-            file.write("-- 开始生成回滚语句\n\n")
+            self.file.write("-- 开始生成回滚语句\n\n")
             for rollsql in self.rollSql:
-                file.write(rollsql+"\n")
-            file.write("-- 回滚SQL生成完毕\n\n")
+                self.file.write(str(rollsql)+"\n")
+            self.file.write("-- 回滚SQL生成完毕\n\n")
         else:
             print("SQL回滚数组长度为0，有问题！")
 
-        file.close()
+    def saveFile(self):
+        self.file.close()
 
 
     def mainControl(self):
-
+        self.openFile()
         settleNum = input("请输入回退结算单的个数：")
         settlemain = self.queryData(self.idsql4)
         ordermain = self.queryData(self.idsql6)
@@ -199,7 +203,7 @@ class wcHuituiJiesuan:
             self.removeSettleSql()
             self.removeRollSql()
             self.removeRollSqlArray()
-
+        self.saveFile()
         input("生成SQL完毕，请查看生成的sql文件")
 
 
